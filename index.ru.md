@@ -85,7 +85,7 @@ pip3 install https://github.com/alphacep/vosk-api/releases/download/0.3.7/vosk-0
 docker run -d -p 2700:2700 alphacep/kaldi-en:latest
 ```
 
-Смотрите проект https://github.com/alphacep/vosk-server
+Смотрите проект <https://github.com/alphacep/vosk-server>
 
 
 ## Сборка из исходников

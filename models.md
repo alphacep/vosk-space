@@ -8,6 +8,7 @@ This is the list of models compatible with Vosk-API.
 
 To add a new model here create an issue on Github.
 
+{:class="table table-bordered"}
 | Model                                                                                                     | Size  | Accuracy   | Notes                                                                                        |
 |-------------------------------------------------------------------------------------------------------------------------|-------|------------|----------------------------------------------------------------------------------------------|
 | **English**                                                                                               |       |            |  |

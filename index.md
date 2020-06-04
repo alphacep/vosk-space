@@ -82,7 +82,7 @@ The server is installed with docker and can run with a single command:
 docker run -d -p 2700:2700 alphacep/kaldi-en:latest
 ```
 
-For details see https://github.com/alphacep/vosk-server
+For details see <https://github.com/alphacep/vosk-server>
 
 
 ## Compilation from source
@@ -166,7 +166,7 @@ For information about models see [the documentation on available models](models.
 
 ## Accuracy issues
 
-See documentation on [adaptation](adapation.html) and [generic advice on accuracy](accuracy.html)
+See documentation on [adaptation](adaption.html) and [generic advice on accuracy](accuracy.html)
 
 ## Contact Us
 
