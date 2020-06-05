@@ -28,7 +28,7 @@ gradle build
 
 Please note that medium blog post about 64-bit is not relevant anymore, the script builds x86, arm64 and armv7 libraries automatically without any modifications.
 
-For example of Android application using Vosk-API check https://github.com/alphacep/kaldi-android-demo project
+For example of Android application using Vosk-API check <https://github.com/alphacep/kaldi-android-demo> project
 
 ## iOS build
 

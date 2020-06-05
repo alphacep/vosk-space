@@ -9,9 +9,10 @@ url: "https://alphacephei.com"
 
 # Build settings
 markdown: kramdown
-theme: tale
+# theme: tale
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 exclude:
   - Gemfile
   - Gemfile.lock
