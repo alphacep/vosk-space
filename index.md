@@ -166,7 +166,7 @@ For information about models see [the documentation on available models](models.
 
 ## Accuracy issues
 
-See documentation on [adaptation](adaption.html) and [generic advice on accuracy](accuracy.html)
+See documentation on [adaptation](adaptation.html) and [generic advice on accuracy](accuracy.html)
 
 ## Contact Us
 
@@ -175,4 +175,5 @@ If you have any questions, feel free to
    * Post an issue here on github
    * Send us an e-mail at [contact@alphacephei.com](mailto:contact@alphacephei.com)
    * Join our group dedicated to speech recognition on Telegram [@speech_recognition](https://t.me/speech_recognition)
-   * Join [Wechat group](https://alphacephei.com/img/wechat/wechat.jpg) for discussion in Chinese
+   * Join [Wechat group](https://alphacephei.com/img/wechat/wechat.jpg) for discussion in Chinese. If QR code doesn't work or expired,
+     mail us to join the group.
