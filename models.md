@@ -64,6 +64,7 @@ check mini_librispeech recipe for details. Some notes on training:
   * Train the model without pitch. It might be helpful for small amount of data, but for large database it doesn't give the advantage
 but complicates the processing and increases response time.
   * Train ivector of dim 30 instead of standard 100 to save memory of mobile models.
+  * Latest mini_librispeech uses online cmvn which we do not support yet. Use [this script](https://github.com/kaldi-asr/kaldi/blob/master/egs/mini_librispeech/s5/local/chain/tuning/run_tdnn_1j.sh) to train nnet3 model.
 
 ## Model structure
 
