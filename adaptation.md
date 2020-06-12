@@ -36,7 +36,8 @@ cd model
 fstsymbols --save_osymbols=words.txt Gr.fst > /dev/null
 farcompilestrings --fst_type=compact --symbols=words.txt --keep_symbols text.txt | \
     ngramcount | ngrammake | \
-    fstconvert --fst_type=ngram > Gr.fst
+    fstconvert --fst_type=ngram > Gr.new.fst
+mv Gr.new.fst Gr.fst
 ```
 
 Use created Gr.fst instead of standard one in your model.
