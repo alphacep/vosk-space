@@ -127,8 +127,8 @@ Run like this:
 ```
 cd vosk-api/python/example
 wget https://alphacephei.com/kaldi/models/vosk-model-small-en-us-0.3.zip
-unzip alphacep-model-small-en-us-0.3.zip
-mv alphacep-model-small-en-us-0.3 model
+unzip vosk-model-small-en-us-0.3.zip
+mv vosk-model-small-en-us-0.3 model
 python3 ./test_simple.py test.wav
 ```
 
@@ -143,8 +143,8 @@ Or Java
 ```
 cd java && KALDI_ROOT=<KALDI_ROOT> make
 wget https://alphacephei.com/kaldi/models/vosk-model-small-en-us-0.3.zip
-unzip alphacep-model-small-en-us-0.3.zip
-mv alphacep-model-small-en-us-0.3 model
+unzip vosk-model-small-en-us-0.3.zip
+mv vosk-model-small-en-us-0.3 model
 make run
 ```
 
@@ -155,8 +155,8 @@ Or C#
 ```
 cd csharp && KALDI_ROOT=<KALDI_ROOT> make
 wget https://alphacephei.com/kaldi/models/vosk-model-small-en-us-0.3.zip
-unzip alphacep-model-small-en-us-0.3.zip
-mv alphacep-model-small-en-us-0.3 model
+unzip vosk-model-small-en-us-0.3.zip
+mv vosk-model-small-en-us-0.3 model
 mono test.exe
 ```
 
