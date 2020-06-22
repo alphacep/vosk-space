@@ -66,11 +66,13 @@ pip3 install https://github.com/alphacep/vosk-api/releases/download/0.3.7/vosk-0
 Also please note that Vosk requires libgfortran on some Linux builds which might be missing, you might need to install libgfortran with a
 package manager.
 
-In case of trouble installing, check the following
+In case of trouble installing, verify and provide for analysis the output of the following commands
 
-  * python3 --version
-  * pip3 --version
-  * pip3 -v install vosk
+```
+python3 --version
+pip3 --version
+pip3 -v install vosk
+```
 
 ## Websocket Server and GRPC server
 

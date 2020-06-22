@@ -69,11 +69,13 @@ pip3 install https://github.com/alphacep/vosk-api/releases/download/0.3.7/vosk-0
 Также учтите, что некотрые сборки требуют наличия libgfortran. Например, на RPi необходимо установить libgfortran с 
 помощью менеджера пакетов.
 
-В случае проблем с установкой, проверьте вывод следующих команд:
+В случае проблем с установкой, проверьте и предоставьте для анализа вывод следующих команд:
 
-  * python3 --version
-  * pip3 --version
-  * pip3 -v install vosk
+```
+python3 --version
+pip3 --version
+pip3 -v install vosk
+```
 
 ## Сервер для протоколов Websocket и GRPC
 
