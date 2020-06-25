@@ -138,6 +138,10 @@ To run with your audio file make sure it has proper format - PCM 16khz 16bit mon
 
 You can find other examples of using a microphone, decoding with a fixed small vocabulary or speaker identification setup in  [python/example subfolder](https://github.com/alphacep/vosk-api/tree/master/python/example)
 
+For more details see this video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Itic1lFc4Gg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 #### Java example API build
 
 Or Java

@@ -25,6 +25,7 @@ To add a new model here create an issue on Github.
 | [vosk-model-small-ru-0.4](https://alphacephei.com/vosk/models/vosk-model-small-ru-0.4.zip)                |  39M  |   TBD      | Lightweight wideband model for Android and RPi                                               |
 | **French**                                                                                                |       |            |  |
 | [vosk-model-small-fr-pguyot-0.3](https://alphacephei.com/vosk/models/vosk-model-small-fr-pguyot-0.3.zip)                |  39M  |   TBD      | Lightweight wideband model for Android and RPi trained by [Paul Guyot](https://github.com/pguyot/zamia-speech/releases) |
+| [fr-pguyot-zamia-20191016-tdnn_f](https://github.com/pguyot/zamia-speech/releases/download/20190930/kaldi-generic-fr-tdnn_f-r20191016.tar.xz) | 282M | TBD | Bigger more accurate model by [Paul Guyot](https://github.com/pguyot/zamia-speech/releases) |
 | **German**                                                                                                |       |            |  |
 | [tuda-de](http://ltdata1.informatik.uni-hamburg.de/kaldi_tuda_de/de_400k_nnet3chain_tdnn1f_2048_sp_bi.tar.bz2)    |  566M |   TBD      | Wideband server model from [tuda-de](https://github.com/uhh-lt/vosk-model-tuda-de)            |
 | [vosk-model-small-de-zamia-0.3](https://alphacephei.com/vosk/models/vosk-model-small-de-zamia-0.3.zip)            |  49M  |   TBD      | Lightweight wideband model for Android and RPi                                           |
