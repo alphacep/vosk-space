@@ -48,7 +48,7 @@ We currently support the following platforms:
 
 Make sure you have newer pip and python3:
 
-  * Python version: 3.5-3.8 (Linux), 3.6-3.7 (ARM), 3.8 (OSX), 3.8 (Windows)
+  * Python version: 3.5-3.8 (Linux), 3.6-3.7 (ARM), 3.8 (OSX), 3.8-64bit (Windows)
   * pip version: 19.0 and newer.
 
 Uprade python and pip if needed. Then install vosk on Linux/Mac with a simple command
@@ -65,6 +65,8 @@ pip3 install https://github.com/alphacep/vosk-api/releases/download/0.3.7/vosk-0
 
 Also please note that Vosk requires libgfortran on some Linux builds which might be missing, you might need to install libgfortran with a
 package manager.
+
+On Windows make sure you have 64-bit Python. We do not support 32-bit python yet.
 
 In case of trouble installing, verify and provide for analysis the output of the following commands
 
