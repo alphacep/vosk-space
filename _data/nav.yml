@@ -1,0 +1,19 @@
+docs:
+
+- title: Introduction
+  url: index.html
+
+- title: Installation
+  url: install.html
+
+- title: Integrations
+  url: integrations.html
+
+- title: Accuracy
+  url: accuracy.html
+
+- title: Adaptation
+  url: adaptation.html
+
+- title: Models
+  url: models.html
