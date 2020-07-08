@@ -1,19 +1,25 @@
 docs:
 
 - title: Introduction
-  url: index.html
+  url: /vosk/
 
 - title: Installation
-  url: install.html
+  url: install
 
 - title: Integrations
-  url: integrations.html
+  url: integrations
 
 - title: Accuracy
-  url: accuracy.html
+  url: accuracy
 
 - title: Adaptation
-  url: adaptation.html
+  url: adaptation
 
 - title: Models
-  url: models.html
+  url: models
+
+- title: Android Demo
+  url: android
+
+- title: Vosk Server
+  url: server

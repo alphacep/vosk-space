@@ -12,10 +12,11 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
-  - build.sh
+  - build*.sh
   - README
 
 google_analytics: UA-36804419-1
