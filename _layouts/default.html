@@ -10,21 +10,31 @@
         {% include navigation.html %}
 
         <div class="row m-2">
-            <div class="col-2">
+            <div class="col-xs-12 col-sm-2">
                  {% include sidebar.html %}
             </div>
-            <div class="col-10">
+            <div class="col-xs-12 col-sm-10">
                   <main>
                       {{ content }}
                    </main>
              </div>
         </div>
 
-        <div class="row">
+        <div class="row-fluid">
             <div class="col">
                 {% include footer.html %}
             </div>
         </div>
     </div>
   </body>
+
+  <script async src="/lib/jquery-1.12.4.min.js"></script>
+  <script async src="/lib/bootstrap.min.js"></script>
+  <script>
+     window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+     ga('create', '{{ site.google_analytics }}', 'auto');
+     ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+
 </html>

@@ -6,6 +6,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="/css/bootstrap.min.css">
+
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700">
 
@@ -15,8 +16,4 @@
   <!-- RSS -->
   {% feed_meta %}
 
-  <!-- Google Analytics-->
-  {% if site.google_analytics and jekyll.environment == 'production' %}
-  {% include analytics.html %}
-  {% endif %}
 </head>
