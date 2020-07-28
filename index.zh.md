@@ -5,6 +5,10 @@ lang: zh
 
 [![Build Status](https://travis-ci.com/alphacep/vosk-api.svg?branch=master)](https://travis-ci.com/alphacep/vosk-api)
 
+[EN](index)
+
+[RU](index.ru)
+
 Vosk是言语识别工具包。Vosk最好的事情是：
 
   1. 支持九种语言 - 中文, 英语，德语，法语，西班牙语，葡萄牙语，俄语，土耳其语，越南语

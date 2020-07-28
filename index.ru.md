@@ -5,9 +5,9 @@ lang: ru
 
 [![Build Status](https://travis-ci.com/alphacep/vosk-api.svg?branch=master)](https://travis-ci.com/alphacep/vosk-api)
 
-[EN](index.html)
+[EN](index)
 
-[中文](index.zh.html)
+[中文](index.zh)
 
 Библитека для распознавания речи "Воск". Преимущества библиотеки:
 
@@ -24,11 +24,11 @@ lang: ru
 
   Смотрите основные разделы:
 
-  * [Установка и использование](install.html)
-  * [Интеграция](integrations.html)
-  * [Адаптация](adaptation.html)
-  * [Точность](accuracy.html)
-  * [Модели](models.html)
+  * [Установка и использование](install)
+  * [Интеграция](integrations)
+  * [Адаптация](adaptation)
+  * [Точность](accuracy)
+  * [Модели](models)
 
 
 ## Обратная связь

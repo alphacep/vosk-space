@@ -4,9 +4,9 @@ layout: default
 
 [![Build Status](https://travis-ci.com/alphacep/vosk-api.svg?branch=master)](https://travis-ci.com/alphacep/vosk-api)
 
-[РУС](index.ru.html)
+[РУС](index.ru)
 
-[中文](index.zh.html)
+[中文](index.zh)
 
 Vosk is a speech recognition toolkit. The best things in Vosk are:
 
@@ -23,11 +23,11 @@ Vosk is a speech recognition toolkit. The best things in Vosk are:
 
   See the following secions for more information:
 
-  * [Installation and usage](install.html)
-  * [Integrations](integrations.html)
-  * [Adaptation](adaptation.html)
-  * [Accuracy](accuracy.html)
-  * [Models](models.html)
+  * [Installation and usage](install)
+  * [Integrations](integrations)
+  * [Adaptation](adaptation)
+  * [Accuracy](accuracy)
+  * [Models](models)
 
 ## Contact Us
 
