@@ -39,6 +39,8 @@ To add a new model here create an issue on Github.
 | [vosk-model-small-tr-0.3](https://alphacephei.com/vosk/models/vosk-model-small-tr-0.3.zip)                |  35M  |   TBD      | Lightweight wideband model for Android and RPi                                               |
 | **Vietnamese**                                                                                                |       |            |  |
 | [vosk-model-small-vn-0.3](https://alphacephei.com/vosk/models/vosk-model-small-vn-0.3.zip)                |  32M  |   TBD      | Lightweight wideband model for Android and RPi                                               |
+| **Italian**                                                                                                |       |            |  |
+| [vosk-model-small-it-0.3](https://alphacephei.com/vosk/models/vosk-model-small-it-0.4.zip)                |  32M  |   TBD      | Lightweight wideband model for Android and RPi                                               |
 | **Speaker identification model**                                                                          |       |            |                                                                                              |
 | [vosk-model-spk-0.3](https://alphacephei.com/vosk/models/vosk-model-spk-0.3.zip)                          |  13M  |   TBD      | Model for speaker identification, should work for all languages                              |
 
