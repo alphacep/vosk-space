@@ -26,7 +26,7 @@ or for Russian
 docker run -d -p 2700:2700 alphacep/kaldi-ru:latest
 ```
 
-or for German (model from https://github.com/uhh-lt/kaldi-tuda-de#pretrained-models)
+or for German
 
 ```
 docker run -d -p 2700:2700 alphacep/kaldi-de:latest
@@ -77,12 +77,12 @@ To test with a microphone, run
 Connected to ws://localhost:2700
 Type Ctrl-C to exit
 {"partial" : ""}
-{"partial" : "поднимите мне веки"}
-{"partial" : "поднимите мне веки"}
-{"result" : [ {"word": "поднимите", "start" : 3.45, "end" : 4.26, "conf" : 1},
-{"word": "мне", "start" : 4.26, "end" : 4.47, "conf" : 1},
-{"word": "веки", "start" : 4.47, "end" : 5.07, "conf" : 1}
- ], "text" : "поднимите мне веки" }
+{"partial" : "raise my eyes"}
+{"partial" : "raise my eyes"}
+{"result" : [ {"word": "raise", "start" : 3.45, "end" : 4.26, "conf" : 1},
+{"word": "my", "start" : 4.26, "end" : 4.47, "conf" : 1},
+{"word": "eyes", "start" : 4.47, "end" : 5.07, "conf" : 1}
+ ], "text" : "raise my eyes" }
 {"partial" : ""}
 Closing PyAudio Stream
 Terminating PyAudio object
