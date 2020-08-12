@@ -45,3 +45,13 @@ Use created Gr.fst instead of standard one in your model.
 For more details see OpenGRM documentation http://www.opengrm.org/twiki/bin/view/GRM/NGramLibrary
 
 You can not introduce new words this way, that is something we will cover later.
+
+## Adapting the acoustic model
+
+Adapting the acoustic model is also possible with about 1 hour of data. You can follow 
+[this issue](https://github.com/daanzu/kaldi-active-grammar/issues/33) for details. 
+
+Basically you need to collect the data, put it in the Kaldi format, then run 
+<https://github.com/kaldi-asr/kaldi/blob/master/egs/aishell2/s5/local/nnet3/tuning/finetune_tdnn_1a.sh>
+
+More detailed setup of the finetuning might be helpful, tracked at [vosk-api issue](https://github.com/alphacep/vosk-api/issues/185).
