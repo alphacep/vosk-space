@@ -43,7 +43,7 @@ Remember, the more information you provide the faster you get a solution.
 
 Once you figure out the weakness of the current setup you might try to solve it:
 
-  * Adapt the models using more data following [adaptation] document
+  * Adapt the models using more data following [adaptation](adaptation) document
   * Fix bugs in the software
   * Implement required algorithms
   * Implement better audio recording and delivery
