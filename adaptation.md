@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Model adaptation
 ---
 
 There are many issues which can lead to bad accuracy from model

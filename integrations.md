@@ -1,5 +1,6 @@
 ---
 layout: default
+title: PBX integration
 ---
 
 ## Asterisk

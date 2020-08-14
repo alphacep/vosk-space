@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Websocket, gRPC, MQTT and WebRTC servers
 ---
 
 A very simple server based on [Vosk-API](https://github.com/alphacep/vosk-api).

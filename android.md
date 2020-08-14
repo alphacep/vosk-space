@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Offline speech recognition on Android
 ---
 
 ## About

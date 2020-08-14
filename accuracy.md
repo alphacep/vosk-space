@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Debugging accuracy problems
 ---
 
 ## Accuracy issues
