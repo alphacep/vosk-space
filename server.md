@@ -5,7 +5,7 @@ title: Websocket, gRPC, MQTT and WebRTC servers
 
 A very simple server based on [Vosk-API](https://github.com/alphacep/vosk-api).
 
-There are three implementations for different protocol - websocket, grpc, mqtt.
+There are four implementations for different protocol - websocket, grpc, mqtt, webrtc.
 
 ## Usage
 
