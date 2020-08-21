@@ -15,7 +15,7 @@ To add a new model here create an issue on Github.
 | **English**                                                                                               |       |            |  |
 | [vosk-model-en-us-aspire-0.2](https://alphacephei.com/vosk/models/vosk-model-en-us-aspire-0.2.zip)        |  1.4G |   TBD      | Trained on Fisher + more or less recent LM. Should be pretty good for generic US English transcription |
 | [vosk-model-small-en-us-0.3](http://alphacephei.com/vosk/models/vosk-model-small-en-us-0.3.zip)          |  36M  |   TBD      | Lightweight wideband model for Android and RPi |
-| [vosk-model-en-us-daanzu](https://github.com/daanzu/kaldi-active-grammar/releases/download/v1.4.0/vosk-model-en-us-daanzu-20200328.zip)          |  3.2G  |   TBD      | Accurate wideband model for dictation from Kaldi-active-grammar project                      |
+| [vosk-model-en-us-daanzu](https://github.com/daanzu/kaldi-active-grammar/releases/download/v1.4.0/vosk-model-en-us-daanzu-20200328.zip)          |  1.0G  |   TBD      | Accurate wideband model for dictation from Kaldi-active-grammar project                      |
 | [vosk-model-en-us-daanzu-lgraph](https://github.com/daanzu/kaldi-active-grammar/releases/download/v1.4.0/vosk-model-en-us-daanzu-20200328-lgraph.zip)          |  129M  |   TBD      |Accurate wideband model for dictation from Kaldi-active-grammar project with configurable graph |
 | [vosk-model-en-us-librispeech-0.2](https://alphacephei.com/vosk/models/vosk-model-en-us-librispeech-0.2.zip) | 845M |   TBD      | Repackaged Kaldi model from http://kaldi-asr.org/models/m13 |
 | **Chinese**                                                                                                   |       |            |  |
@@ -53,6 +53,7 @@ Other places where you can check for models which might be compatible:
   * <http://kaldi-asr.org/models.html> - variety of models from Kaldi - librispeech, aspire, chinese models
   * <https://github.com/daanzu/kaldi-active-grammar/blob/master/docs/models.md> - Big dictation models
   * <https://github.com/uhh-lt/vosk-model-tuda-de> - German models
+  * <https://github.com/german-asr/kaldi-german> - Another German project
   * <http://zamia-speech.org/asr/> - German and English model from Zamia
   * <https://github.com/pguyot/zamia-speech/releases> - French models for Zamia
   * <https://github.com/opensource-spraakherkenning-nl/Kaldi_NL> - Dutch model

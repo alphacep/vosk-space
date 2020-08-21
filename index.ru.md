@@ -35,6 +35,6 @@ lang: ru
 
 Если возникли вопросы, свяжитесь с нами:
 
-   * Создайте проблему тут на github
+   * Создайте проблему [на Гитхабе](https://github.com/alphacep/vosk-api/issues/new)
    * Напишите нам по почте [contact@alphacephei.com](mailto:contact@alphacephei.com)
    * Заходите в нашу группу в Телеграмме [@speech_recognition_ru](https://t.me/speech_recognition_ru)

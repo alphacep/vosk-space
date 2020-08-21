@@ -33,7 +33,7 @@ Vosk is a speech recognition toolkit. The best things in Vosk are:
 
 If you have any questions, feel free to
 
-   * Post an issue here on github
+   * Post an issue [on github](https://github.com/alphacep/vosk-api/issues/new)
    * Send us an e-mail at [contact@alphacephei.com](mailto:contact@alphacephei.com)
    * Join our group dedicated to speech recognition on Telegram [@speech_recognition](https://t.me/speech_recognition)
    * We have a Wechat group which is pretty big, so it is invitation-only. Mail us to join the group and provide some information about yourself.
