@@ -1,9 +1,9 @@
 # Welcome to Jekyll!
 #
 
-title: VOSK
+title: VOSK Offline Speech Recognition API
 email: nshmyrev@alphacephei.com
-description: Offline speech recognition API for Android, iOS, Raspberry Pi and servers with Python, Java, C#, Swift and Node.
+description: Accurate speech recognition for Android, iOS, Raspberry Pi and servers with Python, Java, C#, Swift and Node.
 baseurl: "/vosk"
 url: "https://alphacephei.com"
 

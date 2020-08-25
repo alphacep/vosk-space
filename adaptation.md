@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Model adaptation
+title: Model adaptation for VOSK
 ---
 
 There are many issues which can lead to bad accuracy from model

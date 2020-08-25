@@ -1,6 +1,6 @@
 ---
 layout: default
-title: PBX integration
+title: VOSK integration with Asterisk, Freeswitch and Jigasi
 ---
 
 ## Asterisk

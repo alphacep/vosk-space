@@ -1,11 +1,13 @@
 ---
 layout: default
-title: Offline speech recognition on Android
+title: Offline speech recognition on Android with VOSK
 ---
 
 ## About
 
 This demo implements offline speech recognition and speaker identification for mobile applications using Kaldi and Vosk libraries.
+
+[Vosk Demo on Android Github Project](https://github.com/alphacep/vosk-android-demo)
 
 ## Usage
 

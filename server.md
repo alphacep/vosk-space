@@ -1,7 +1,9 @@
 ---
 layout: default
-title: Websocket, gRPC, MQTT and WebRTC servers
+title: Websocket, gRPC, MQTT and WebRTC servers for VOSK
 ---
+
+[Vosk Server Github Project](https://github.com/alphacep/vosk-server)
 
 A very simple server based on [Vosk-API](https://github.com/alphacep/vosk-api).
 

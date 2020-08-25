@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Installation
+title: Vosk Installation
 ---
 
 ## Android build

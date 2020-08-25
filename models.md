@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Models
+title: VOSK Models
 ---
 
 # Models
