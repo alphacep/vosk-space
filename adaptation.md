@@ -80,7 +80,7 @@ You can not introduce new words this way, that is something we will cover later.
 You can rebuild the graph in the big models. For that you need to do the following:
 
 1. Prepare the lexicon in the Kaldi format
-2. Prepare the langauge model with the generic one interpolated with the domain-specific one
+2. Prepare the language model with the generic one interpolated with the domain-specific one
 3. Compile lexicon
 4. Compile the graph
 5. Replace graph inside the model
