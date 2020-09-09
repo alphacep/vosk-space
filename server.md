@@ -35,6 +35,12 @@ or for German
 docker run -d -p 2700:2700 alphacep/kaldi-de:latest
 ```
 
+or for Indian English
+
+```
+docker run -d -p 2700:2700 alphacep/kaldi-en-in:latest
+```
+
 Run
 
 ```
