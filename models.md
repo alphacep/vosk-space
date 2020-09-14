@@ -1,6 +1,7 @@
 ---
 layout: default
 title: VOSK Models
+permalink: /models
 ---
 
 # Models

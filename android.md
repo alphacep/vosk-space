@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Offline speech recognition on Android with VOSK
+permalink: /android
 ---
 
 ## About

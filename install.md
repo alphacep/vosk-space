@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Vosk Installation
+permalink: /install
 ---
 
 ## Android build

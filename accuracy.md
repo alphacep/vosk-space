@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Debugging accuracy problems in VOSK
+permalink: /accuracy
 ---
 
 ## Accuracy issues

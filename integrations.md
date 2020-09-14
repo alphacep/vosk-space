@@ -1,6 +1,7 @@
 ---
 layout: default
 title: VOSK integration with Asterisk, Freeswitch and Jigasi
+permalink: /integrations
 ---
 
 ## Asterisk
