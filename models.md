@@ -38,7 +38,7 @@ To add a new model here create an issue on Github.
 | **Portuguese**                                                                                                |       |            |  |
 | [vosk-model-small-pt-0.3](https://alphacephei.com/vosk/models/vosk-model-small-pt-0.3.zip)                |  31M  |   TBD      | Lightweight wideband model for Android and RPi                                               |
 | **Greek**                                                                                                |       |            |  |
-| [vosk-model-el-gr-0.6.zip](https://alphacephei.com/vosk/models/vosk-model-el-gr-0.6.zip)                  |  1.1G |   TBD      | Big narrowband Greek model for server processing, not extremely accurate though        |
+| [vosk-model-el-gr-0.7.zip](https://alphacephei.com/vosk/models/vosk-model-el-gr-0.7.zip)                  |  1.1G |   TBD      | Big narrowband Greek model for server processing, not extremely accurate though        |
 | **Turkish**                                                                                                |       |            |  |
 | [vosk-model-small-tr-0.3](https://alphacephei.com/vosk/models/vosk-model-small-tr-0.3.zip)                |  35M  |   TBD      | Lightweight wideband model for Android and RPi                                               |
 | **Vietnamese**                                                                                                |       |            |  |
@@ -74,6 +74,9 @@ check mini_librispeech recipe for details. Some notes on training:
 but complicates the processing and increases response time.
   * Train ivector of dim 30 instead of standard 100 to save memory of mobile models.
   * Latest mini_librispeech uses online cmvn which we do not support yet. Use [this script](https://github.com/kaldi-asr/kaldi/blob/master/egs/mini_librispeech/s5/local/chain/tuning/run_tdnn_1j.sh) to train nnet3 model.
+
+PLEASE NOTE THAT THE SIMPLE GMM MODEL YOU TRAIN WITH **"KALDI FOR DUMMIES"** TUTORIAL **DOES NOT WORK** WITH VOSK. YOU NEED TO RUN
+MINI-LIBRISPEECH FROM START TO END, INCLUDING **CHAIN MODEL TRAINING**. You also need CUDA GPU to train.
 
 ## Model structure
 
