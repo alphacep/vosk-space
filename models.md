@@ -49,6 +49,8 @@ To add a new model here create an issue on Github.
 | **Dutch**                                                                                                 |       |            |  |
 | [vosk-model-nl-spraakherkenning-0.6.zip](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6.zip)               |  860M  |   TBD      | Medium Dutch model from [Kaldi_NL](https://github.com/opensource-spraakherkenning-nl/Kaldi_NL) |
 | [vosk-model-nl-spraakherkenning-0.6-lgraph.zip](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6-lgraph.zip) |  100M  |   TBD      | Smaller model with dynamic graph  |
+| **Catalan**                                                                                                |       |            |  |
+| [vosk-model-small-ca-0.4](https://alphacephei.com/vosk/models/vosk-model-small-ca-0.4.zip)                |  42M  |   TBD      | Lightweight wideband model for Android and RPi for Catalan                                   |
 | **Speaker identification model**                                                                          |       |            |                                                                                              |
 | [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  |   TBD      | Model for speaker identification, should work for all languages                              |
 
