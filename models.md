@@ -18,7 +18,7 @@ To add a new model here create an issue on Github.
 | [vosk-model-small-en-us-0.3](http://alphacephei.com/vosk/models/vosk-model-small-en-us-0.3.zip)          |  36M  |   15.34 (librispeech test-clean) 12.09 (tedlium)      | Lightweight wideband model for Android and RPi |
 | [vosk-model-en-us-daanzu-20200905](https://alphacephei.com/vosk/models/vosk-model-en-us-daanzu-20200905.zip)          |  1.0G  |  7.08 (librispeech test-clean)  8.25 (tedlium)    | Accurate wideband model for dictation from [Kaldi-active-grammar](https://github.com/daanzu/kaldi-active-grammar) project                      |
 | [vosk-model-en-us-daanzu-20200905-lgraph](https://alphacephei.com/vosk/models/vosk-model-en-us-daanzu-20200905-lgraph.zip)          |  129M  |   8.20 (librispeech test-clean) 9.28 (tedlium)      |Accurate wideband model for dictation from [Kaldi-active-grammar](https://github.com/daanzu/kaldi-active-grammar) project with configurable graph |
-| [vosk-model-en-us-librispeech-0.2](https://alphacephei.com/vosk/models/vosk-model-en-us-librispeech-0.2.zip) | 845M |   TBD      | Repackaged Kaldi model from http://kaldi-asr.org/models/m13 |
+| [vosk-model-en-us-librispeech-0.2](https://alphacephei.com/vosk/models/vosk-model-en-us-librispeech-0.2.zip) | 845M |   TBD      | Repackaged Librispeech model from [Kaldi](http://kaldi-asr.org/models/m13) |
 | **Indian English**                                                                                               |       |            |  |
 | [vosk-model-en-in-0.4](https://alphacephei.com/vosk/models/vosk-model-en-in-0.4.zip)        |  370M | TBD | Generic Indian English model for telecom and broadcast |
 | [vosk-model-small-en-in-0.4](http://alphacephei.com/vosk/models/vosk-model-small-en-in-0.4.zip)          |  36M  | TBD | Lightweight Indian English model for mobile applications |
@@ -52,7 +52,7 @@ To add a new model here create an issue on Github.
 | **Catalan**                                                                                                |       |            |  |
 | [vosk-model-small-ca-0.4](https://alphacephei.com/vosk/models/vosk-model-small-ca-0.4.zip)                |  42M  |   TBD      | Lightweight wideband model for Android and RPi for Catalan                                   |
 | **Arabic**                                                                                                |       |            |  |
-| [vosk-model-ar-mgb2-0.4](https://alphacephei.com/vosk/models/vosk-model-ar-mgb2-0.4.zip)                  |  318M  |   TBD      | Arabic model trained on MGB2 dataset from [Kaldi](https://kaldi-asr.org/models/m9)          |
+| [vosk-model-ar-mgb2-0.4](https://alphacephei.com/vosk/models/vosk-model-ar-mgb2-0.4.zip)                  |  318M  |   TBD      | Repackaged Arabic model trained on MGB2 dataset from [Kaldi](https://kaldi-asr.org/models/m9)          |
 | **Speaker identification model**                                                                          |       |            |                                                                                              |
 | [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  |   TBD      | Model for speaker identification, should work for all languages                              |
 
@@ -74,8 +74,9 @@ Other places where you can check for models which might be compatible:
 
 ## Training your own model
 
-You can train your model with Kaldi toolkit. The training is pretty standard - you need tdnn nnet3 model with ivectors. You can
-check mini_librispeech recipe for details. Some notes on training:
+You can train your model with Kaldi toolkit. The training is pretty
+standard - you need tdnn nnet3 model with i-vectors. You can check
+mini_librispeech recipe for details. Some notes on training:
 
   * For smaller mobile models watch number of parameters
   * Train the model without pitch. It might be helpful for small amount of data, but for large database it doesn't give the advantage
@@ -83,8 +84,11 @@ but complicates the processing and increases response time.
   * Train ivector of dim 30 instead of standard 100 to save memory of mobile models.
   * Latest mini_librispeech uses online cmvn which we do not support yet. Use [this script](https://github.com/kaldi-asr/kaldi/blob/master/egs/mini_librispeech/s5/local/chain/tuning/run_tdnn_1j.sh) to train nnet3 model.
 
-PLEASE NOTE THAT THE SIMPLE GMM MODEL YOU TRAIN WITH **"KALDI FOR DUMMIES"** TUTORIAL **DOES NOT WORK** WITH VOSK. YOU NEED TO RUN
-MINI-LIBRISPEECH FROM START TO END, INCLUDING **CHAIN MODEL TRAINING**. You also need CUDA GPU to train.
+PLEASE NOTE THAT THE SIMPLE GMM MODEL YOU TRAIN WITH **"KALDI FOR
+DUMMIES"** TUTORIAL **DOES NOT WORK** WITH VOSK. YOU NEED TO RUN
+MINI-LIBRISPEECH FROM START TO END, INCLUDING **CHAIN MODEL TRAINING**.
+You also need CUDA GPU to train. If you do not have a GPU, try to run
+Kaldi on Collab.
 
 ## Model structure
 
