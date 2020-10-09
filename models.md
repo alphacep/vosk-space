@@ -11,52 +11,53 @@ This is the list of models compatible with Vosk-API.
 To add a new model here create an issue on Github.
 
 {:class="table table-bordered"}
-| Model                                                                                                     | Size  | Accuracy   | Notes                                                                                        |
-|-------------------------------------------------------------------------------------------------------------------------|-------|------------|----------------------------------------------------------------------------------------------|
-| **English**                                                                                               |       |            |  |
-| [vosk-model-en-us-aspire-0.2](https://alphacephei.com/vosk/models/vosk-model-en-us-aspire-0.2.zip)        |  1.4G |   13.64 (librispeech test-clean) 12.89 (tedlium)      | Trained on Fisher + more or less recent LM. Should be pretty good for generic US English transcription |
-| [vosk-model-small-en-us-0.4](http://alphacephei.com/vosk/models/vosk-model-small-en-us-0.4.zip)          |  36M  |   15.34 (librispeech test-clean) 12.09 (tedlium)      | Lightweight wideband model for Android and RPi |
-| [vosk-model-en-us-daanzu-20200905](https://alphacephei.com/vosk/models/vosk-model-en-us-daanzu-20200905.zip)          |  1.0G  |  7.08 (librispeech test-clean)  8.25 (tedlium)    | Accurate wideband model for dictation from [Kaldi-active-grammar](https://github.com/daanzu/kaldi-active-grammar) project                      |
-| [vosk-model-en-us-daanzu-20200905-lgraph](https://alphacephei.com/vosk/models/vosk-model-en-us-daanzu-20200905-lgraph.zip)          |  129M  |   8.20 (librispeech test-clean) 9.28 (tedlium)      |Accurate wideband model for dictation from [Kaldi-active-grammar](https://github.com/daanzu/kaldi-active-grammar) project with configurable graph |
-| [vosk-model-en-us-librispeech-0.2](https://alphacephei.com/vosk/models/vosk-model-en-us-librispeech-0.2.zip) | 845M |   TBD      | Repackaged Librispeech model from [Kaldi](http://kaldi-asr.org/models/m13). Not very accurate, mainly for research |
-| **Indian English**                                                                                               |       |            |  |
-| [vosk-model-en-in-0.4](https://alphacephei.com/vosk/models/vosk-model-en-in-0.4.zip)        |  370M | TBD | Generic Indian English model for telecom and broadcast |
-| [vosk-model-small-en-in-0.4](http://alphacephei.com/vosk/models/vosk-model-small-en-in-0.4.zip)          |  36M  | TBD | Lightweight Indian English model for mobile applications |
-| **Chinese**                                                                                                   |       |            |  |
-| [vosk-model-cn-0.1.zip](https://alphacephei.com/vosk/models/vosk-model-cn-0.1.zip)                        |  195M |   TBD      | Big narrowband Chinese model for server processing                                           |
-| [vosk-model-small-cn-0.3](https://alphacephei.com/vosk/models/vosk-model-small-cn-0.3.zip)                |  32M  |   TBD      | Lightweight wideband model for Android and RPi                                               |
-| **Russian**                                                                                                   |       |            |  |
-| [vosk-model-ru-0.10.zip](https://alphacephei.com/vosk/models/vosk-model-ru-0.10.zip)                      |  2.5G |   TBD      | Big narrowband Russian model for server processing                                           |
-| [vosk-model-small-ru-0.4](https://alphacephei.com/vosk/models/vosk-model-small-ru-0.4.zip)                |  39M  |   TBD      | Lightweight wideband model for Android and RPi                                               |
-| **French**                                                                                                |       |            |  |
-| [vosk-model-small-fr-pguyot-0.3](https://alphacephei.com/vosk/models/vosk-model-small-fr-pguyot-0.3.zip)                |  39M  |   TBD      | Lightweight wideband model for Android and RPi trained by [Paul Guyot](https://github.com/pguyot/zamia-speech/releases) |
-| [fr-pguyot-zamia-20191016-tdnn_f](https://github.com/pguyot/zamia-speech/releases/download/20190930/kaldi-generic-fr-tdnn_f-r20191016.tar.xz) | 282M | TBD | Bigger more accurate model by [Paul Guyot](https://github.com/pguyot/zamia-speech/releases) |
-| **German**                                                                                                |       |            |  |
-| [vosk-model-de-0.6](https://alphacephei.com/vosk/models/vosk-model-de-0.6.zip)                            |  1.2G |   TBD      |  Big narrowband German model for telephony and server   |
-| [vosk-model-small-de-zamia-0.3](https://alphacephei.com/vosk/models/vosk-model-small-de-zamia-0.3.zip)            |  49M  |   TBD      | Lightweight wideband model for Android and RPi                                           |
-| **Spanish**                                                                                                |       |            |  |
-| [vosk-model-small-es-0.3](https://alphacephei.com/vosk/models/vosk-model-small-es-0.3.zip)                |  33M  |   TBD      | Lightweight wideband model for Android and RPi                                               |
-| **Portuguese**                                                                                                |       |            |  |
-| [vosk-model-small-pt-0.3](https://alphacephei.com/vosk/models/vosk-model-small-pt-0.3.zip)                |  31M  |   TBD      | Lightweight wideband model for Android and RPi                                               |
-| **Greek**                                                                                                |       |            |  |
-| [vosk-model-el-gr-0.7.zip](https://alphacephei.com/vosk/models/vosk-model-el-gr-0.7.zip)                  |  1.1G |   TBD      | Big narrowband Greek model for server processing, not extremely accurate though        |
-| **Turkish**                                                                                                |       |            |  |
-| [vosk-model-small-tr-0.3](https://alphacephei.com/vosk/models/vosk-model-small-tr-0.3.zip)                |  35M  |   TBD      | Lightweight wideband model for Android and RPi                                               |
-| **Vietnamese**                                                                                                |       |            |  |
-| [vosk-model-small-vn-0.3](https://alphacephei.com/vosk/models/vosk-model-small-vn-0.3.zip)                |  32M  |   TBD      | Lightweight wideband model for Android and RPi                                               |
-| **Italian**                                                                                                |       |            |  |
-| [vosk-model-small-it-0.4](https://alphacephei.com/vosk/models/vosk-model-small-it-0.4.zip)                |  32M  |   TBD      | Lightweight wideband model for Android and RPi                                               |
-| **Dutch**                                                                                                 |       |            |  |
-| [vosk-model-nl-spraakherkenning-0.6.zip](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6.zip)               |  860M  |   TBD      | Medium Dutch model from [Kaldi_NL](https://github.com/opensource-spraakherkenning-nl/Kaldi_NL) |
-| [vosk-model-nl-spraakherkenning-0.6-lgraph.zip](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6-lgraph.zip) |  100M  |   TBD      | Smaller model with dynamic graph  |
-| **Catalan**                                                                                                |       |            |  |
-| [vosk-model-small-ca-0.4](https://alphacephei.com/vosk/models/vosk-model-small-ca-0.4.zip)                |  42M  |   TBD      | Lightweight wideband model for Android and RPi for Catalan                                   |
-| **Arabic**                                                                                                |       |            |  |
-| [vosk-model-ar-mgb2-0.4](https://alphacephei.com/vosk/models/vosk-model-ar-mgb2-0.4.zip)                  |  318M  |   TBD      | Repackaged Arabic model trained on MGB2 dataset from [Kaldi](https://kaldi-asr.org/models/m9)          |
-| **Farsi**                                                                                                 |       |            |  |
-| [vosk-model-small-fa-0.4](https://alphacephei.com/vosk/models/vosk-model-small-fa-0.4.zip)                |  47M  |   TBD      | Lightweight wideband model for Android and RPi for Farsi (Persian)                                   |
-| **Speaker identification model**                                                                          |       |            |                                                                                              |
-| [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  |   TBD      | Model for speaker identification, should work for all languages                              |
+| Model                                                                                                     | Size  | Accuracy   | Notes | License    |
+|-----------------------------------------------------------------------------------------------------------|-------|------------|-------|------------|
+| **English**                                                                                               |       |            |       |            |
+| [vosk-model-en-us-aspire-0.2](https://alphacephei.com/vosk/models/vosk-model-en-us-aspire-0.2.zip)        |  1.4G | 13.64 (librispeech test-clean) 12.89 (tedlium) | Trained on Fisher + more or less recent LM. Should be pretty good for generic US English transcription | Apache 2.0 |
+| [vosk-model-small-en-us-0.4](http://alphacephei.com/vosk/models/vosk-model-small-en-us-0.4.zip)           |  36M  | 15.34 (librispeech test-clean) 12.09 (tedlium) | Lightweight wideband model for Android and RPi | Apache 2.0 |
+| [vosk-model-en-us-daanzu-20200905](https://alphacephei.com/vosk/models/vosk-model-en-us-daanzu-20200905.zip) |  1.0G |  7.08 (librispeech test-clean)  8.25 (tedlium) | Accurate wideband model for dictation from [Kaldi-active-grammar](https://github.com/daanzu/kaldi-active-grammar) project | AGPL    |
+| [vosk-model-en-us-daanzu-20200905-lgraph](https://alphacephei.com/vosk/models/vosk-model-en-us-daanzu-20200905-lgraph.zip) |  129M | 8.20 (librispeech test-clean) 9.28 (tedlium) | Accurate wideband model for dictation from [Kaldi-active-grammar](https://github.com/daanzu/kaldi-active-grammar) project with configurable graph | AGPL |
+| [vosk-model-en-us-librispeech-0.2](https://alphacephei.com/vosk/models/vosk-model-en-us-librispeech-0.2.zip) | 845M | TBD | Repackaged Librispeech model from [Kaldi](http://kaldi-asr.org/models/m13). Not very accurate, mainly for research | Apache 2.0 |
+| **Indian English**                                                                                        |       |            |            |       |
+| [vosk-model-en-in-0.4](https://alphacephei.com/vosk/models/vosk-model-en-in-0.4.zip)                      |  370M | TBD | Generic Indian English model for telecom and broadcast | Apache 2.0 |
+| [vosk-model-small-en-in-0.4](http://alphacephei.com/vosk/models/vosk-model-small-en-in-0.4.zip)           |  36M  | TBD | Lightweight Indian English model for mobile applications | Apache 2.0 |
+| **Chinese**                                                                                               |       |            |     |  |
+| [vosk-model-cn-0.1.zip](https://alphacephei.com/vosk/models/vosk-model-cn-0.1.zip)                        |  195M | TBD | Big narrowband Chinese model for server processing | Apache 2.0 |
+| [vosk-model-small-cn-0.3](https://alphacephei.com/vosk/models/vosk-model-small-cn-0.3.zip)                |  32M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
+| **Russian**                                                                                               |       |            |     |  |
+| [vosk-model-ru-0.10.zip](https://alphacephei.com/vosk/models/vosk-model-ru-0.10.zip)                      |  2.5G | 5.71 (our audiobooks) 16.26 (open_stt audiobooks) 26.20 (public_youtube_700_val open_stt) 40.15 (asr_calls_2_val open_stt) | Big narrowband Russian model for server processing | Apache 2.0 |
+| [vosk-model-small-ru-0.4](https://alphacephei.com/vosk/models/vosk-model-small-ru-0.4.zip)                |  39M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
+| **French**                                                                                                |       |            |     |  |
+| [vosk-model-small-fr-pguyot-0.3](https://alphacephei.com/vosk/models/vosk-model-small-fr-pguyot-0.3.zip)  |  39M  | TBD | Lightweight wideband model for Android and RPi trained by [Paul Guyot](https://github.com/pguyot/zamia-speech/releases) | CC-BY-NC-SA 4.0 |
+| [fr-pguyot-zamia-20191016-tdnn_f](https://github.com/pguyot/zamia-speech/releases/download/20190930/kaldi-generic-fr-tdnn_f-r20191016.tar.xz) | 282M | TBD | Bigger more accurate model by [Paul Guyot](https://github.com/pguyot/zamia-speech/releases) | CC-BY-NC-SA 4.0 |
+| **German**                                                                                                |       |            |     |  |
+| [vosk-model-de-0.6](https://alphacephei.com/vosk/models/vosk-model-de-0.6.zip)                            |  1.2G | 13.03 (Tuda-de test), 11.22 (Tuda-de rescore) | Big narrowband German model for telephony and server | Apache 2.0 |
+| [vosk-model-small-de-zamia-0.3](https://alphacephei.com/vosk/models/vosk-model-small-de-zamia-0.3.zip)    |  49M  | TBD | Lightweight wideband model for Android and RPi | LGPL-3.0   |
+| **Spanish**                                                                                               |       |            |     |  |
+| [vosk-model-small-es-0.3](https://alphacephei.com/vosk/models/vosk-model-small-es-0.3.zip)                |  33M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
+| **Portuguese**                                                                                            |       |            |     |  |
+| [vosk-model-small-pt-0.3](https://alphacephei.com/vosk/models/vosk-model-small-pt-0.3.zip)                |  31M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
+| **Greek**                                                                                                 |       |            |     |  |
+| [vosk-model-el-gr-0.7.zip](https://alphacephei.com/vosk/models/vosk-model-el-gr-0.7.zip)                  |  1.1G | TBD | Big narrowband Greek model for server processing, not extremely accurate though | Apache 2.0 |
+| **Turkish**                                                                                               |       |            |     |  |
+| [vosk-model-small-tr-0.3](https://alphacephei.com/vosk/models/vosk-model-small-tr-0.3.zip)                |  35M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
+| **Vietnamese**                                                                                            |       |            |     |  |
+| [vosk-model-small-vn-0.3](https://alphacephei.com/vosk/models/vosk-model-small-vn-0.3.zip)                |  32M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
+| **Italian**                                                                                               |       |            |     |  |
+| [vosk-model-small-it-0.4](https://alphacephei.com/vosk/models/vosk-model-small-it-0.4.zip)                |  32M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
+| **Dutch**                                                                                                 |       |            |     |  |
+| [vosk-model-nl-spraakherkenning-0.6.zip](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6.zip) |  860M  | TBD | Medium Dutch model from [Kaldi_NL](https://github.com/opensource-spraakherkenning-nl/Kaldi_NL) | Apache 2.0 |
+| [vosk-model-nl-spraakherkenning-0.6-lgraph.zip](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6-lgraph.zip) |  100M  | TBD | Smaller model with dynamic graph | Apache 2.0 |
+| **Catalan**                                                                                               |       |            |     |  |
+| [vosk-model-small-ca-0.4](https://alphacephei.com/vosk/models/vosk-model-small-ca-0.4.zip)                |  42M  | TBD | Lightweight wideband model for Android and RPi for Catalan | Apache 2.0 |
+| **Arabic**                                                                                                |       |            |     |  |
+| [vosk-model-ar-mgb2-0.4](https://alphacephei.com/vosk/models/vosk-model-ar-mgb2-0.4.zip)                  |  318M | 16.40 (MGB-2 dev set) | Repackaged Arabic model trained on MGB2 dataset from [Kaldi](https://kaldi-asr.org/models/m9) | Apache 2.0 |
+| **Farsi**                                                                                                 |       |            |     |  |
+| [vosk-model-small-fa-0.4](https://alphacephei.com/vosk/models/vosk-model-small-fa-0.4.zip)                |  47M  | TBD | Lightweight wideband model for Android and RPi for Farsi (Persian) | Apache 2.0 |
+| **Speaker identification model**                                                                          |       |            |     |  |
+| [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  | TBD | Model for speaker identification, should work for all languages | Apache 2.0 |
+
 
 
 ## Other models
