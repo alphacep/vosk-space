@@ -75,6 +75,8 @@ Other places where you can check for models which might be compatible:
   * <https://montreal-forced-aligner.readthedocs.io/en/latest/pretrained_models.html> (GMM models, not compatible but might be still useful)
   * <https://github.com/goodatlas/zeroth> - Korean Kaldi (just a recipe and data to train)
   * <https://github.com/undertheseanlp/automatic_speech_recognition> - Vietnamese Kaldi project
+  * <https://doc.linto.ai/#/services/linstt> - LINTO project
+  * <https://community.rhasspy.org/> - Rhasspy (some Kaldi models for Czech, probably even more)
 
 ## Training your own model
 
