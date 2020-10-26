@@ -141,3 +141,7 @@ unzip vosk-model-small-en-us-0.4.zip
 mv vosk-model-small-en-us-0.4 model
 mono test.exe
 ```
+
+We also have Nuget package, currently only Linux is supported, we plan to
+add Windows and OSX binaries soon. See <https://www.nuget.org/packages/Vosk/>
+
