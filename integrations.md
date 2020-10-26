@@ -20,3 +20,9 @@ See <https://github.com/jitsi/jigasi/pull/294>
 
 See the plugin for unimrcp server <https://github.com/alphacep/unimrcp-vosk-plugin/tree/vosk-plugin>
 
+# ROS Robot operating system
+
+Some draft of the plugin is here, not yet fully functional
+<https://github.com/alphacep/ros-vosk>. See also ROS wiki page
+<http://wiki.ros.org/vosk>. We need someone help to fully implement and
+test the integration.
