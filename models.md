@@ -56,6 +56,8 @@ To add a new model here create an issue on Github.
 | [vosk-model-ar-mgb2-0.4](https://alphacephei.com/vosk/models/vosk-model-ar-mgb2-0.4.zip)                  |  318M | 16.40 (MGB-2 dev set) | Repackaged Arabic model trained on MGB2 dataset from [Kaldi](https://kaldi-asr.org/models/m9) | Apache 2.0 |
 | **Farsi**                                                                                                 |       |            |     |  |
 | [vosk-model-small-fa-0.4](https://alphacephei.com/vosk/models/vosk-model-small-fa-0.4.zip)                |  47M  | TBD | Lightweight wideband model for Android and RPi for Farsi (Persian) | Apache 2.0 |
+| **Filipino**                                                                                                 |       |            |     |  |
+| [vosk-model-tl-ph-generic-0.6.zip](https://alphacephei.com/vosk/models/vosk-model-tl-ph-generic-0.6.zip)  |  320M  | TBD | Medium wideband model for Filipino (Tagalog) by [feddybear](https://github.com/feddybear/flipside_ph) | Apache 2.0 |
 | **Speaker identification model**                                                                          |       |            |     |  |
 | [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  | TBD | Model for speaker identification, should work for all languages | Apache 2.0 |
 
@@ -77,6 +79,7 @@ Other places where you can check for models which might be compatible:
   * <https://github.com/undertheseanlp/automatic_speech_recognition> - Vietnamese Kaldi project
   * <https://doc.linto.ai/#/services/linstt> - LINTO project
   * <https://community.rhasspy.org/> - Rhasspy (some Kaldi models for Czech, probably even more)
+  * <https://github.com/feddybear/flipside_ph> - Filipino model project by Federico Ang
 
 ## Training your own model
 
