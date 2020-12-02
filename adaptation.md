@@ -78,7 +78,11 @@ You can not introduce new words this way, that is something we will cover later.
 
 ## Updating words and the vocabulary in the big models
 
-You can rebuild the graph in the big models. For that you need to do the following:
+You can rebuild the graph in some of the big models (Aspire EN, Daanzu
+En, Russian, German, French). Some of the models like Indian English are
+not available for update yet because we didn't share all the necessary files.
+
+To update the graph you need to do the following:
 
 1. Prepare the lexicon in the Kaldi format
 2. Prepare the language model with the generic one interpolated with the domain-specific one
@@ -87,6 +91,10 @@ You can rebuild the graph in the big models. For that you need to do the followi
 5. Replace graph inside the model
 
 For more detailed guide see [this post](https://chrisearch.wordpress.com/2017/03/11/speech-recognition-using-kaldi-extending-and-using-the-aspire-model/).
+
+You can also download daanzu setup for the model update <https://alphacephei.com/vosk/models/vosk-model-en-us-daanzu-20200905-train.zip>.
+
+Unfortunately the process is not fully automated yet, you have to figure out details yourself.
 
 ## Adapting the acoustic model with finetuning
 
