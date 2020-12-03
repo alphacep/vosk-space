@@ -33,8 +33,9 @@ To add a new model here create an issue on Github.
 | [fr-pguyot-zamia-20191016-tdnn_f](https://github.com/pguyot/zamia-speech/releases/download/20190930/kaldi-generic-fr-tdnn_f-r20191016.tar.xz) | 282M | 27.98 (cv test) | Bigger more accurate model by [Paul Guyot](https://github.com/pguyot/zamia-speech/releases) | CC-BY-NC-SA 4.0 |
 | [vosk-model-fr-0.6-linto](https://alphacephei.com/vosk/models/vosk-model-fr-0.6-linto.zip)                |  1.4G  | 16.25 (cv test) | Big accurate model for wideband transcription [LINTO](https://doc.linto.ai/#/services/linstt) | AGPL |
 | **German**                                                                                                |       |            |     |  |
-| [vosk-model-de-0.6](https://alphacephei.com/vosk/models/vosk-model-de-0.6.zip)                            |  1.2G | 13.03 (Tuda-de test), 11.22 (Tuda-de rescore) | Big narrowband German model for telephony and server | Apache 2.0 |
-| [vosk-model-small-de-zamia-0.3](https://alphacephei.com/vosk/models/vosk-model-small-de-zamia-0.3.zip)    |  49M  | TBD | Lightweight wideband model for Android and RPi | LGPL-3.0   |
+| [vosk-model-de-0.6](https://alphacephei.com/vosk/models/vosk-model-de-0.6.zip)                            |  1.2G | 9.31 (Tuda-de test), 26.26 (podcast) | Big narrowband German model for telephony and server | Apache 2.0 |
+| [vosk-model-small-de-zamia-0.3](https://alphacephei.com/vosk/models/vosk-model-small-de-zamia-0.3.zip)    |  49M  | 14.81 (Tuda-de test, 37.46 (podcast) | Zamia f_250 small model repackaged (not recommended) | LGPL-3.0   |
+| [vosk-model-small-de-0.15](https://alphacephei.com/vosk/models/vosk-model-small-de-0.15.zip)              |  45M  | 13.75 (Tuda-de test), 30.67 (podcast) | Lightweight wideband model for Android and RPi | Apache 2.0 |
 | **Spanish**                                                                                               |       |            |     |  |
 | [vosk-model-small-es-0.3](https://alphacephei.com/vosk/models/vosk-model-small-es-0.3.zip)                |  33M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
 | **Portuguese**                                                                                            |       |            |     |  |
