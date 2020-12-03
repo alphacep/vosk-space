@@ -33,7 +33,7 @@ We currently support the following platforms:
 
 Make sure you have up-to-date pip and python3 versions:
 
-  * Python version: 3.5-3.8 (Linux), 3.6-3.7 (ARM), 3.8 (OSX), 3.8-64bit (Windows)
+  * Python version: 3.5-3.8 (Linux), 3.6-3.7 (ARM), 3.8-3.9 (OSX), 3.8-64bit (Windows)
   * pip version: 19.0 and newer.
 
 Uprade python and pip if needed. Then install vosk on Linux/Mac from pip:
