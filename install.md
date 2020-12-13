@@ -109,9 +109,9 @@ python3 setup.py install --user --single-version-externally-managed --root=/
 Clone the [vosk-api](https://github.com/alphacep/vosk-api) and run the following commands:
 ```
 cd vosk-api/python/example
-wget https://alphacephei.com/kaldi/models/vosk-model-small-en-us-0.4.zip
-unzip vosk-model-small-en-us-0.4.zip
-mv vosk-model-small-en-us-0.4 model
+wget https://alphacephei.com/kaldi/models/vosk-model-small-en-us-0.15.zip
+unzip vosk-model-small-en-us-0.15.zip
+mv vosk-model-small-en-us-0.15 model
 python3 ./test_simple.py test.wav
 ```
 
@@ -126,9 +126,9 @@ For more info see this video:
 
 ```
 cd java && KALDI_ROOT=<KALDI_ROOT> make
-wget https://alphacephei.com/kaldi/models/vosk-model-small-en-us-0.4.zip
-unzip vosk-model-small-en-us-0.4.zip
-mv vosk-model-small-en-us-0.4 model
+wget https://alphacephei.com/kaldi/models/vosk-model-small-en-us-0.15.zip
+unzip vosk-model-small-en-us-0.15.zip
+mv vosk-model-small-en-us-0.15 model
 make run
 ```
 
@@ -136,9 +136,9 @@ make run
 
 ```
 cd csharp && KALDI_ROOT=<KALDI_ROOT> make
-wget https://alphacephei.com/kaldi/models/vosk-model-small-en-us-0.4.zip
-unzip vosk-model-small-en-us-0.4.zip
-mv vosk-model-small-en-us-0.4 model
+wget https://alphacephei.com/kaldi/models/vosk-model-small-en-us-0.15.zip
+unzip vosk-model-small-en-us-0.15.zip
+mv vosk-model-small-en-us-0.15 model
 mono test.exe
 ```
 
