@@ -59,7 +59,7 @@ To add a new model here create an issue on Github.
 | **Farsi**                                                                                                 |       |            |     |  |
 | [vosk-model-small-fa-0.4](https://alphacephei.com/vosk/models/vosk-model-small-fa-0.4.zip)                |  47M  | TBD | Lightweight wideband model for Android and RPi for Farsi (Persian) | Apache 2.0 |
 | **Filipino**                                                                                                 |       |            |     |  |
-| [vosk-model-tl-ph-generic-0.6.zip](https://alphacephei.com/vosk/models/vosk-model-tl-ph-generic-0.6.zip)  |  320M  | TBD | Medium wideband model for Filipino (Tagalog) by [feddybear](https://github.com/feddybear/flipside_ph) | Apache 2.0 |
+| [vosk-model-tl-ph-generic-0.6.zip](https://alphacephei.com/vosk/models/vosk-model-tl-ph-generic-0.6.zip)  |  320M  | TBD | Medium wideband model for Filipino (Tagalog) by [feddybear](https://github.com/feddybear/flipside_ph) | CC-BY-NC-SA 4.0 |
 | **Speaker identification model**                                                                          |       |            |     |  |
 | [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  | TBD | Model for speaker identification, should work for all languages | Apache 2.0 |
 
