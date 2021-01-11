@@ -11,7 +11,7 @@ This is the list of models compatible with Vosk-API.
 To add a new model here create an issue on Github.
 
 {:class="table table-bordered"}
-| Model                                                                                                     | Size  | Accuracy   | Notes | License    |
+| Model                                                                                                     | Size  | Word error rate/Speed | Notes | License    |
 |-----------------------------------------------------------------------------------------------------------|-------|------------|-------|------------|
 | **English**                                                                                               |       |            |       |            |
 | [vosk-model-en-us-aspire-0.2](https://alphacephei.com/vosk/models/vosk-model-en-us-aspire-0.2.zip)        |  1.4G | 13.64 (librispeech test-clean) 12.89 (tedlium) | Trained on Fisher + more or less recent LM. Should be pretty good for generic US English transcription | Apache 2.0 |
@@ -32,7 +32,8 @@ To add a new model here create an issue on Github.
 | **French**                                                                                                |       |            |     |  |
 | [vosk-model-small-fr-pguyot-0.3](https://alphacephei.com/vosk/models/vosk-model-small-fr-pguyot-0.3.zip)  |  39M  | TBD | Lightweight wideband model for Android and RPi trained by [Paul Guyot](https://github.com/pguyot/zamia-speech/releases) | CC-BY-NC-SA 4.0 |
 | [fr-pguyot-zamia-20191016-tdnn_f](https://github.com/pguyot/zamia-speech/releases/download/20190930/kaldi-generic-fr-tdnn_f-r20191016.tar.xz) | 282M | 27.98 (cv test) | Bigger more accurate model by [Paul Guyot](https://github.com/pguyot/zamia-speech/releases) | CC-BY-NC-SA 4.0 |
-| [vosk-model-fr-0.6-linto](https://alphacephei.com/vosk/models/vosk-model-fr-0.6-linto.zip)                |  1.4G  | 16.25 (cv test) | Big accurate model for wideband transcription [LINTO](https://doc.linto.ai/#/services/linstt) | AGPL |
+| [vosk-model-fr-0.6-linto-2.2.0](https://alphacephei.com/vosk/models/vosk-model-fr-0.6-linto-2.2.0.zip)    |  1.5G  | 15.94 (cv test) 0.4xRT | Big accurate model for wideband transcription [LINTO](https://doc.linto.ai/#/services/linstt). Last version: bigger, slower | AGPL |
+| [vosk-model-fr-0.6-linto-2.0.0](https://alphacephei.com/vosk/models/vosk-model-fr-0.6-linto-2.0.0.zip)    |  1.4G  | 16.25 (cv test) 0.2xRT | Big accurate model for wideband transcription [LINTO](https://doc.linto.ai/#/services/linstt) | AGPL |
 | **German**                                                                                                |       |            |     |  |
 | [vosk-model-de-0.6](https://alphacephei.com/vosk/models/vosk-model-de-0.6.zip)                            |  1.2G | 9.31 (Tuda-de test), 26.26 (podcast) | Big narrowband German model for telephony and server | Apache 2.0 |
 | [vosk-model-small-de-zamia-0.3](https://alphacephei.com/vosk/models/vosk-model-small-de-zamia-0.3.zip)    |  49M  | 14.81 (Tuda-de test, 37.46 (podcast) | Zamia f_250 small model repackaged (not recommended) | LGPL-3.0   |
