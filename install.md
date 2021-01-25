@@ -100,11 +100,12 @@ Follow this process from our [docker](https://github.com/alphacep/vosk-api/blob/
 
 #### Python module build
 
-Then build the python module
+Then clone the vosk-api project and build the python module:
+
 ```sh
-export KALDI_ROOT=<KALDI_ROOT>
-cd python
-python3 setup.py install --user --single-version-externally-managed --root=/
+git clone https://github.com/alphacep/vosk-api
+cd vosk-api/python
+KALDI_ROOT=<KALDI_ROOT> python3 setup.py install --user --single-version-externally-managed --root=/
 ```
 
 ## Usage examples
@@ -112,7 +113,9 @@ python3 setup.py install --user --single-version-externally-managed --root=/
 ### Python
 
 Clone the [vosk-api](https://github.com/alphacep/vosk-api) and run the following commands:
+
 ```
+git clone https://github.com/alphacep/vosk-api
 cd vosk-api/python/example
 wget https://alphacephei.com/kaldi/models/vosk-model-small-en-us-0.15.zip
 unzip vosk-model-small-en-us-0.15.zip
@@ -130,7 +133,8 @@ For more info see this video:
 ### Java
 
 ```
-cd java && KALDI_ROOT=<KALDI_ROOT> make
+git clone https://github.com/alphacep/vosk-api
+cd vosk-api/java && KALDI_ROOT=<KALDI_ROOT> make
 wget https://alphacephei.com/kaldi/models/vosk-model-small-en-us-0.15.zip
 unzip vosk-model-small-en-us-0.15.zip
 mv vosk-model-small-en-us-0.15 model
@@ -140,7 +144,8 @@ make run
 ### C#
 
 ```
-cd csharp && KALDI_ROOT=<KALDI_ROOT> make
+git clone https://github.com/alphacep/vosk-api
+cd vosk-api/csharp && KALDI_ROOT=<KALDI_ROOT> make
 wget https://alphacephei.com/kaldi/models/vosk-model-small-en-us-0.15.zip
 unzip vosk-model-small-en-us-0.15.zip
 mv vosk-model-small-en-us-0.15 model
