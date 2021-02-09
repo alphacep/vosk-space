@@ -164,3 +164,15 @@ and then follow the [example in our code](https://github.com/alphacep/vosk-api/t
 For details of the wrapper see the [nuget folder](https://github.com/alphacep/vosk-api/tree/master/csharp/nuget).
 
 Nuget should work on Windows and Linux. We might add OSX later.
+
+### Javascript/Nodejs
+
+We implement node bindings with node-ffi-napi library and thus should support more or less recent node versions
+
+To install node module simply run
+
+```
+npm install vosk
+```
+
+For example of the API see the [code on github](https://github.com/alphacep/vosk-api/blob/master/nodejs/demo/demo.js).
