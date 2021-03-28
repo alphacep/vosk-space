@@ -127,19 +127,35 @@ For more info see this video:
 
 ### Java
 
-Java on desktop and Android still uses swig. We plan to move to javacpp instead to 
-simplify platform management and unify bindings. Not there yet.
+We distribute Vosk library in our own maven repository:
 
-To try swig bindings:
+https://alphacephei.com/maven/
+
+To plug the library simply add our maven repo and add the dependency:
 
 ```
-git clone https://github.com/alphacep/vosk-api
-cd vosk-api/java && KALDI_ROOT=<KALDI_ROOT> make
-wget https://alphacephei.com/kaldi/models/vosk-model-small-en-us-0.15.zip
-unzip vosk-model-small-en-us-0.15.zip
-mv vosk-model-small-en-us-0.15 model
-make run
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://alphacephei.com/maven/'
+    }
+}
+
+dependencies {
+    implementation group: 'net.java.dev.jna', name: 'jna', version: '5.7.0'
+    implementation group: 'com.alphacephei', name: 'vosk', version: '0.3.21+'
+}
 ```
+
+For example of a full demo project built with gradle see:
+
+https://github.com/alphacep/vosk-api/tree/master/java/demo
+
+The code samples are here:
+
+https://github.com/alphacep/vosk-api/blob/master/java/demo/src/main/java/org/vosk/demo/DecoderDemo.java
+
+We support Java 8+ on Linux, OSX and Windows.
 
 ### C#
 
