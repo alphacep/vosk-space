@@ -129,7 +129,7 @@ For more info see this video:
 
 We distribute Vosk library in our own maven repository:
 
-https://alphacephei.com/maven/
+<https://alphacephei.com/maven/>
 
 To plug the library simply add our maven repo and add the dependency:
 
@@ -149,11 +149,11 @@ dependencies {
 
 For example of a full demo project built with gradle see:
 
-https://github.com/alphacep/vosk-api/tree/master/java/demo
+<https://github.com/alphacep/vosk-api/tree/master/java/demo>
 
 The code samples are here:
 
-https://github.com/alphacep/vosk-api/blob/master/java/demo/src/main/java/org/vosk/demo/DecoderDemo.java
+<https://github.com/alphacep/vosk-api/blob/master/java/demo/src/main/java/org/vosk/demo/DecoderDemo.java>
 
 We support Java 8+ on Linux, OSX and Windows.
 
