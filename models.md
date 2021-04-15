@@ -111,6 +111,7 @@ Once you trained the model arrange the files according to the following layout (
   * `am/final.mdl` - acoustic model
   * `conf/mfcc.conf` - mfcc config file. Make sure you take mfcc_hires.conf version if you are using hires model (most external ones)
   * `conf/model.conf` - provide default decoding beams and silence phones. you have to create this file yourself, it is not present in kaldi model
+  * `conf/pitch.conf` - optional file to create feature pipeline with pitch features. Might be missing if model doesn't use pitch
   * `ivector/final.dubm` - take ivector files from ivector extractor (optional folder if the model is trained with ivectors)
   * `ivector/final.ie`
   * `ivector/final.mat`
@@ -125,4 +126,3 @@ Once you trained the model arrange the files according to the following layout (
   * `graph/words.txt` - from the graph
   * `rescore/G.carpa` - carpa rescoring is optional but helpful in big models. Usually located inside data/lang_test_rescore
   * `rescore/G.fst` - also optional if you want to use rescoring
-
