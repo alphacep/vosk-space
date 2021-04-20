@@ -25,9 +25,10 @@ compilation instructions there as well as development plans.
 
 ## Languages
 
-Models for different languages (English, Chinese, Russian) are available in
-[Models](https://github.com/alphacep/vosk-api/blob/master/doc/models.md) section. To use the model unpack it into
-```kaldi-android-demo/models/src/main/assets/sync/model-android```. More languages gonna be ready soon.
+Models for different languages (English, Chinese, Russian) are available
+in [Models](models) section. To use the model unpack it into [assets](https://github.com/alphacep/vosk-android-demo/tree/master/models/src/main/assets/model-en-us) and
+update the code to rebuild the UUID file in gradle file. More languages gonna be ready
+soon.
 
 ## Updating grammar and language model
 
