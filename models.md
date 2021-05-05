@@ -125,4 +125,8 @@ Once you trained the model arrange the files according to the following layout (
   * `graph/phones.txt` - from the graph
   * `graph/words.txt` - from the graph
   * `rescore/G.carpa` - carpa rescoring is optional but helpful in big models. Usually located inside data/lang_test_rescore
-  * `rescore/G.fst` - also optional if you want to use rescoring
+  * `rescore/G.fst` - also optional if you want to use rescoring, also used for interpolation with RNNLM
+  * `rnnlm/feat_embedding.final.mat` - RNNLM embedding for rescoring. Optional if you have it.
+  * `rnnlm/special_symbol_opts.conf` - RNNLM model options
+  * `rnnlm/final.raw` - RNNLM model
+  * `rnnlm/word_feats.txt` - RNNLM model word feats
