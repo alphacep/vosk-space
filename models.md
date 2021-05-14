@@ -73,7 +73,7 @@ To add a new model here create an issue on Github.
 Other places where you can check for models which might be compatible:
 
   * <http://kaldi-asr.org/models.html> - variety of models from Kaldi - librispeech, aspire, chinese models
-  * <https://github.com/daanzu/kaldi-active-grammar/blob/master/docs/models.md> - Big dictation models
+  * <https://github.com/daanzu/kaldi-active-grammar/blob/master/docs/models.md> - Big dictation models for English
   * <https://github.com/uhh-lt/vosk-model-tuda-de> - German models
   * <https://github.com/german-asr/kaldi-german> - Another German project
   * <http://zamia-speech.org/asr/> - German and English model from Zamia
@@ -82,9 +82,12 @@ Other places where you can check for models which might be compatible:
   * <https://montreal-forced-aligner.readthedocs.io/en/latest/pretrained_models.html> (GMM models, not compatible but might be still useful)
   * <https://github.com/goodatlas/zeroth> - Korean Kaldi (just a recipe and data to train)
   * <https://github.com/undertheseanlp/automatic_speech_recognition> - Vietnamese Kaldi project
-  * <https://doc.linto.ai/#/services/linstt> - LINTO project
+  * <https://doc.linto.ai/#/services/linstt> - LINTO project with French and English models
   * <https://community.rhasspy.org/> - Rhasspy (some Kaldi models for Czech, probably even more)
   * <https://github.com/feddybear/flipside_ph> - Filipino model project by Federico Ang
+  * <https://github.com/alumae/kiirkirjutaja> - Estonian Speech Recognition project with Vosk models
+  * <https://github.com/falabrasil/kaldi-br> - Portuguese models from FalaBrasil project
+  * <https://github.com/egorsmkv/speech-recognition-uk> - Ukrainian ASR project with Vosk models
 
 ## Training your own model
 
