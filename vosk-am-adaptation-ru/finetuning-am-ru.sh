@@ -1,4 +1,3 @@
-. ./path_train_with_27.sh
 . ./cmd.sh
 
 data_set=train
@@ -25,25 +24,13 @@ if [ $stage -le 1 ]; then
   steps/compute_cmvn_stats.sh ${data_dir} exp/make_mfcc/${data_set} mfcc || exit 1;
 
   utils/fix_data_dir.sh ${data_dir} || exit 1;
-  # extract mfcc_hires for AM finetuning
-  utils/copy_data_dir.sh ${data_dir} ${data_dir}_hires
-  
-  rm -f ${data_dir}_hires/{cmvn.scp,feats.scp}
-  # utils/data/perturb_data_dir_volume.sh ${data_dir}_hires || exit 1;
-  steps/make_mfcc.sh \
-    --cmd "$train_cmd" --nj $nj --mfcc-config conf/mfcc_hires.conf \
-    ${data_dir}_hires exp/make_mfcc/${data_set}_hires mfcc_hires
-  
-  steps/compute_cmvn_stats.sh ${data_dir}_hires exp/make_mfcc/${data_set}_hires mfcc_hires
-  
+
   # extract ivector features
   sh steps/online/nnet2/extract_ivectors_online.sh $data_dir ivector exp/nnet3_online/ivectors_test
   
   # extract align features
-  sh steps/nnet3/align.sh $data_dir data/lang $ali_dir exp/nnet3/ali
+  sh steps/nnet3/align.sh $data_dir data/lang am $ali_dir
   
-  # copy ali.*.gz, in case of *=1, it will be ali.1.gz
-  cp exp/nnet3/ali/ali.1.gz $ali_dir/ali.1.gz
 fi
 
 echo -----
@@ -51,7 +38,7 @@ echo 2
 echo -----
 
 if [ $stage -le 2 ]; then
-  $train_cmd $dir/log/generate_input_model.log nnet3-am-copy --raw=true "$src_dir/final.mdl" "$dir/input.raw";
+  $train_cmd $dir/log/generate_input_model.log nnet3-am-copy --raw=true "$am/final.mdl" "$dir/input.raw";
 fi
 
 echo -----
@@ -69,7 +56,7 @@ if [ $stage -le 3 ]; then
     --trainer.optimization.initial-effective-lrate $initial_effective_lrate \
     --trainer.optimization.final-effective-lrate $final_effective_lrate \
     --trainer.optimization.minibatch-size $minibatch_size \
-    --feat-dir ${data_dir}_hires \
+    --feat-dir ${data_dir} \
     --lang data/lang \
     --ali-dir ${ali_dir} \
     --feat.online-ivector-dir exp/nnet3_online/ivectors_test \
