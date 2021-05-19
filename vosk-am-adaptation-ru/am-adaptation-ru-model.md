@@ -74,7 +74,7 @@ sh steps/online/nnet2/extract_ivectors_online.sh $data_dir ivector exp/nnet3_onl
 sh steps/nnet3/align.sh $data_dir data/lang am $ali_dir
 
 # Training
-# Next, train a copy of the original acoustic model _input.raw_.
+Next, train a copy of the original acoustic model _input.raw_.
 
 ```bash
 steps/nnet3/train_dnn.py --stage=$train_stage \
