@@ -63,9 +63,12 @@ To add a new model here create an issue on Github.
 | [vosk-model-small-fa-0.5](https://alphacephei.com/vosk/models/vosk-model-small-fa-0.5.zip)                |  60M  | TBD | Bigger small model for desktop application (Persian) | Apache 2.0 |
 | **Filipino**                                                                                                 |       |            |     |  |
 | [vosk-model-tl-ph-generic-0.6.zip](https://alphacephei.com/vosk/models/vosk-model-tl-ph-generic-0.6.zip)  |  320M  | TBD | Medium wideband model for Filipino (Tagalog) by [feddybear](https://github.com/feddybear/flipside_ph) | CC-BY-NC-SA 4.0 |
+| **Ukrainian**                                                                                             |       |            |     |  |
+| [vosk-model-small-uk-v3-nano](https://alphacephei.com/vosk/models/vosk-model-small-uk-v3-nano.zip)        |  73M  | TBD | Nano model from [Speech Recognition for Ukrainian](https://github.com/egorsmkv/speech-recognition-uk) | Apache 2.0 |
+| [vosk-model-small-uk-v3-small](https://alphacephei.com/vosk/models/vosk-model-small-uk-v3-small.zip)      | 133M  | TBD | Small model from [Speech Recognition for Ukrainian](https://github.com/egorsmkv/speech-recognition-uk) | Apache 2.0 |
+| [vosk-model-uk-v3](https://alphacephei.com/vosk/models/vosk-model-uk-v3.zip)                              |  343M | TBD | Bigger model from [Speech Recognition for Ukrainian](https://github.com/egorsmkv/speech-recognition-uk) | Apache 2.0 |
 | **Speaker identification model**                                                                          |       |            |     |  |
 | [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  | TBD | Model for speaker identification, should work for all languages | Apache 2.0 |
-
 
 
 ## Other models
