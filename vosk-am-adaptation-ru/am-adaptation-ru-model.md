@@ -133,3 +133,23 @@ __Case: 4__ Model with same params and 1 epoch training (much better):
 __A little more meta information:__
 
 ![image](https://user-images.githubusercontent.com/48170101/117958791-30eac000-b33d-11eb-93f6-688b09f6e698.png)
+
+# Compute metrics
+
+We will compute [WER](https://en.wikipedia.org/wiki/Word_error_rate) via modified [inference.py](inference.py) script. Before running inference, you should prepare
+_files.txt_ , file with name of wavs and their pathes relative to running script.
+
+![files.txt](https://user-images.githubusercontent.com/48170101/118797940-e8904c80-b8be-11eb-84f5-e362195146e3.png)
+
+And _wav_text.pkl_ , python dict with keys as file names and values as groundtruth transcribtions. Beyond that, you ought to install libraries from [requirements.txt](requirements.txt). After all, we can start calculate our metric:
+
+```bash
+# compute wer and transcribe wavs
+python inferency.py files.txt 'new'
+```
+Parameter _'new'_ sets path to tuned vosk-model, in case of _'old'_ script will initialize (with assumption that you have such directory) original vosk-model folder.
+
+In total, script will produce _log_inference.csv_ file, with computed wer and transcriptions:
+
+![image](https://user-images.githubusercontent.com/48170101/118801326-b1239f00-b8c2-11eb-9d43-3a18a04e61bd.png)
+
