@@ -50,10 +50,6 @@ In my case, each new wav file is a new record, and there are no segments, so all
 
 ![utt2spk](https://user-images.githubusercontent.com/48170101/117793486-17c70e00-b26e-11eb-8104-9f13f35ca259.png)
 
-*spk2gender*
-
-![spk2gender](https://user-images.githubusercontent.com/48170101/117793875-7e4c2c00-b26e-11eb-9665-d9a4049fa0c8.png)
-
 # Create features
 
 The steps/scripts from the [CVTE finetuning](https://github.com/zhaoyi2/CVTE_chain_model_finetune/tree/master/steps) recipe are used to extract mel features and normalize them, **MAYBE** we should use the steps from kaldi [aishell2](https://github.com/kaldi-asr/kaldi/tree/master/egs/aishell2/s5), can this __affect__ the preparation of features? As for the finetune script, they are combined into one sh [finetune_tdnn_1a.sh](https://github.com/kaldi-asr/kaldi/blob/master/egs/aishell2/s5/local/nnet3/tuning/finetune_tdnn_1a.sh), this pipeline is recommended in alphacephei [model adaptation](https://alphacephei.com/vosk/adaptation) 
