@@ -25,13 +25,12 @@ echo -----
 echo 0. Get VOSK model.
 echo -----
 
-# Download model
 if [ $stage -le 1 ]; then
-  # get vosk
+  # Download VOSK model
   echo Downloading vosk-model-ru-0.10 ...
   wget https://alphacephei.com/vosk/models/vosk-model-ru-0.10.zip
   
-  #unzip
+  # Unzip
   echo Unzipping vosk-model-ru-0.10
   unzip vosk-model-ru-0.10.zip 
 fi
@@ -40,17 +39,16 @@ echo -----
 echo 1. Prepare data.
 echo -----
 
-# Download The M-AILABS Speech Dataset [3.6GB]
 if [ $stage -le 2 ]; then
-  # get dataset
+  # Download The M-AILABS Speech Dataset [3.6GB]
   echo Downloading M-AILABS dataset ...
   wget http://www.caito.de/data/Training/stt_tts/ru_RU.tgz
   
-  # untar
+  # Untar
   echo Untar M-AILABS dataset ...
   tar -xvzf ru_RU.tgz
   
-  # parse data in kaldi format
+  # Parse data in kaldi format
   echo Creating Kaldi format data from ru_RU/by_book/male/minaev/oblomov/ ...
   python create_data.py ru_RU/by_book/male/minaev/oblomov/ $data_dir $test_dir
 fi
@@ -60,22 +58,22 @@ echo 2. Create features.
 echo -----
 
 if [ $stage -le 3 ]; then
-  # compute mfcc features
+  # Compute mfcc features
   steps/make_mfcc.sh \
     --cmd "$train_cmd" --nj $nj --mfcc-config conf/mfcc.conf \
     ${data_dir} exp/make_mfcc/${data_set} mfcc
    
-  # normalize 
+  # Normalize 
   steps/compute_cmvn_stats.sh ${data_dir} exp/make_mfcc/${data_set} mfcc
   utils/fix_data_dir.sh ${data_dir} || exit 1;
   
-  # extract ivector features
+  # Extract ivector features
   sh steps/online/nnet2/extract_ivectors_online.sh $data_dir ivector ivector_dir
   
-  # extract align features
+  # Extract align features
   sh steps/nnet3/align.sh $data_dir data/lang am $ali_dir
   
-  # extract lats with generate_ali_from_lats=true
+  # Extract lats with generate_ali_from_lats=true
   sh steps/nnet3/align_lats.sh $data_dir data/lang am $ali_dir  
 fi
 
@@ -84,7 +82,7 @@ echo 3. Copy model.
 echo -----
 
 if [ $stage -le 4 ]; then
-  # copy model in raw format
+  # Copy model in raw format
   utils/run.pl $dir/log/generate_input_model.log nnet3-am-copy --raw=true "am/final.mdl" "$dir/input.raw";
 fi
 
@@ -93,7 +91,7 @@ echo 4. Train model.
 echo -----
 
 if [ $stage -le 5 ]; then
-  # train model
+  # Train model
   steps/nnet3/train_dnn.py --stage=$train_stage \
     --cmd="$decode_cmd" \
     --feat.cmvn-opts="--norm-means=false --norm-vars=false" \
