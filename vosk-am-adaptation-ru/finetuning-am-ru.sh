@@ -16,16 +16,18 @@ initial_effective_lrate=0.000025
 final_effective_lrate=0.00001
 minibatch_size=512
 
-stage=1
+stage=3
 
 train_stage=-10
 nj=1
 
-echo -----
-echo 0. Get VOSK model.
-echo -----
 
 if [ $stage -le 1 ]; then
+
+  echo -----
+  echo 0. Get VOSK model.
+  echo -----
+
   # Download VOSK model
   echo Downloading vosk-model-ru-0.10 ...
   wget https://alphacephei.com/vosk/models/vosk-model-ru-0.10.zip
@@ -35,11 +37,13 @@ if [ $stage -le 1 ]; then
   unzip vosk-model-ru-0.10.zip 
 fi
 
-echo -----
-echo 1. Prepare data.
-echo -----
 
 if [ $stage -le 2 ]; then
+
+  echo -----
+  echo 1. Prepare data.
+  echo -----
+
   # Download The M-AILABS Speech Dataset [3.6GB]
   echo Downloading M-AILABS dataset ...
   wget http://www.caito.de/data/Training/stt_tts/ru_RU.tgz
@@ -50,16 +54,18 @@ if [ $stage -le 2 ]; then
   
   # Parse data in kaldi format
   echo Creating Kaldi format data from ru_RU/by_book/male/minaev/oblomov/ ...
-  python create_data.py ru_RU/by_book/male/minaev/oblomov/ $data_dir $test_dir
+  python3 create_data.py ru_RU/by_book/male/minaev/oblomov/ $data_dir $test_dir
 fi
 
-echo -----
-echo 2. Create features.
-echo -----
 
 if [ $stage -le 3 ]; then
+  
+  echo -----
+  echo 2. Create features.
+  echo -----
+
   # Compute mfcc features
-  # [ATTENTION] Set allow-downsample true in compute-mfcc-feats
+  # [ATTENTION] set allow-downsample true in compute-mfcc-feats.cc calling
   steps/make_mfcc.sh \
     --cmd "$train_cmd" --nj $nj --mfcc-config conf/mfcc.conf \
     ${data_dir} exp/make_mfcc/${data_set} mfcc
@@ -72,28 +78,30 @@ if [ $stage -le 3 ]; then
   sh steps/online/nnet2/extract_ivectors_online.sh $data_dir ivector ivector_dir
   
   # Extract align features
-  # [ATTENTION] You should set variable ivector_dir inside sh file
+  # [ATTENTION] set ivector variable inside algin.sh script
   sh steps/nnet3/align.sh $data_dir data/lang am $ali_dir
   
   # Extract lats with generate_ali_from_lats=true
-  # [ATTENTION] You should set variable ivector_dir inside sh file
+  # [ATTENTION] set ivector variable inside algin_lats.sh script
   sh steps/nnet3/align_lats.sh $data_dir data/lang am $ali_dir  
 fi
 
-echo -----
-echo 3. Copy model.
-echo -----
-
 if [ $stage -le 4 ]; then
+  
+  echo -----
+  echo 3. Copy model.
+  echo -----
+
   # Copy model in raw format
   utils/run.pl $dir/log/generate_input_model.log nnet3-am-copy --raw=true "am/final.mdl" "$dir/input.raw";
 fi
 
-echo -----
-echo 4. Train model.
-echo -----
-
 if [ $stage -le 5 ]; then
+  
+  echo -----
+  echo 4. Train model.
+  echo -----
+
   # Train model
   steps/nnet3/train_dnn.py --stage=$train_stage \
     --cmd="$decode_cmd" \
