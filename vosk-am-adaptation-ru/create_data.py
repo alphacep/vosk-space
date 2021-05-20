@@ -65,29 +65,29 @@ def create_kaldi_format_data(root_path, train_folder, test_folder):
         filename = filename.sort_values(by="FilePure")
 
         print("Writing data directory:", directory)
-        os.makedirs("data/" + directory)
+        os.makedirs(directory)
         print("")
-        scp_file = "data/" + directory + "/wav.scp"
+        scp_file = directory + "/wav.scp"
         print("Writing scp file: {} .. ".format(scp_file), end='')
         filename.to_csv(scp_file, sep=" ", header=0, index=False, columns=["FilePure","Fullfile"])
         print("done.")
 
-        uts_file = "data/" + directory + "/utt2spk"
+        uts_file = directory + "/utt2spk"
         print("Writing utt2spk file: {} .. ".format(uts_file), end='')
         filename.to_csv(uts_file, sep=" ", header=0, index=False, columns=["FilePure","FilePure"])
         print("done.")
 
-        stu_file = "data/" + directory + "/spk2utt"
+        stu_file = directory + "/spk2utt"
         print("Writing spk2utt file: {} .. ".format(stu_file), end='')
         writeSpeakerToUtterance(stu_file, filename["FilePure"], filename["FilePure"])
         print("done.")
 
-        corpus_file = "data/" + directory + "/corpus.txt"
+        corpus_file = directory + "/corpus.txt"
         print("Writing corpus file: {} .. ".format(corpus_file), end='')
         filename.to_csv(corpus_file, sep="\t", header=0, index=False, columns=["Recognition"])
         print("done.")
 
-        text_file = "data/" + directory + "/text"
+        text_file = directory + "/text"
         print("Writing text file: {} .. ".format(text_file), end='')
         writeTextFile(text_file, filename["FilePure"], filename["Recognition"])
         print("done.")
