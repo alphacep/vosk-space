@@ -59,6 +59,7 @@ echo -----
 
 if [ $stage -le 3 ]; then
   # Compute mfcc features
+  # [ATTENTION] Set allow-downsample true in compute-mfcc-feats
   steps/make_mfcc.sh \
     --cmd "$train_cmd" --nj $nj --mfcc-config conf/mfcc.conf \
     ${data_dir} exp/make_mfcc/${data_set} mfcc
