@@ -5,7 +5,7 @@ test_dir=data/${test_set}
 ali_dir=exp/${data_set}_ali
 src_dir=exp/nnet3/tdnn_sp
 dir=${src_dir}_${data_set}
-ivector_dir=exp/nnet3_online/ivectors_test
+ivector_dir=exp/ivector
 
 . ./cmd.sh
 
@@ -72,9 +72,11 @@ if [ $stage -le 3 ]; then
   sh steps/online/nnet2/extract_ivectors_online.sh $data_dir ivector ivector_dir
   
   # Extract align features
+  # [ATTENTION] You should set variable ivector_dir inside sh file
   sh steps/nnet3/align.sh $data_dir data/lang am $ali_dir
   
   # Extract lats with generate_ali_from_lats=true
+  # [ATTENTION] You should set variable ivector_dir inside sh file
   sh steps/nnet3/align_lats.sh $data_dir data/lang am $ali_dir  
 fi
 
@@ -106,7 +108,7 @@ if [ $stage -le 5 ]; then
     --feat-dir ${data_dir}\
     --lang data/lang \
     --ali-dir ${ali_dir} \
-    --feat.online-ivector-dir ivector_dir
+    --feat.online-ivector-dir ivector_dir \
     --egs.frames-per-eg 8 \
     --dir $dir || exit 1;
 fi
