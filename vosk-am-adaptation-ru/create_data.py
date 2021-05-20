@@ -35,7 +35,6 @@ def create_kaldi_format_data(root_path, train_folder, test_folder):
     Usage:
         python3 create_data.py ru_RU/by_book/male/minaev/oblomov/ data/train data/test
     """
-    
     meta_path = os.path.join(root_path, 'metadata.csv')
     wavs_path = os.path.join(root_path, 'wavs')
     
@@ -59,7 +58,6 @@ def create_kaldi_format_data(root_path, train_folder, test_folder):
     train['Fullfile'] = train['Directory'].astype(str) + '/' + train['File'].astype(str) 
     test['Fullfile']  = test['Directory'].astype(str) + '/' + test['File'].astype(str) 
 
-    
     for filename, directory in [(train, train_folder), (test, test_folder)]:
 
         filename = filename.sort_values(by="FilePure")
