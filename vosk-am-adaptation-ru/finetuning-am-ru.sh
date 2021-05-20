@@ -30,7 +30,8 @@ if [ $stage -le 1 ]; then
   
   # extract align features
   sh steps/nnet3/align.sh $data_dir data/lang am $ali_dir
-  
+  sh steps/nnet3/align_lats.sh $data_dir data/lang am $ali_dir
+
 fi
 
 echo -----
@@ -60,6 +61,6 @@ if [ $stage -le 3 ]; then
     --lang data/lang \
     --ali-dir ${ali_dir} \
     --feat.online-ivector-dir exp/nnet3_online/ivectors_test \
-    --egs.frames-per-eg 100 \
+    --egs.frames-per-eg 8 \
     --dir $dir || exit 1;
 fi
