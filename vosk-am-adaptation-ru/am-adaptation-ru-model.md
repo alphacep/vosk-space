@@ -59,19 +59,21 @@ Here is the script we use, [ft.sh](ft.sh). Directly a piece of code with data pr
 ```bash
 # Compute mfcc 
 steps/make_mfcc.sh \
-  --cmd "$train_cmd" --nj $nj \
-  ${data_dir} exp/make_mfcc/${data_set} mfcc
-  
+    --cmd "$train_cmd" --nj $nj --mfcc-config conf/mfcc.conf \
+    ${data_dir} exp/make_mfcc/${data_set} mfcc
+    
 # Normalization
 steps/compute_cmvn_stats.sh ${data_dir} exp/make_mfcc/${data_set} mfcc || exit 1;
 
 utils/fix_data_dir.sh ${data_dir} || exit 1;
 
 # Compute ivector
-sh steps/online/nnet2/extract_ivectors_online.sh $data_dir ivector exp/nnet3_online/ivectors_test
+sh steps/online/nnet2/extract_ivectors_online.sh $data_dir ivector ivector_dir
 
 # Align with ivector
 sh steps/nnet3/align.sh $data_dir data/lang am $ali_dir
+sh steps/nnet3/align_lats.sh $data_dir data/lang am $ali_dir
+
 
 # Training
 Next, train a copy of the original acoustic model _input.raw_.
@@ -90,8 +92,8 @@ steps/nnet3/train_dnn.py --stage=$train_stage \
   --feat-dir ${data_dir} \
   --lang data/lang \
   --ali-dir ${ali_dir} \
-  --feat.online-ivector-dir exp/nnet3_online/ivectors_test \
-  --egs.frames-per-eg 100 \ # может ли здесь быть проблема с объемом frames
+  --feat.online-ivector-dir ivector_dir \
+  --egs.frames-per-eg 8 \ 
   --dir $dir || exit 1;
 ```
 
