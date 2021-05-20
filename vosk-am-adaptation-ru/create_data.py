@@ -33,7 +33,7 @@ def create_kaldi_format_data(root_path, train_folder, test_folder):
         Prints parsing results.
     
     Usage:
-        python3 create_data.py ru_RU/by_book/male/minaev/oblomov/ train test
+        python3 create_data.py ru_RU/by_book/male/minaev/oblomov/ data/train data/test
     """
     
     meta_path = os.path.join(root_path, 'metadata.csv')
