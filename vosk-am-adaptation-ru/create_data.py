@@ -18,7 +18,23 @@ def writeSpeakerToUtterance(stu_file, speakers, ids):
     f.close()
 
     
-def create_kaldi_format_data(root_path):
+def create_kaldi_format_data(root_path, train_folder, test_folder):
+    """
+    Kaldi format preparation function refferenced to https://github.com/JohnDoe02/kaldi/blob/private/egs/rm/s5/local/prepare_data.py.
+    Specialized for parsing http://www.caito.de/data/Training/stt_tts/ru_RU.tgz 
+    Especially for ru_RU/by_book/male/minaev/oblomov/ path
+
+    Args:
+        root_path: path to oblomov
+        train_folder: path to output train_folder
+        test_folder: path to output test_folder.
+
+    Returns:
+        Prints parsing results.
+    
+    Usage:
+        python3 create_data.py ru_RU/by_book/male/minaev/oblomov/ train test
+    """
     
     meta_path = os.path.join(root_path, 'metadata.csv')
     wavs_path = os.path.join(root_path, 'wavs')
@@ -44,14 +60,13 @@ def create_kaldi_format_data(root_path):
     test['Fullfile']  = test['Directory'].astype(str) + '/' + test['File'].astype(str) 
 
     
-    for filename, directory in [(train, 'train'), (test, 'test')]:
+    for filename, directory in [(train, train_folder), (test, test_folder)]:
 
         filename = filename.sort_values(by="FilePure")
 
         print("Writing data directory:", directory)
         os.makedirs("data/" + directory)
         print("")
-        
         scp_file = "data/" + directory + "/wav.scp"
         print("Writing scp file: {} .. ".format(scp_file), end='')
         filename.to_csv(scp_file, sep=" ", header=0, index=False, columns=["FilePure","Fullfile"])
@@ -83,7 +98,7 @@ def create_kaldi_format_data(root_path):
 
 
 def main():
-    create_kaldi_format_data(root_path=sys.argv[1])
+    create_kaldi_format_data(root_path=sys.argv[1], train_folder=sys.argv[2], test_folder=sys.argv[3])
     
 
 main()
