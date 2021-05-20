@@ -1,4 +1,5 @@
 import os
+import re
 import sys
 import pandas as pd
 
@@ -50,6 +51,7 @@ def create_kaldi_format_data(root_path):
         print("Writing data directory:", directory)
         os.makedirs("data/" + directory)
         print("")
+        
         scp_file = "data/" + directory + "/wav.scp"
         print("Writing scp file: {} .. ".format(scp_file), end='')
         filename.to_csv(scp_file, sep=" ", header=0, index=False, columns=["FilePure","Fullfile"])
@@ -79,5 +81,9 @@ def create_kaldi_format_data(root_path):
 
     return 0
 
+
 def main():
     create_kaldi_format_data(root_path=sys.argv[1])
+    
+
+main()
