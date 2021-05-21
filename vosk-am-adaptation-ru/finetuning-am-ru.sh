@@ -75,7 +75,7 @@ if [ $stage -le 3 ]; then
   sh ../dict_prep.sh
   
   # Creates data/local/lang and data/lang
-  sh $utils/prepare_lang.sh data/local/dict '!SIL' data/local/lang data/lang || exit 1;
+  utils/prepare_lang.sh data/local/dict '!SIL' data/local/lang data/lang || exit 1;
 fi
 
 
