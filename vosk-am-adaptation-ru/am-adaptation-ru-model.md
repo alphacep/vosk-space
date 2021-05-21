@@ -46,6 +46,7 @@ cp -r $KALDI_ROOT/egs/wsj/s5/steps .
 cp -r $KALDI_ROOT/egs/wsj/s5/local .
 cp -r $KALDI_ROOT/egs/wsj/s5/utils .
 cp ../path.sh path.sh
+# ATTENTION! CONFIGURE PATH.SH.
 ```
 
 # Download data
