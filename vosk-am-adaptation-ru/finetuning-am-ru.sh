@@ -88,12 +88,8 @@ if [ $stage -le 5 ]; then
   echo 3. Create alignments.
   echo -----
   # Extract ivector features
-  sh steps/online/nnet2/extract_ivectors_online.sh $data_dir ivector ivector_dir
-  
-  # Extract align features
-  # [ATTENTION] set ivector variable inside algin.sh script
-  sh steps/nnet3/align.sh $data_dir data/lang am $ali_dir
-  
+  sh steps/online/nnet2/extract_ivectors_online.sh $data_dir ivector $ivector_dir
+
   # Extract lats with generate_ali_from_lats=true
   # [ATTENTION] set ivector variable inside algin_lats.sh script
   sh steps/nnet3/align_lats.sh $data_dir data/lang am $ali_dir  
@@ -121,7 +117,7 @@ if [ $stage -le 6 ]; then
     --feat-dir ${data_dir}\
     --lang data/lang \
     --ali-dir ${ali_dir} \
-    --feat.online-ivector-dir ivector_dir \
+    --feat.online-ivector-dir $ivector_dir \
     --egs.frames-per-eg 8 \
     --dir $dir || exit 1;
 fi
