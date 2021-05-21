@@ -72,7 +72,7 @@ python3 ../create_data.py ru_RU/by_book/male/minaev/oblomov/ $data_dir $test_dir
 sh ../dict_prep.sh
 
 # Creates data/local/lang and data/lang
-sh $utils/prepare_lang.sh data/local/dict '!SIL' data/local/lang data/lang || exit 1;
+sh utils/prepare_lang.sh data/local/dict '!SIL' data/local/lang data/lang || exit 1;
 ```
 
 > If the "segments" file does not exist, the first token on each line of "wav.scp" file is just the utterance id."
