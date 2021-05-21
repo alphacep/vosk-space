@@ -35,6 +35,9 @@ if [ $stage -le 1 ]; then
   # Unzip
   echo Unzipping vosk-model-ru-0.10
   unzip vosk-model-ru-0.10.zip 
+  
+  # Step into vosk-model
+  cd vosk-model-ru-0.10/
 fi
 
 
