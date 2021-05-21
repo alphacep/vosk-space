@@ -41,7 +41,7 @@ fi
 if [ $stage -le 2 ]; then
 
   echo -----
-  echo 1. Prepare data.
+  echo 1. Get data.
   echo -----
 
   # Download The M-AILABS Speech Dataset [3.6GB]
@@ -51,6 +51,13 @@ if [ $stage -le 2 ]; then
   # Untar
   echo Untar M-AILABS dataset ...
   tar -xvzf ru_RU.tgz
+fi
+
+if [ $stage -le 3 ]: then
+
+  echo -----
+  echo 2. Prepare data.
+  echo -----
   
   # Parse data in kaldi format
   echo Creating Kaldi format data from ru_RU/by_book/male/minaev/oblomov/ ...
@@ -58,7 +65,7 @@ if [ $stage -le 2 ]; then
 fi
 
 
-if [ $stage -le 3 ]; then
+if [ $stage -le 4 ]; then
   
   echo -----
   echo 2. Create features.
@@ -73,7 +80,13 @@ if [ $stage -le 3 ]; then
   # Normalize 
   steps/compute_cmvn_stats.sh ${data_dir} exp/make_mfcc/${data_set} mfcc
   utils/fix_data_dir.sh ${data_dir} || exit 1;
+fi
+
+if [ $stage -le 5 ]; then
   
+  echo -----
+  echo 3. Create alignments.
+  echo -----
   # Extract ivector features
   sh steps/online/nnet2/extract_ivectors_online.sh $data_dir ivector ivector_dir
   
@@ -86,22 +99,14 @@ if [ $stage -le 3 ]; then
   sh steps/nnet3/align_lats.sh $data_dir data/lang am $ali_dir  
 fi
 
-if [ $stage -le 4 ]; then
-  
-  echo -----
-  echo 3. Copy model.
-  echo -----
-
-  # Copy model in raw format
-  utils/run.pl $dir/log/generate_input_model.log nnet3-am-copy --raw=true "am/final.mdl" "$dir/input.raw";
-fi
-
-if [ $stage -le 5 ]; then
+if [ $stage -le 6 ]; then
   
   echo -----
   echo 4. Train model.
   echo -----
 
+  # Copy model in raw format
+  utils/run.pl $dir/log/generate_input_model.log nnet3-am-copy --raw=true "am/final.mdl" "$dir/input.raw";
   # Train model
   steps/nnet3/train_dnn.py --stage=$train_stage \
     --cmd="$decode_cmd" \
