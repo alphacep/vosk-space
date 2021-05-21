@@ -38,6 +38,8 @@ if [ $stage -le 1 ]; then
   
   # Step into vosk-model
   cd vosk-model-ru-0.10/
+  
+  # Copy files from $KALDI_ROOT
   cp -r $KALDI_ROOT/egs/aishell2/s5/steps .
   cp -r $KALDI_ROOT/egs/aishell2/s5/local .
   cp -r $KALDI_ROOT/egs/aishell2/s5/utils .
@@ -68,6 +70,12 @@ if [ $stage -le 3 ]; then
   # Parse data in kaldi format
   echo Creating Kaldi format data from ru_RU/by_book/male/minaev/oblomov/ ...
   python3 create_data.py ru_RU/by_book/male/minaev/oblomov/ $data_dir $test_dir
+  
+  # Creates data/local/dict, we will use our modified version
+  sh dict_prep.sh
+  
+  # Creates data/local/lang and data/lang
+  sh $utils/prepare_lang.sh data/local/dict '!SIL' data/local/lang data/lang || exit 1;
 fi
 
 
@@ -93,6 +101,7 @@ if [ $stage -le 5 ]; then
   echo -----
   echo 3. Create alignments.
   echo -----
+  
   # Extract ivector features
   sh steps/online/nnet2/extract_ivectors_online.sh $data_dir ivector $ivector_dir
 
