@@ -38,6 +38,9 @@ if [ $stage -le 1 ]; then
   
   # Step into vosk-model
   cd vosk-model-ru-0.10/
+  cp -r $KALDI_ROOT/egs/aishell2/s5/steps .
+  cp -r $KALDI_ROOT/egs/aishell2/s5/local .
+  cp -r $KALDI_ROOT/egs/aishell2/s5/utils .
 fi
 
 
