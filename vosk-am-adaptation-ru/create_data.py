@@ -1,21 +1,9 @@
+# -*- coding: utf-8 -*-
+
 import os
 import re
 import sys
 import pandas as pd
-
-
-def writeTextFile(text_file, ids, recognitions):
-    f = open(text_file, "w")
-    for id, recognition in zip(ids, recognitions):
-        f.write(id + " " + recognition + "\n")
-    f.close()
-
-    
-def writeSpeakerToUtterance(stu_file, speakers, ids):
-    f = open(stu_file, "w")
-    for id, speaker in zip(ids, speakers):
-        f.write(speaker + " " + id + "\n")
-    f.close()
 
     
 def create_kaldi_format_data(root_path, train_folder, test_folder):
@@ -23,12 +11,10 @@ def create_kaldi_format_data(root_path, train_folder, test_folder):
     Kaldi format preparation function refferenced to https://github.com/JohnDoe02/kaldi/blob/private/egs/rm/s5/local/prepare_data.py.
     Specialized for parsing http://www.caito.de/data/Training/stt_tts/ru_RU.tgz 
     Especially for ru_RU/by_book/male/minaev/oblomov/ path
-
     Args:
         root_path: path to oblomov
         train_folder: path to output train_folder
         test_folder: path to output test_folder.
-
     Returns:
         Prints parsing results.
     
@@ -43,8 +29,8 @@ def create_kaldi_format_data(root_path, train_folder, test_folder):
     test  = meta_data.sample(1000)
     train = meta_data[~meta_data.isin(test.index)]
     
-    train['Recognition'] = train[1].apply(lambda row: ' '.join(re.findall("[А-Яа-яЁё]+", row)).lower().strip())
-    test['Recognition']  =  test[1].apply(lambda row: ' '.join(re.findall("[А-Яа-яЁё]+", row)).lower().strip())
+    train['Recognition'] = train[1].apply(lambda row: ' '.join(re.findall("[А-Яа-я]+", row)).lower().strip())
+    test['Recognition']  =  test[1].apply(lambda row: ' '.join(re.findall("[А-Яа-я]+", row)).lower().strip())
     
     train['Directory'] = wavs_path
     test['Directory']  = wavs_path
@@ -77,7 +63,7 @@ def create_kaldi_format_data(root_path, train_folder, test_folder):
 
         stu_file = directory + "/spk2utt"
         print("Writing spk2utt file: {} .. ".format(stu_file), end='')
-        writeSpeakerToUtterance(stu_file, filename["FilePure"], filename["FilePure"])
+        filename.to_csv(stu_file, sep=" ", header=0, index=False, columns=["FilePure","FilePure"])
         print("done.")
 
         corpus_file = directory + "/corpus.txt"
@@ -87,7 +73,8 @@ def create_kaldi_format_data(root_path, train_folder, test_folder):
 
         text_file = directory + "/text"
         print("Writing text file: {} .. ".format(text_file), end='')
-        writeTextFile(text_file, filename["FilePure"], filename["Recognition"])
+        filename.to_csv(text_file, sep="\t", header=0, index=False, columns=["FilePure","Recognition"])
+
         print("done.")
         print("")
         print("")
