@@ -42,9 +42,9 @@ unzip vosk-model-ru-0.10.zip
 cd vosk-model-ru-0.10/
 
 # Copy files from $KALDI_ROOT
-cp -r $KALDI_ROOT/egs/aishell2/s5/steps .
-cp -r $KALDI_ROOT/egs/aishell2/s5/local .
-cp -r $KALDI_ROOT/egs/aishell2/s5/utils .
+cp -r $KALDI_ROOT/egs/wsj/s5/steps .
+cp -r $KALDI_ROOT/egs/wsj/s5/local .
+cp -r $KALDI_ROOT/egs/wsj/s5/utils .
 ```
 
 # Download data
