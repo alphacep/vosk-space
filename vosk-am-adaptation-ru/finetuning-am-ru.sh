@@ -53,7 +53,7 @@ if [ $stage -le 2 ]; then
   tar -xvzf ru_RU.tgz
 fi
 
-if [ $stage -le 3 ]: then
+if [ $stage -le 3 ]; then
 
   echo -----
   echo 2. Prepare data.
