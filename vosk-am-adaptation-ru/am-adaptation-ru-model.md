@@ -19,6 +19,32 @@ cd ../src
 
 # Make
 make
+
+# Download our repo
+cd ../../
+git clone https://github.com/SanzharMrz/vosk-space.git
+cd vosk-space/vosk-am-adaptation-ru
+```
+
+# Download VOSK
+First of all, we will get VOSK model and copy some utility scripts from aishell2. We assume that you have _$KALDI_ROOT_ variable.
+
+```bash
+# Download VOSK model
+echo Downloading vosk-model-ru-0.10 ...
+wget https://alphacephei.com/vosk/models/vosk-model-ru-0.10.zip
+
+# Unzip
+echo Unzipping vosk-model-ru-0.10
+unzip vosk-model-ru-0.10.zip 
+
+# Step into vosk-model
+cd vosk-model-ru-0.10/
+
+# Copy files from $KALDI_ROOT
+cp -r $KALDI_ROOT/egs/aishell2/s5/steps .
+cp -r $KALDI_ROOT/egs/aishell2/s5/local .
+cp -r $KALDI_ROOT/egs/aishell2/s5/utils .
 ```
 
 # Download data
@@ -37,6 +63,12 @@ tar -xvzf ru_RU.tgz
 # Prepare data
 The official guide from Kaldi [data preparation](https://kaldi-asr.org/doc/data_prep.html). There is our parsing [create_data.py](create_data.py) with refference to [JohnDoe](https://github.com/JohnDoe02/kaldi/blob/private/egs/rm/s5/local/prepare_data.py). Parser creates dataset.tsv with columns,  __"File"__, __"Length"__, __"Directory"__, __"Recognition"__ .  Here you should note that __"File"__ is the file name with the full path and some meta, "Length" can be filled with anything, "Directory" is the full path to the folder with the files, "Recognition" is the text from the wav files.
 
+```bash
+# Parse data in kaldi format
+echo Creating Kaldi format data from ru_RU/by_book/male/minaev/oblomov/ ...
+python3 create_data.py ru_RU/by_book/male/minaev/oblomov/ $data_dir $test_dir
+```
+
 > If the "segments" file does not exist, the first token on each line of "wav.scp" file is just the utterance id."
 
 Pay attention to the sorting by utterance-id:
@@ -46,12 +78,6 @@ Pay attention to the sorting by utterance-id:
 In addition, you need to check your audio via `sox --i filename`, and if you have cutted wav files and  multichannel, then: 
 
 > The recording side is a concept that relates to telephone conversations where there are two channels, and if not, it's probably safe to use "A". 
-
-```bash
-# Parse data in kaldi format
-echo Creating Kaldi format data from ru_RU/by_book/male/minaev/oblomov/ ...
-python3 create_data.py ru_RU/by_book/male/minaev/oblomov/ $data_dir $test_dir
-```
 
 In my case, each new wav file is a new record, and there are no segments, so all files with recording-id can be replaced by utterance-id:
 
@@ -89,8 +115,6 @@ sh steps/online/nnet2/extract_ivectors_online.sh $data_dir ivector $ivector_dir
 # [ATTENTION] set ivector variable inside algin_lats.sh script
 sh steps/nnet3/align_lats.sh $data_dir data/lang am $ali_dir  
 ```
-
-
 
 # Training
 Next, train a copy of the original acoustic model _input.raw_.
