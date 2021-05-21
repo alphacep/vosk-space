@@ -23,7 +23,7 @@ make
 # Download our repo
 cd ../../
 git clone https://github.com/SanzharMrz/vosk-space.git
-cd vosk-space-master/vosk-am-adaptation-ru
+cd vosk-space/vosk-am-adaptation-ru
 ```
 
 # Download VOSK
