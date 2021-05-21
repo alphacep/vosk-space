@@ -19,16 +19,23 @@ cd ../src
 
 # Make
 make
+```
 
-# Download and unzip model
-cd ../
-wget https://alphacephei.com/vosk/models/vosk-model-ru-0.10.zip
-unzip vosk-model-ru-0.10.zip
+# Download data
+We will test our finetuning script on The M-AILABS Russian Speech [Dataset.](https://www.caito.de/2019/01/the-m-ailabs-speech-dataset/) Especially male/minaev/oblomov/ part, with 9'000 audios on train and 1'000 on test.
+
+```bash
+# Download
+echo Downloading M-AILABS dataset ...
+wget http://www.caito.de/data/Training/stt_tts/ru_RU.tgz
+
+# Untar
+echo Untar M-AILABS dataset ...
+tar -xvzf ru_RU.tgz
 ```
 
 # Prepare data
-The official guide from Kaldi [Data Preparation](https://kaldi-asr.org/doc/data_prep.html).  There is also a code from JohnDoe, for [RM](https://catalog.ldc.upenn.edu/LDC93S3C) dataset, where [prepare_data.py](https://github.com/JohnDoe02/kaldi/blob/private/egs/rm/s5/local/prepare_data.py) parses
-some dataset.tsv with columns,  __"File"__, __"Length"__, __"Directory"__, __"Recognition"__ , Here you should note that __"File"__ is the file name with the full path and some meta, "Length" can be filled with anything, "Directory" is the full path to the folder with the files, "Recognition" is the text from the wav files.
+The official guide from Kaldi [data preparation](https://kaldi-asr.org/doc/data_prep.html). There is our parsing [create_data.py](create_data.py) with refference to [JohnDoe](https://github.com/JohnDoe02/kaldi/blob/private/egs/rm/s5/local/prepare_data.py). Parser creates dataset.tsv with columns,  __"File"__, __"Length"__, __"Directory"__, __"Recognition"__ .  Here you should note that __"File"__ is the file name with the full path and some meta, "Length" can be filled with anything, "Directory" is the full path to the folder with the files, "Recognition" is the text from the wav files.
 
 > If the "segments" file does not exist, the first token on each line of "wav.scp" file is just the utterance id."
 
@@ -39,6 +46,12 @@ Pay attention to the sorting by utterance-id:
 In addition, you need to check your audio via `sox --i filename`, and if you have cutted wav files and  multichannel, then: 
 
 > The recording side is a concept that relates to telephone conversations where there are two channels, and if not, it's probably safe to use "A". 
+
+```bash
+# Parse data in kaldi format
+echo Creating Kaldi format data from ru_RU/by_book/male/minaev/oblomov/ ...
+python3 create_data.py ru_RU/by_book/male/minaev/oblomov/ $data_dir $test_dir
+```
 
 In my case, each new wav file is a new record, and there are no segments, so all files with recording-id can be replaced by utterance-id:
 
@@ -51,28 +64,32 @@ In my case, each new wav file is a new record, and there are no segments, so all
 ![utt2spk](https://user-images.githubusercontent.com/48170101/117793486-17c70e00-b26e-11eb-8104-9f13f35ca259.png)
 
 # Create features
-
-The steps/scripts from the [CVTE finetuning](https://github.com/zhaoyi2/CVTE_chain_model_finetune/tree/master/steps) recipe are used to extract mel features and normalize them, **MAYBE** we should use the steps from kaldi [aishell2](https://github.com/kaldi-asr/kaldi/tree/master/egs/aishell2/s5), can this __affect__ the preparation of features? As for the finetune script, they are combined into one sh [finetune_tdnn_1a.sh](https://github.com/kaldi-asr/kaldi/blob/master/egs/aishell2/s5/local/nnet3/tuning/finetune_tdnn_1a.sh), this pipeline is recommended in alphacephei [model adaptation](https://alphacephei.com/vosk/adaptation) 
-
-Here is the script we use, [ft.sh](ft.sh). Directly a piece of code with data preparation (possible inaccuracies, worth validating):
+The _steps/_, _utils/_ scripts are from the [aishell2](https://github.com/kaldi-asr/kaldi/tree/master/egs/aishell2/s5).
+Here is the script we use, [finetuning-am-ru.sh](finetuning-am-ru.sh). Directly a piece of code with feature extraction (possible inaccuracies, worth validating):
 
 ```bash
-# Compute mfcc 
+# Compute mfcc
 steps/make_mfcc.sh \
-    --cmd "$train_cmd" --nj $nj --mfcc-config conf/mfcc.conf \
-    ${data_dir} exp/make_mfcc/${data_set} mfcc
-    
-# Normalization
-steps/compute_cmvn_stats.sh ${data_dir} exp/make_mfcc/${data_set} mfcc || exit 1;
+  --cmd "$train_cmd" --nj $nj --mfcc-config conf/mfcc.conf \
+  ${data_dir} exp/make_mfcc/${data_set} mfcc
 
+# Normalize 
+steps/compute_cmvn_stats.sh ${data_dir} exp/make_mfcc/${data_set} mfcc
 utils/fix_data_dir.sh ${data_dir} || exit 1;
+```
 
-# Compute ivector
-sh steps/online/nnet2/extract_ivectors_online.sh $data_dir ivector ivector_dir
+# Create alignments
+Process of alignment in our case, based on ivectors extraction, via steps/nnet3/align_lats.sh script with setted parameter _generate_ali_from_lats=true_.
 
-# Align with ivector
-sh steps/nnet3/align.sh $data_dir data/lang am $ali_dir
-sh steps/nnet3/align_lats.sh $data_dir data/lang am $ali_dir
+```bash
+# Extract ivector features
+sh steps/online/nnet2/extract_ivectors_online.sh $data_dir ivector $ivector_dir
+
+# Extract lats with generate_ali_from_lats=true
+# [ATTENTION] set ivector variable inside algin_lats.sh script
+sh steps/nnet3/align_lats.sh $data_dir data/lang am $ali_dir  
+```
+
 
 
 # Training
@@ -92,7 +109,7 @@ steps/nnet3/train_dnn.py --stage=$train_stage \
   --feat-dir ${data_dir} \
   --lang data/lang \
   --ali-dir ${ali_dir} \
-  --feat.online-ivector-dir ivector_dir \
+  --feat.online-ivector-dir $ivector_dir \
   --egs.frames-per-eg 8 \ 
   --dir $dir || exit 1;
 ```
@@ -111,47 +128,3 @@ minibatch_size=128
 After training, in the generated folder for experiments, there will be .mdl model files
 
 ![ls](https://user-images.githubusercontent.com/48170101/117951384-ef0a4b80-b335-11eb-9f4e-2d2f9883432f.png)
-
-# Inference
-
-Decoding process is the stumbling block in our case. In vosk-api, there is a script for [inference](https://github.com/alphacep/vosk-api/blob/master/python/test/transcribe_scp.py). Which we actually use as a _py_ command. 
-
-__Case: 1__ Copy one of the aforementioned .mdl files into the _am_ folder of the downloaded vosk-model. Let's say final.mdl (What is typical, during the training frame-per-eg was equal to 100). And we get:
-
-![inference_final](https://user-images.githubusercontent.com/48170101/117957473-eddc1d00-b33b-11eb-9731-36df023a1219.png)
-
-__Case: 2__ Copy any of the other models. For example combined.mdl:
-
-![inference_combined](https://user-images.githubusercontent.com/48170101/117958178-95f1e600-b33c-11eb-8955-74594648fb51.png)
-
-__Case: 3__ 100.mdl:
-
-![100.mdl](https://user-images.githubusercontent.com/48170101/117959014-6becf380-b33d-11eb-9358-ed843393abcd.png)
-
-__Case: 4__ Model with same params and 1 epoch training (much better):
-
-![final.mdl 1 epoch](https://user-images.githubusercontent.com/48170101/118093894-e5451e80-b3ef-11eb-9a7c-3e9927d685b1.png)
-
-__A little more meta information:__
-
-![image](https://user-images.githubusercontent.com/48170101/117958791-30eac000-b33d-11eb-93f6-688b09f6e698.png)
-
-# Compute metrics
-
-We will compute [WER](https://en.wikipedia.org/wiki/Word_error_rate) via modified [inference.py](inference.py) script. Before running inference, you should prepare
-_files.txt_ , file with name of wavs and their pathes relative to running script.
-
-![files.txt](https://user-images.githubusercontent.com/48170101/118797940-e8904c80-b8be-11eb-84f5-e362195146e3.png)
-
-And _wav_text.pkl_ , python dict with keys as file names and values as groundtruth transcribtions. Beyond that, you ought to install libraries from [requirements.txt](requirements.txt). After all, we can start calculate our metric:
-
-```bash
-# compute wer and transcribe wavs
-python inferency.py files.txt 'new'
-```
-Parameter _'new'_ sets path to tuned vosk-model, in case of _'old'_ script will initialize (with assumption that you have such directory) original vosk-model folder.
-
-In total, script will produce _log_inference.csv_ file, with computed wer and transcriptions:
-
-![image](https://user-images.githubusercontent.com/48170101/118801326-b1239f00-b8c2-11eb-9d43-3a18a04e61bd.png)
-
