@@ -45,6 +45,7 @@ cd vosk-model-ru-0.10/
 cp -r $KALDI_ROOT/egs/wsj/s5/steps .
 cp -r $KALDI_ROOT/egs/wsj/s5/local .
 cp -r $KALDI_ROOT/egs/wsj/s5/utils .
+cp ../path.sh path.sh
 ```
 
 # Download data
