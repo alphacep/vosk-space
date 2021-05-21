@@ -66,7 +66,13 @@ The official guide from Kaldi [data preparation](https://kaldi-asr.org/doc/data_
 ```bash
 # Parse data in kaldi format
 echo Creating Kaldi format data from ru_RU/by_book/male/minaev/oblomov/ ...
-python3 create_data.py ru_RU/by_book/male/minaev/oblomov/ $data_dir $test_dir
+python3 ../create_data.py ru_RU/by_book/male/minaev/oblomov/ $data_dir $test_dir
+
+# Creates data/local/dict, we will use our modified version
+sh ../dict_prep.sh
+
+# Creates data/local/lang and data/lang
+sh $utils/prepare_lang.sh data/local/dict '!SIL' data/local/lang data/lang || exit 1;
 ```
 
 > If the "segments" file does not exist, the first token on each line of "wav.scp" file is just the utterance id."
