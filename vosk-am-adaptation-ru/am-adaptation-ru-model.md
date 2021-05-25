@@ -1,8 +1,8 @@
-# Vosk-am-adaptation / [DRAFT] + [HELP!]
+# Vosk-am-adaptation
 
 Fine-Tuning russian-language acoustic model [vosk-model-ru-0.10.zip](https://alphacephei.com/vosk/models/vosk-model-ru-0.10.zip)
-# Installing
-Installing Kaldi. Build. Download the model.
+# Usage
+Installing Kaldi. Build. Download the model. Run script.
 ```bash
 # Copy repo
 git clone https://github.com/kaldi-asr/kaldi.git
@@ -24,6 +24,9 @@ make
 cd ../../
 git clone https://github.com/SanzharMrz/vosk-space.git
 cd vosk-space/vosk-am-adaptation-ru
+
+# Run fine-tuning script
+sh finetuning-am-ru.sh
 ```
 
 # Download VOSK
