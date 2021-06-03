@@ -30,3 +30,5 @@ test the integration.
 ## Other projects that use Vosk
 
 <https://github.com/ryohajika/ofxVosk> - ofxVosk is an openFrameworks addon of vosk-api to use automatic speech recognition (ASR) functionality based on Kaldi project.
+
+<https://github.com/ideasman42/nerd-dictation> - Offline Speech to Text for Desktop Linux. See [demo video](https://www.youtube.com/watch?v=T7sR-4DFhpQ).
