@@ -15,7 +15,7 @@ This demo implements offline speech recognition and speaker identification for m
 Simply import the project into Android Studio and run. It will listen for the audio and dump the transcription.
 
 To use this library in your application simply modify the demo according to your needs - add kaldi-android aar
-to dependencies, update the model and modify java UI code accodring to your needs.
+to dependencies, update the model and modify java UI code according to your needs.
 
 ## Development
 
