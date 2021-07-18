@@ -42,7 +42,7 @@ To add a new model here create an issue on Github.
 | [vosk-model-small-de-0.15](https://alphacephei.com/vosk/models/vosk-model-small-de-0.15.zip)              |  45M  | 13.75 (Tuda-de test), 30.67 (podcast) | Lightweight wideband model for Android and RPi | Apache 2.0 |
 | **Spanish**                                                                                               |       |            |     |  |
 | [vosk-model-small-es-0.3](https://alphacephei.com/vosk/models/vosk-model-small-es-0.3.zip)                |  33M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
-| **Portuguese**                                                                                            |       |            |     |  |
+| **Portuguese/Brazilian Portuguese**                                                                       |       |            |     |  |
 | [vosk-model-small-pt-0.3](https://alphacephei.com/vosk/models/vosk-model-small-pt-0.3.zip)                |  31M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
 | **Greek**                                                                                                 |       |            |     |  |
 | [vosk-model-el-gr-0.7.zip](https://alphacephei.com/vosk/models/vosk-model-el-gr-0.7.zip)                  |  1.1G | TBD | Big narrowband Greek model for server processing, not extremely accurate though | Apache 2.0 |
