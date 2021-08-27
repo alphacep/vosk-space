@@ -28,6 +28,7 @@ Vosk is a speech recognition toolkit. The best things in Vosk are:
   * [Adaptation](adaptation)
   * [Accuracy](accuracy)
   * [Models](models)
+  * [Language Model Adaptation](lm)
 
 ## Contact Us
 

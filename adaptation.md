@@ -90,11 +90,7 @@ To update the graph you need to do the following:
 4. Compile the graph
 5. Replace graph inside the model
 
-For more detailed guide see [this post](https://chrisearch.wordpress.com/2017/03/11/speech-recognition-using-kaldi-extending-and-using-the-aspire-model/).
-
-You can also download daanzu setup for the model update <https://alphacephei.com/vosk/models/vosk-model-en-us-daanzu-20200905-train.zip>.
-
-Unfortunately the process is not fully automated yet, you have to figure out details yourself.
+For more detailed guide see [full guide on Vosk model graph adaptation](lm).
 
 ## Adapting the acoustic model with finetuning
 

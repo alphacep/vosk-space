@@ -23,3 +23,9 @@ docs:
 
 - title: Vosk Server
   url: server
+
+- title: LM adaptation
+  url: lm
+
+- title: FAQ
+  url: faq
