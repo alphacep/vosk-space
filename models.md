@@ -15,7 +15,7 @@ To add a new model here create an issue on Github.
 |-----------------------------------------------------------------------------------------------------------|-------|------------|-------|------------|
 | **English**                                                                                               |       |            |       |            |
 | [vosk-model-small-en-us-0.15](http://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip)         |  40M  | 9.85 (librispeech test-clean) 10.38 (tedlium) | Lightweight wideband model for Android and RPi | Apache 2.0 |
-| [vosk-model-en-us-0.20](http://alphacephei.com/vosk/models/vosk-model-en-us-0.20.zip)                     |  580M | 6.27 (librispeech test-clean) 6.93 (tedlium) 41.00(callcenter) | Accurate wideband model | Apache 2.0 |
+| [vosk-model-en-us-0.21](http://alphacephei.com/vosk/models/vosk-model-en-us-0.21.zip)                     |  1.6G | 5.43 (librispeech test-clean) 6.42 (tedlium) 40.63(callcenter) | Accurate wideband model | Apache 2.0 |
 | [vosk-model-en-us-aspire-0.2](https://alphacephei.com/vosk/models/vosk-model-en-us-aspire-0.2.zip)        |  1.4G | 13.64 (librispeech test-clean) 12.89 (tedlium) 33.82(callcenter) | Model for telephony applications, not so nice for wideband | Apache 2.0 |
 | **English Other**                                                                                         |       |            |       |            |
 | [vosk-model-en-us-daanzu-20200905](https://alphacephei.com/vosk/models/vosk-model-en-us-daanzu-20200905.zip) |  1.0G |  7.08 (librispeech test-clean)  8.25 (tedlium) | Wideband model for dictation from [Kaldi-active-grammar](https://github.com/daanzu/kaldi-active-grammar) project | AGPL |
