@@ -321,7 +321,7 @@ In the future we might provide a docker for model compilation, for now you have 
 ### Update process
 
   1. Download the update package, for example <https://alphacephei.com/vosk/models/vosk-model-ru-0.10-compile.zip>
-  1. Unpack and properly point to `KALDI_ROOT` in the `path.sh` script
+  1. Unpack and properly point to `KALDI_ROOT` and the current version of `ngram` you have installed in the `path.sh` script
   1. Add your extra texts into `db/extra.txt`
   1. Optionally add manual words phones into `db/extra.dic`
   1. Run `compile-graph.sh`. Update takes about 15 minutes. Watch errors in the process.
