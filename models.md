@@ -37,7 +37,7 @@ To add a new model here create an issue on Github.
 | [vosk-model-fr-0.6-linto-2.2.0](https://alphacephei.com/vosk/models/vosk-model-fr-0.6-linto-2.2.0.zip)    |  1.5G  | 15.94 (cv test) 0.4xRT | Big accurate model for wideband transcription [LINTO](https://doc.linto.ai/#/services/linstt). Last version: bigger, slower | AGPL |
 | [vosk-model-fr-0.6-linto-2.0.0](https://alphacephei.com/vosk/models/vosk-model-fr-0.6-linto-2.0.0.zip)    |  1.4G  | 16.25 (cv test) 0.2xRT | Big accurate model for wideband transcription [LINTO](https://doc.linto.ai/#/services/linstt) | AGPL |
 | **German**                                                                                                |       |            |     |  |
-| [vosk-model-de-0.6](https://alphacephei.com/vosk/models/vosk-model-de-0.6.zip)                            |  1.2G | 9.31 (Tuda-de test), 26.26 (podcast) | Big narrowband German model for telephony and server | Apache 2.0 |
+| [vosk-model-de-0.21](https://alphacephei.com/vosk/models/vosk-model-de-0.21.zip)                          |  1.9G | 9.30 (Tuda-de test), 24.10 (podcast) 11.99 (cv-test) | Big narrowband German model for telephony and server | Apache 2.0 |
 | [vosk-model-small-de-zamia-0.3](https://alphacephei.com/vosk/models/vosk-model-small-de-zamia-0.3.zip)    |  49M  | 14.81 (Tuda-de test, 37.46 (podcast) | Zamia f_250 small model repackaged (not recommended) | LGPL-3.0   |
 | [vosk-model-small-de-0.15](https://alphacephei.com/vosk/models/vosk-model-small-de-0.15.zip)              |  45M  | 13.75 (Tuda-de test), 30.67 (podcast) | Lightweight wideband model for Android and RPi | Apache 2.0 |
 | **Spanish**                                                                                               |       |            |     |  |
@@ -72,6 +72,8 @@ To add a new model here create an issue on Github.
 | **Kazakh**                                                                                                |       |            |     |  |
 | [vosk-model-small-kz-0.15](https://alphacephei.com/vosk/models/vosk-model-small-kz-0.15.zip)              |  42M  | 9.60(dev) 8.32(test) | Small mobile model from [SAIDA_Kazakh](https://github.com/IS2AI/ISSAI_SAIDA_Kazakh_ASR)| Apache 2.0 |
 | [vosk-model-kz-0.15](https://alphacephei.com/vosk/models/vosk-model-kz-0.15.zip)                          |  378M | 8.06(dev) 6.81(test) | Bigger wideband model [SAIDA_Kazakh](https://github.com/IS2AI/ISSAI_SAIDA_Kazakh_ASR)| Apache 2.0 |
+| **Swedish**                                                                                                |       |            |     |  |
+| [vosk-model-small-sv-rhasspy-0.15](https://alphacephei.com/vosk/models/vosk-model-small-sv-rhasspy-0.15.zip)      |  289M | TBD | Repackaged model from [Rhasspy project](https://github.com/rhasspy/sv_kaldi-rhasspy) | MIT |
 | **Speaker identification model**                                                                          |       |            |     |  |
 | [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  | TBD | Model for speaker identification, should work for all languages | Apache 2.0 |
 
