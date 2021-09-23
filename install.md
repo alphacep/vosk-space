@@ -30,13 +30,19 @@ We currently support the following platforms:
   * Linux on x86_64
   * Raspbian on Raspberry Pi
   * Linux on arm64
-  * OSX
+  * OSX (only x86, not M1)
   * Windows
+
+We do not support:
+
+  * ARMv6 (Rpi Zero is too slow)
+  * OSX m1
+  * Windows ARM64
 
 Make sure you have up-to-date pip and python3 versions:
 
-  * Python version: 3.5-3.9 (Linux), 3.6-3.7 (ARM), 3.8-3.9 (OSX), 3.5-3.9 64-bit (Windows)
-  * pip version: 19.0 and newer.
+  * Python version: 3.5-3.9
+  * pip version: 20.3 and newer.
 
 Uprade python and pip if needed. Then install vosk on Linux/Mac from pip:
 
@@ -47,10 +53,8 @@ pip3 install vosk
 Please note that some platforms are not fully supported by pip, for example on arm64 you have install from released wheels:
 
 ```sh
-pip3 install https://github.com/alphacep/vosk-api/releases/download/0.3.15/vosk-0.3.15-cp37-cp37m-linux_aarch64.whl
+https://github.com/alphacep/vosk-api/releases/download/v0.3.31/vosk-0.3.31-py3-none-linux_aarch64.whl
 ```
-
-On Windows make sure you have 64-bit Python. We do not support 32-bit python yet. We might release 32 bit some time later.
 
 If you have trouble installing, check the output of the following commands and provide it for reference:
 ```sh
