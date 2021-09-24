@@ -6,8 +6,31 @@ permalink: /install
 
 ## Android build
 
+For Android build we recommend to use our maven repo:
+
+<https://alphacephei.com/maven>
+
+and just add aar to dependencies. 
+
+```
+repositories {
+    maven {
+        url 'https://alphacephei.com/maven/'
+    }
+}
+
+dependencies {
+    implementation group: 'com.alphacephei', name: 'vosk-android', version: '0.3.31+'
+}
+```
+
+In case you still want ot build android
+library, do the following:
+
 ```sh
-cd android
+export ANDROID_SDK_HOME=...
+cd vosk-api/android/lib
+./build-vosk.sh
 gradle build
 ```
 
@@ -19,7 +42,8 @@ For an example Android application using the Vosk-API check the <https://github.
 
 ## iOS build
 
-Available on request. Drop as a mail at [contact@alphacephei.com](mailto:contact@alphacephei.com).
+Available on request. Drop us an e-mail at [contact@alphacephei.com](mailto:contact@alphacephei.com). Describe
+the organization you are working at if any. Describe the purpose of the project.
 
 ## Python installation from Pypi
 
@@ -36,7 +60,7 @@ We currently support the following platforms:
 We do not support:
 
   * ARMv6 (Rpi Zero is too slow)
-  * OSX m1
+  * OSX M1
   * Windows ARM64
 
 Make sure you have up-to-date pip and python3 versions:
@@ -44,7 +68,7 @@ Make sure you have up-to-date pip and python3 versions:
   * Python version: 3.5-3.9
   * pip version: 20.3 and newer.
 
-Uprade python and pip if needed. Then install vosk on Linux/Mac from pip:
+Upgrade python and pip if needed. Then install vosk on Linux/Mac from pip:
 
 ```sh
 pip3 install vosk
@@ -56,7 +80,10 @@ Please note that some platforms are not fully supported by pip, for example on a
 https://github.com/alphacep/vosk-api/releases/download/v0.3.31/vosk-0.3.31-py3-none-linux_aarch64.whl
 ```
 
+On OSX M1 you can try to install x86 python in Rosetta2, vosk should work then.
+
 If you have trouble installing, check the output of the following commands and provide it for reference:
+
 ```sh
 python3 --version
 pip3 --version
