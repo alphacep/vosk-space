@@ -21,6 +21,9 @@ docs:
 - title: Android Demo
   url: android
 
+- title: Unity
+  url: unity
+
 - title: Vosk Server
   url: server
 
