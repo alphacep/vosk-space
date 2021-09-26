@@ -18,7 +18,7 @@ Traditionally Vosk models compile the following data sources to build recognitio
    * Language model - model of word sequences
    * Phonetic dictionary - model of the decomposition on words to sounds
 
-Such separation of spects has advantages and disadvantages:
+Such separation of aspects has advantages and disadvantages:
 
    * You can quickly replace the knowledge source, for example, you can introduce a new word with non-standard pronunciation (a technical term maybe)
    * You can train your model on one domain and use for another domain just by replacing language model
