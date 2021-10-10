@@ -15,13 +15,14 @@ To add a new model here create an issue on Github.
 |-----------------------------------------------------------------------------------------------------------|-------|------------|-------|------------|
 | **English**                                                                                               |       |            |       |            |
 | [vosk-model-small-en-us-0.15](http://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip)         |  40M  | 9.85 (librispeech test-clean) 10.38 (tedlium) | Lightweight wideband model for Android and RPi | Apache 2.0 |
-| [vosk-model-en-us-0.21](http://alphacephei.com/vosk/models/vosk-model-en-us-0.21.zip)                     |  1.6G | 5.43 (librispeech test-clean) 6.42 (tedlium) 40.63(callcenter) | Accurate wideband model | Apache 2.0 |
-| [vosk-model-en-us-aspire-0.2](https://alphacephei.com/vosk/models/vosk-model-en-us-aspire-0.2.zip)        |  1.4G | 13.64 (librispeech test-clean) 12.89 (tedlium) 33.82(callcenter) | Model for telephony applications, not so nice for wideband | Apache 2.0 |
-| **English Other**                                                                                         |       |            |       |            |
+| [vosk-model-en-us-0.22](http://alphacephei.com/vosk/models/vosk-model-en-us-0.22.zip)                     |  1.8G | 5.69 (librispeech test-clean) 6.05 (tedlium) 29.78(callcenter) | Accurate generic US English model | Apache 2.0 |
+| **English Other**                                                                                         |       | **Older Models**   |       |            |
 | [vosk-model-en-us-daanzu-20200905](https://alphacephei.com/vosk/models/vosk-model-en-us-daanzu-20200905.zip) |  1.0G |  7.08 (librispeech test-clean)  8.25 (tedlium) | Wideband model for dictation from [Kaldi-active-grammar](https://github.com/daanzu/kaldi-active-grammar) project | AGPL |
 | [vosk-model-en-us-daanzu-20200905-lgraph](https://alphacephei.com/vosk/models/vosk-model-en-us-daanzu-20200905-lgraph.zip) |  129M | 8.20 (librispeech test-clean) 9.28 (tedlium) | Wideband model for dictation from [Kaldi-active-grammar](https://github.com/daanzu/kaldi-active-grammar) project with configurable graph | AGPL |
-| [vosk-model-en-us-librispeech-0.2](https://alphacephei.com/vosk/models/vosk-model-en-us-librispeech-0.2.zip) | 845M | TBD | Repackaged Librispeech model from [Kaldi](http://kaldi-asr.org/models/m13). Not very accurate, mainly for research | Apache 2.0 |
+| [vosk-model-en-us-librispeech-0.2](https://alphacephei.com/vosk/models/vosk-model-en-us-librispeech-0.2.zip) | 845M | TBD | Repackaged Librispeech model from [Kaldi](http://kaldi-asr.org/models/m13), not very accurate | Apache 2.0 |
 | [vosk-model-small-en-us-zamia-0.5](http://alphacephei.com/vosk/models/vosk-model-small-en-us-zamia-0.5.zip) |  49M  | 11.55 (librispeech test-clean) 12.64 (tedlium) | Repackaged Zamia model f_250, mainly for research | LGPL-3.0 |
+| [vosk-model-en-us-aspire-0.2](https://alphacephei.com/vosk/models/vosk-model-en-us-aspire-0.2.zip)        |  1.4G | 13.64 (librispeech test-clean) 12.89 (tedlium) 33.82(callcenter) | Kaldi original ASPIRE model, not very accurate | Apache 2.0 |
+| [vosk-model-en-us-0.21](http://alphacephei.com/vosk/models/vosk-model-en-us-0.21.zip)                     |  1.6G | 5.43 (librispeech test-clean) 6.42 (tedlium) 40.63(callcenter) | Wideband model previous generation | Apache 2.0 |
 | **Indian English**                                                                                        |       |            |            |       |
 | [vosk-model-en-in-0.4](https://alphacephei.com/vosk/models/vosk-model-en-in-0.4.zip)                      |  370M | TBD | Generic Indian English model for telecom and broadcast | Apache 2.0 |
 | [vosk-model-small-en-in-0.4](http://alphacephei.com/vosk/models/vosk-model-small-en-in-0.4.zip)           |  36M  | TBD | Lightweight Indian English model for mobile applications | Apache 2.0 |
@@ -98,6 +99,7 @@ Other places where you can check for models which might be compatible:
   * <https://github.com/alumae/kiirkirjutaja> - Estonian Speech Recognition project with Vosk models
   * <https://github.com/falabrasil/kaldi-br> - Portuguese models from FalaBrasil project
   * <https://github.com/egorsmkv/speech-recognition-uk> - Ukrainian ASR project with Vosk models
+  * <https://github.com/Appen/UHV-OTS-Speech> - repository from Appen for Scalable Data Annotation Pipeline for High-Quality Large Speech Datasets Development
 
 ## Training your own model
 
