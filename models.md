@@ -29,6 +29,7 @@ To add a new model here create an issue on Github.
 | **Chinese**                                                                                               |       |            |     |  |
 | [vosk-model-cn-0.1.zip](https://alphacephei.com/vosk/models/vosk-model-cn-0.1.zip)                        |  195M | TBD | Big narrowband Chinese model for server processing | Apache 2.0 |
 | [vosk-model-small-cn-0.3](https://alphacephei.com/vosk/models/vosk-model-small-cn-0.3.zip)                |  32M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
+| [vosk-model-cn-kaldi-multicn-2.zip](https://alphacephei.com/vosk/models/vosk-model-cn-kaldi-multicn-2.zip)  |  195M | TBD | Original Wideban Kaldi multi-cn model from [Kaldi](http://kaldi-asr.org/models/m11) | Apache 2.0 |
 | **Russian**                                                                                               |       |            |     |  |
 | [vosk-model-ru-0.10.zip](https://alphacephei.com/vosk/models/vosk-model-ru-0.10.zip)                      |  2.5G | 5.71 (our audiobooks) 16.26 (open_stt audiobooks) 26.20 (public_youtube_700_val open_stt) 40.15 (asr_calls_2_val open_stt) | Big narrowband Russian model for server processing | Apache 2.0 |
 | [vosk-model-small-ru-0.22](https://alphacephei.com/vosk/models/vosk-model-small-ru-0.22.zip)              |  45M  | 22.71 (openstt audiobooks) 31.97 (openstt youtube) 29.89 (sova devices) 11.79 (golos crowd) | Lightweight wideband model for Android/iOS and RPi | Apache 2.0 |
