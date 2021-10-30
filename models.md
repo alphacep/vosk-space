@@ -27,13 +27,13 @@ To add a new model here create an issue on Github.
 | [vosk-model-en-in-0.4](https://alphacephei.com/vosk/models/vosk-model-en-in-0.4.zip)                      |  370M | TBD | Generic Indian English model for telecom and broadcast | Apache 2.0 |
 | [vosk-model-small-en-in-0.4](http://alphacephei.com/vosk/models/vosk-model-small-en-in-0.4.zip)           |  36M  | TBD | Lightweight Indian English model for mobile applications | Apache 2.0 |
 | **Chinese**                                                                                               |       |            |     |  |
-| [vosk-model-cn-0.1.zip](https://alphacephei.com/vosk/models/vosk-model-cn-0.1.zip)                        |  195M | TBD | Big narrowband Chinese model for server processing | Apache 2.0 |
+| [vosk-model-cn-0.1](https://alphacephei.com/vosk/models/vosk-model-cn-0.1.zip)                        |  195M | TBD | Big narrowband Chinese model for server processing | Apache 2.0 |
 | [vosk-model-small-cn-0.3](https://alphacephei.com/vosk/models/vosk-model-small-cn-0.3.zip)                |  32M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
-| [vosk-model-cn-kaldi-multicn-2.zip](https://alphacephei.com/vosk/models/vosk-model-cn-kaldi-multicn-2.zip)  |  195M | TBD | Original Wideband Kaldi multi-cn model from [Kaldi](http://kaldi-asr.org/models/m11) | Apache 2.0 |
-| [vosk-model-cn-kaldi-multicn-2-lgraph.zip](https://alphacephei.com/vosk/models/vosk-model-cn-kaldi-multicn-2-lgraph.zip)  |  101M | TBD | Original Wideband Kaldi multi-cn model from [Kaldi](http://kaldi-asr.org/models/m11) with dynamic graph | Apache 2.0 |
-| [vosk-model-cn-kaldi-cvte-2.zip](https://alphacephei.com/vosk/models/vosk-model-cn-kaldi-cvte-2.zip)  |  3.3G | TBD | CVTE Kaldi model from [Kaldi](http://kaldi-asr.org/models/m2) | Apache 2.0 |
+| [vosk-model-cn-kaldi-multicn-2](https://alphacephei.com/vosk/models/vosk-model-cn-kaldi-multicn-2.zip)  |  195M | TBD | Original Wideband Kaldi multi-cn model from [Kaldi](http://kaldi-asr.org/models/m11) | Apache 2.0 |
+| [vosk-model-cn-kaldi-multicn-2-lgraph](https://alphacephei.com/vosk/models/vosk-model-cn-kaldi-multicn-2-lgraph.zip)  |  101M | TBD | Original Wideband Kaldi multi-cn model from [Kaldi](http://kaldi-asr.org/models/m11) with dynamic graph | Apache 2.0 |
+| [vosk-model-cn-kaldi-cvte-2](https://alphacephei.com/vosk/models/vosk-model-cn-kaldi-cvte-2.zip)  |  3.3G | TBD | CVTE Kaldi model from [Kaldi](http://kaldi-asr.org/models/m2) | Apache 2.0 |
 | **Russian**                                                                                               |       |            |     |  |
-| [vosk-model-ru-0.10.zip](https://alphacephei.com/vosk/models/vosk-model-ru-0.10.zip)                      |  2.5G | 5.71 (our audiobooks) 16.26 (open_stt audiobooks) 26.20 (public_youtube_700_val open_stt) 40.15 (asr_calls_2_val open_stt) | Big narrowband Russian model for server processing | Apache 2.0 |
+| [vosk-model-ru-0.10](https://alphacephei.com/vosk/models/vosk-model-ru-0.10.zip)                      |  2.5G | 5.71 (our audiobooks) 16.26 (open_stt audiobooks) 26.20 (public_youtube_700_val open_stt) 40.15 (asr_calls_2_val open_stt) | Big narrowband Russian model for server processing | Apache 2.0 |
 | [vosk-model-small-ru-0.22](https://alphacephei.com/vosk/models/vosk-model-small-ru-0.22.zip)              |  45M  | 22.71 (openstt audiobooks) 31.97 (openstt youtube) 29.89 (sova devices) 11.79 (golos crowd) | Lightweight wideband model for Android/iOS and RPi | Apache 2.0 |
 | **French**                                                                                                |       |            |     |  |
 | [vosk-model-small-fr-pguyot-0.3](https://alphacephei.com/vosk/models/vosk-model-small-fr-pguyot-0.3.zip)  |  39M  | TBD | Lightweight wideband model for Android and RPi trained by [Paul Guyot](https://github.com/pguyot/zamia-speech/releases) | CC-BY-NC-SA 4.0 |
@@ -49,7 +49,7 @@ To add a new model here create an issue on Github.
 | **Portuguese/Brazilian Portuguese**                                                                       |       |            |     |  |
 | [vosk-model-small-pt-0.3](https://alphacephei.com/vosk/models/vosk-model-small-pt-0.3.zip)                |  31M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
 | **Greek**                                                                                                 |       |            |     |  |
-| [vosk-model-el-gr-0.7.zip](https://alphacephei.com/vosk/models/vosk-model-el-gr-0.7.zip)                  |  1.1G | TBD | Big narrowband Greek model for server processing, not extremely accurate though | Apache 2.0 |
+| [vosk-model-el-gr-0.7](https://alphacephei.com/vosk/models/vosk-model-el-gr-0.7.zip)                  |  1.1G | TBD | Big narrowband Greek model for server processing, not extremely accurate though | Apache 2.0 |
 | **Turkish**                                                                                               |       |            |     |  |
 | [vosk-model-small-tr-0.3](https://alphacephei.com/vosk/models/vosk-model-small-tr-0.3.zip)                |  35M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
 | **Vietnamese**                                                                                            |       |            |     |  |
@@ -57,8 +57,8 @@ To add a new model here create an issue on Github.
 | **Italian**                                                                                               |       |            |     |  |
 | [vosk-model-small-it-0.4](https://alphacephei.com/vosk/models/vosk-model-small-it-0.4.zip)                |  32M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
 | **Dutch**                                                                                                 |       |            |     |  |
-| [vosk-model-nl-spraakherkenning-0.6.zip](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6.zip) |  860M  | TBD | Medium Dutch model from [Kaldi_NL](https://github.com/opensource-spraakherkenning-nl/Kaldi_NL) | Apache 2.0 |
-| [vosk-model-nl-spraakherkenning-0.6-lgraph.zip](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6-lgraph.zip) |  100M  | TBD | Smaller model with dynamic graph | Apache 2.0 |
+| [vosk-model-nl-spraakherkenning-0.6](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6.zip) |  860M  | TBD | Medium Dutch model from [Kaldi_NL](https://github.com/opensource-spraakherkenning-nl/Kaldi_NL) | Apache 2.0 |
+| [vosk-model-nl-spraakherkenning-0.6-lgraph](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6-lgraph.zip) |  100M  | TBD | Smaller model with dynamic graph | Apache 2.0 |
 | **Catalan**                                                                                               |       |            |     |  |
 | [vosk-model-small-ca-0.4](https://alphacephei.com/vosk/models/vosk-model-small-ca-0.4.zip)                |  42M  | TBD | Lightweight wideband model for Android and RPi for Catalan | Apache 2.0 |
 | **Arabic**                                                                                                |       |            |     |  |
@@ -68,7 +68,7 @@ To add a new model here create an issue on Github.
 | [vosk-model-fa-0.5](https://alphacephei.com/vosk/models/vosk-model-fa-0.5.zip)                            |  1G   | TBD | Model with large vocabulary, not yet accurate but better than before (Persian) | Apache 2.0 |
 | [vosk-model-small-fa-0.5](https://alphacephei.com/vosk/models/vosk-model-small-fa-0.5.zip)                |  60M  | TBD | Bigger small model for desktop application (Persian) | Apache 2.0 |
 | **Filipino**                                                                                                 |       |            |     |  |
-| [vosk-model-tl-ph-generic-0.6.zip](https://alphacephei.com/vosk/models/vosk-model-tl-ph-generic-0.6.zip)  |  320M  | TBD | Medium wideband model for Filipino (Tagalog) by [feddybear](https://github.com/feddybear/flipside_ph) | CC-BY-NC-SA 4.0 |
+| [vosk-model-tl-ph-generic-0.6](https://alphacephei.com/vosk/models/vosk-model-tl-ph-generic-0.6.zip)  |  320M  | TBD | Medium wideband model for Filipino (Tagalog) by [feddybear](https://github.com/feddybear/flipside_ph) | CC-BY-NC-SA 4.0 |
 | **Ukrainian**                                                                                             |       |            |     |  |
 | [vosk-model-small-uk-v3-nano](https://alphacephei.com/vosk/models/vosk-model-small-uk-v3-nano.zip)        |  73M  | TBD | Nano model from [Speech Recognition for Ukrainian](https://github.com/egorsmkv/speech-recognition-uk) | Apache 2.0 |
 | [vosk-model-small-uk-v3-small](https://alphacephei.com/vosk/models/vosk-model-small-uk-v3-small.zip)      | 133M  | TBD | Small model from [Speech Recognition for Ukrainian](https://github.com/egorsmkv/speech-recognition-uk) | Apache 2.0 |
