@@ -103,6 +103,7 @@ Other places where you can check for models which might be compatible:
   * <https://github.com/falabrasil/kaldi-br> - Portuguese models from FalaBrasil project
   * <https://github.com/egorsmkv/speech-recognition-uk> - Ukrainian ASR project with Vosk models
   * <https://github.com/Appen/UHV-OTS-Speech> - repository from Appen for Scalable Data Annotation Pipeline for High-Quality Large Speech Datasets Development
+  * <https://github.com/vistec-AI/commonvoice-th> - Thai models trained on CommonVoice
 
 ## Training your own model
 
