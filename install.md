@@ -6,21 +6,15 @@ permalink: /install
 
 ## Android build
 
-For Android build we recommend to use our maven repo:
-
-<https://alphacephei.com/maven>
-
-and just add aar to dependencies. 
+For Android make sure you use mavenCentral repository and just add aar to dependencies. 
 
 ```
 repositories {
-    maven {
-        url 'https://alphacephei.com/maven/'
-    }
+    mavenCentral()
 }
 
 dependencies {
-    implementation group: 'com.alphacephei', name: 'vosk-android', version: '0.3.31+'
+    implementation group: 'com.alphacephei', name: 'vosk-android', version: '0.3.32+'
 }
 ```
 
@@ -158,18 +152,12 @@ For more info see this video:
 
 ### Java
 
-We distribute Vosk library in our own maven repository:
-
-<https://alphacephei.com/maven/>
-
-To plug the library simply add our maven repo and add the dependency:
+We distribute Vosk library on MavenCentral. To plug the library simply
+add MavenCentral repo and add the dependency:
 
 ```
 repositories {
     mavenCentral()
-    maven {
-        url 'https://alphacephei.com/maven/'
-    }
 }
 
 dependencies {
