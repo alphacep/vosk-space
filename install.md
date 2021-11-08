@@ -210,4 +210,4 @@ To install node module simply run
 npm install vosk
 ```
 
-For example of the API see the [code on github](https://github.com/alphacep/vosk-api/blob/master/nodejs/demo/demo.js).
+For example of the API see the [code on github](https://github.com/alphacep/vosk-api/tree/master/nodejs/demo).
