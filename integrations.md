@@ -37,3 +37,4 @@ test the integration.
 
 <https://github.com/Tadashi-Hikari/Athena> - assistant
 
+<https://kdenlive.org> - subtitle generation
