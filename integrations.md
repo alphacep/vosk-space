@@ -38,3 +38,5 @@ test the integration.
 <https://github.com/Tadashi-Hikari/Athena> - assistant
 
 <https://kdenlive.org> - subtitle generation
+
+<https://github.com/openaudiosearch/openaudiosearch> - audio library search
