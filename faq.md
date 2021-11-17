@@ -18,7 +18,7 @@ and play library, consider Vosk.
 
 Vosk reuses best practices for accurate speech recognition from many
 other toolkits, not just Kaldi. In our research we use Nvidia Nemo,
-Fairseq and many other open soruce libraries, our goal is to build
+Fairseq and many other open source libraries, our goal is to build
 life-long learning platform which continuously improves speech
 recognition for major langauges and use cases.
 
