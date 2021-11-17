@@ -18,9 +18,9 @@ and play library, consider Vosk.
 
 Vosk reuses best practices for accurate speech recognition from many
 other toolkits, not just Kaldi. In our research we use Nvidia Nemo,
-Fairseq and many other open soruce libraries, our goal is to build
+Fairseq and many other open source libraries, our goal is to build
 life-long learning platform which continuously improves speech
-recognition for major langauges and use cases.
+recognition for major languages and use cases.
 
 Stay tuned!
 
@@ -40,8 +40,8 @@ we will check.
 The process of building a new language model consists of the following
 steps:
 
-  * Data collection (you can collect audiobooks with text transcriptoin
-    from project like librivox, transcribed podcasts, or setup web data
+  * Data collection (you can collect audiobooks with text transcription
+    from projects like [`librivox`](https://librivox.org/), transcribed podcasts, or setup web data
     collection.
   * Data cleanup
   * Model training
