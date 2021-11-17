@@ -40,8 +40,8 @@ we will check.
 The process of building a new language model consists of the following
 steps:
 
-  * Data collection (you can collect audiobooks with text transcriptoin
-    from project like librivox, transcribed podcasts, or setup web data
+  * Data collection (you can collect audiobooks with text transcription
+    from projects like [`librivox`](https://librivox.org/), transcribed podcasts, or setup web data
     collection.
   * Data cleanup
   * Model training
