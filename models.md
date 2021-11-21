@@ -130,6 +130,7 @@ Kaldi on Collab.
 Once you trained the model arrange the files according to the following layout (see en-us-aspire for details):
 
   * `am/final.mdl` - acoustic model
+  * `am/global_cmvn.stats` - required for online-cmvn models, if present enables online cmvn on features.
   * `conf/mfcc.conf` - mfcc config file. Make sure you take mfcc_hires.conf version if you are using hires model (most external ones)
   * `conf/model.conf` - provide default decoding beams and silence phones. you have to create this file yourself, it is not present in kaldi model
   * `conf/pitch.conf` - optional file to create feature pipeline with pitch features. Might be missing if model doesn't use pitch
