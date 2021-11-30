@@ -322,9 +322,11 @@ In the future we might provide a docker for model compilation, for now you have 
 
   1. Download the update package, for example:
 
-      Russian - <https://alphacephei.com/vosk/models/vosk-model-ru-0.10-compile.zip>
+      Russian - <https://alphacephei.com/vosk/models/vosk-model-ru-0.22-compile.zip>
 
       US English - <https://alphacephei.com/vosk/models/vosk-model-en-us-0.21-compile.zip>
+
+      Other language packs are available on request. Please contact us at <mailto:contact@alphacephei.com>
 
   1. Unpack and properly point to `KALDI_ROOT` in the `path.sh` script
   1. Add your extra texts into `db/extra.txt`
