@@ -85,6 +85,17 @@ To add a new model here create an issue on Github.
 | [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  | TBD | Model for speaker identification, should work for all languages | Apache 2.0 |
 
 
+## Punctuation models
+
+For punctuation and case restoration we recommend the  models trained with <https://github.com/benob/recasepunc>
+
+{:class="table table-bordered"}
+| Model                                                                                                     | Size  | License    |
+|-----------------------------------------------------------------------------------------------------------|-------|------------|
+| **German**                                                                                                |       |            |
+| [vosk-recasepunc-de-0.21](http://alphacephei.com/vosk/models/vosk-recasepunc-de-0.21.tar.gz)              |  1.1G | Apache 2.0 |
+
+
 ## Other models
 
 Other places where you can check for models which might be compatible:
