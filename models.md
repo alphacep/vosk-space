@@ -92,9 +92,10 @@ For punctuation and case restoration we recommend the  models trained with <http
 {:class="table table-bordered"}
 | Model                                                                                                     | Size  | License    |
 |-----------------------------------------------------------------------------------------------------------|-------|------------|
+| **Russian**                                                                                               |       |            |
+| [vosk-recasepunc-ru-0.22](http://alphacephei.com/vosk/models/vosk-recasepunc-ru-0.22.zip)                 |  1.6G | Apache 2.0 |
 | **German**                                                                                                |       |            |
-| [vosk-recasepunc-de-0.21](http://alphacephei.com/vosk/models/vosk-recasepunc-de-0.21.tar.gz)              |  1.1G | Apache 2.0 |
-
+| [vosk-recasepunc-de-0.21](http://alphacephei.com/vosk/models/vosk-recasepunc-de-0.21.zip)                 |  1.1G | Apache 2.0 |
 
 ## Other models
 
