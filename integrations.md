@@ -40,3 +40,5 @@ test the integration.
 <https://kdenlive.org> - subtitle generation
 
 <https://github.com/openaudiosearch/openaudiosearch> - audio library search
+
+<https://github.com/bablokb/pi-webradio> - Internet radio with voice control for RaspberryPi
