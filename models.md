@@ -6,6 +6,21 @@ permalink: /models
 
 # Models
 
+We have two types of models - big and small, small models are ideal for
+some limited task on mobile applications. They can run on smartphones,
+Raspberry Pi's. They are also recommended for desktop applications. Small
+model typically is around 50Mb in size and requires about 300Mb of memory
+in runtime. Big models are for the high-accuracy transcription on the
+server. Big models require up to 16Gb in memory since they apply advanced
+AI algorithms. Ideally you run them on some high-end servers like i7 or
+latest AMD Ryzen. On AWS you can take a look on c5a machines and similar
+machines in other clouds.
+
+Most small model allow dynamic vocabulary reconfiguration. Big models are
+static the vocabulary can not be modified in runtime.
+
+## Model list
+
 This is the list of models compatible with Vosk-API.
 
 To add a new model here create an issue on Github.
