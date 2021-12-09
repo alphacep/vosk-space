@@ -324,7 +324,11 @@ In the future we might provide a docker for model compilation, for now you have 
 
       Russian - <https://alphacephei.com/vosk/models/vosk-model-ru-0.22-compile.zip>
 
-      US English - <https://alphacephei.com/vosk/models/vosk-model-en-us-0.21-compile.zip>
+      US English - <https://alphacephei.com/vosk/models/vosk-model-en-us-0.22-compile.zip>
+
+      German - <https://alphacephei.com/vosk/models/vosk-model-de-0.21-compile.zip>
+
+      French - <https://alphacephei.com/vosk/models/vosk-model-fr-0.6-linto-2.2.0-compile.zip>
 
       Other language packs are available on request. Please contact us at <mailto:contact@alphacephei.com>
 
