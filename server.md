@@ -55,8 +55,6 @@ Other formats has to be converted before decoding.
 
 ## Troubleshooting
 
-Server is compiled to work on modern CPU with AVX2 support for best decoding speed. If you want to use older CPU please try to use atom version like kaldi-en-atom instead of kaldi-en.
-
 Some servers use huge carpa models for best accuracy. To load them in memory you need about 8Gb of memory or even more. Make sure you have enough memory on your server.
 
 In case of problems try to run server manually from docker prompt and see what happens:
@@ -70,36 +68,19 @@ LOG ([5.5.643~1-7e185]:ConfigureV2():src/model.cc:138) Decoding params beam=13 m
 
 ## Testing with microphone
 
-You would need to install the pyaudio pip package:
+You would need to install the sounddevice pip package:
 
 ```
-pip install pyaudio
+pip3 install sounddevice
 ```
-
-(on Windows, it's easiest to install the wheel from [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio)).
-
 
 To test with a microphone, run
 
 ```
-./test_microphone.py localhost:2700
-
-Connected to ws://localhost:2700
-Type Ctrl-C to exit
-{"partial" : ""}
-{"partial" : "raise my eyes"}
-{"partial" : "raise my eyes"}
-{"result" : [ {"word": "raise", "start" : 3.45, "end" : 4.26, "conf" : 1},
-{"word": "my", "start" : 4.26, "end" : 4.47, "conf" : 1},
-{"word": "eyes", "start" : 4.47, "end" : 5.07, "conf" : 1}
- ], "text" : "raise my eyes" }
-{"partial" : ""}
-Closing PyAudio Stream
-Terminating PyAudio object
-Terminating connection
-{"result" : [  ], "text" : "" }
-Bye
+./test_microphone.py -u ws://localhost:2700
 ```
+
+The recognized data will be printed on stdout.
 
 ## Other programming languages
 
