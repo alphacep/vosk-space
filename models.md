@@ -29,25 +29,25 @@ To add a new model here create an issue on Github.
 | Model                                                                                                     | Size  | Word error rate/Speed | Notes | License    |
 |-----------------------------------------------------------------------------------------------------------|-------|------------|-------|------------|
 | **English**                                                                                               |       |            |       |            |
-| [vosk-model-small-en-us-0.15](http://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip)         |  40M  | 9.85 (librispeech test-clean) 10.38 (tedlium) | Lightweight wideband model for Android and RPi | Apache 2.0 |
-| [vosk-model-en-us-0.22](http://alphacephei.com/vosk/models/vosk-model-en-us-0.22.zip)                     |  1.8G | 5.69 (librispeech test-clean) 6.05 (tedlium) 29.78(callcenter) | Accurate generic US English model | Apache 2.0 |
-| [vosk-model-en-us-0.22-lgraph](http://alphacephei.com/vosk/models/vosk-model-en-us-0.22-lgraph.zip)       |  128M | 7.82 (librispeech) 8.20 (tedlium) | Big US English model with dynamic graph | Apache 2.0 |
+| [vosk-model-small-en-us-0.15](https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip)         |  40M  | 9.85 (librispeech test-clean) 10.38 (tedlium) | Lightweight wideband model for Android and RPi | Apache 2.0 |
+| [vosk-model-en-us-0.22](https://alphacephei.com/vosk/models/vosk-model-en-us-0.22.zip)                     |  1.8G | 5.69 (librispeech test-clean) 6.05 (tedlium) 29.78(callcenter) | Accurate generic US English model | Apache 2.0 |
+| [vosk-model-en-us-0.22-lgraph](https://alphacephei.com/vosk/models/vosk-model-en-us-0.22-lgraph.zip)       |  128M | 7.82 (librispeech) 8.20 (tedlium) | Big US English model with dynamic graph | Apache 2.0 |
 | **English Other**                                                                                         |       | **Older Models**   |       |            |
 | [vosk-model-en-us-daanzu-20200905](https://alphacephei.com/vosk/models/vosk-model-en-us-daanzu-20200905.zip) |  1.0G |  7.08 (librispeech test-clean)  8.25 (tedlium) | Wideband model for dictation from [Kaldi-active-grammar](https://github.com/daanzu/kaldi-active-grammar) project | AGPL |
 | [vosk-model-en-us-daanzu-20200905-lgraph](https://alphacephei.com/vosk/models/vosk-model-en-us-daanzu-20200905-lgraph.zip) |  129M | 8.20 (librispeech test-clean) 9.28 (tedlium) | Wideband model for dictation from [Kaldi-active-grammar](https://github.com/daanzu/kaldi-active-grammar) project with configurable graph | AGPL |
-| [vosk-model-en-us-librispeech-0.2](https://alphacephei.com/vosk/models/vosk-model-en-us-librispeech-0.2.zip) | 845M | TBD | Repackaged Librispeech model from [Kaldi](http://kaldi-asr.org/models/m13), not very accurate | Apache 2.0 |
-| [vosk-model-small-en-us-zamia-0.5](http://alphacephei.com/vosk/models/vosk-model-small-en-us-zamia-0.5.zip) |  49M  | 11.55 (librispeech test-clean) 12.64 (tedlium) | Repackaged Zamia model f_250, mainly for research | LGPL-3.0 |
+| [vosk-model-en-us-librispeech-0.2](https://alphacephei.com/vosk/models/vosk-model-en-us-librispeech-0.2.zip) | 845M | TBD | Repackaged Librispeech model from [Kaldi](https://kaldi-asr.org/models/m13), not very accurate | Apache 2.0 |
+| [vosk-model-small-en-us-zamia-0.5](https://alphacephei.com/vosk/models/vosk-model-small-en-us-zamia-0.5.zip) |  49M  | 11.55 (librispeech test-clean) 12.64 (tedlium) | Repackaged Zamia model f_250, mainly for research | LGPL-3.0 |
 | [vosk-model-en-us-aspire-0.2](https://alphacephei.com/vosk/models/vosk-model-en-us-aspire-0.2.zip)        |  1.4G | 13.64 (librispeech test-clean) 12.89 (tedlium) 33.82(callcenter) | Kaldi original ASPIRE model, not very accurate | Apache 2.0 |
-| [vosk-model-en-us-0.21](http://alphacephei.com/vosk/models/vosk-model-en-us-0.21.zip)                     |  1.6G | 5.43 (librispeech test-clean) 6.42 (tedlium) 40.63(callcenter) | Wideband model previous generation | Apache 2.0 |
+| [vosk-model-en-us-0.21](https://alphacephei.com/vosk/models/vosk-model-en-us-0.21.zip)                     |  1.6G | 5.43 (librispeech test-clean) 6.42 (tedlium) 40.63(callcenter) | Wideband model previous generation | Apache 2.0 |
 | **Indian English**                                                                                        |       |            |            |       |
 | [vosk-model-en-in-0.4](https://alphacephei.com/vosk/models/vosk-model-en-in-0.4.zip)                      |  370M | TBD | Generic Indian English model for telecom and broadcast | Apache 2.0 |
-| [vosk-model-small-en-in-0.4](http://alphacephei.com/vosk/models/vosk-model-small-en-in-0.4.zip)           |  36M  | TBD | Lightweight Indian English model for mobile applications | Apache 2.0 |
+| [vosk-model-small-en-in-0.4](https://alphacephei.com/vosk/models/vosk-model-small-en-in-0.4.zip)           |  36M  | TBD | Lightweight Indian English model for mobile applications | Apache 2.0 |
 | **Chinese**                                                                                               |       |            |     |  |
 | [vosk-model-cn-0.1](https://alphacephei.com/vosk/models/vosk-model-cn-0.1.zip)                        |  195M | TBD | Big narrowband Chinese model for server processing | Apache 2.0 |
 | [vosk-model-small-cn-0.3](https://alphacephei.com/vosk/models/vosk-model-small-cn-0.3.zip)                |  32M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
-| [vosk-model-cn-kaldi-multicn-2](https://alphacephei.com/vosk/models/vosk-model-cn-kaldi-multicn-2.zip)  |  195M | TBD | Original Wideband Kaldi multi-cn model from [Kaldi](http://kaldi-asr.org/models/m11) | Apache 2.0 |
-| [vosk-model-cn-kaldi-multicn-2-lgraph](https://alphacephei.com/vosk/models/vosk-model-cn-kaldi-multicn-2-lgraph.zip)  |  101M | TBD | Original Wideband Kaldi multi-cn model from [Kaldi](http://kaldi-asr.org/models/m11) with dynamic graph | Apache 2.0 |
-| [vosk-model-cn-kaldi-cvte-2](https://alphacephei.com/vosk/models/vosk-model-cn-kaldi-cvte-2.zip)  |  3.3G | TBD | CVTE Kaldi model from [Kaldi](http://kaldi-asr.org/models/m2) | Apache 2.0 |
+| [vosk-model-cn-kaldi-multicn-2](https://alphacephei.com/vosk/models/vosk-model-cn-kaldi-multicn-2.zip)  |  195M | TBD | Original Wideband Kaldi multi-cn model from [Kaldi](https://kaldi-asr.org/models/m11) | Apache 2.0 |
+| [vosk-model-cn-kaldi-multicn-2-lgraph](https://alphacephei.com/vosk/models/vosk-model-cn-kaldi-multicn-2-lgraph.zip)  |  101M | TBD | Original Wideband Kaldi multi-cn model from [Kaldi](https://kaldi-asr.org/models/m11) with dynamic graph | Apache 2.0 |
+| [vosk-model-cn-kaldi-cvte-2](https://alphacephei.com/vosk/models/vosk-model-cn-kaldi-cvte-2.zip)  |  3.3G | TBD | CVTE Kaldi model from [Kaldi](https://kaldi-asr.org/models/m2) | Apache 2.0 |
 | **Russian**                                                                                               |       |            |     |  |
 | [vosk-model-ru-0.22](https://alphacephei.com/vosk/models/vosk-model-ru-0.22.zip)                          |  1.5G | 5.74 (our audiobooks) 13.35 (open_stt audiobooks) 20.73 (open_stt youtube) 37.38 (openstt calls) 8.65 (golos crowd) 19.71 (sova devices) | Big mixed band Russian model for server processing | Apache 2.0 |
 | [vosk-model-small-ru-0.22](https://alphacephei.com/vosk/models/vosk-model-small-ru-0.22.zip)              |  45M  | 22.71 (openstt audiobooks) 31.97 (openstt youtube) 29.89 (sova devices) 11.79 (golos crowd) | Lightweight wideband model for Android/iOS and RPi | Apache 2.0 |
@@ -108,19 +108,19 @@ For punctuation and case restoration we recommend the  models trained with <http
 | Model                                                                                                     | Size  | License    |
 |-----------------------------------------------------------------------------------------------------------|-------|------------|
 | **Russian**                                                                                               |       |            |
-| [vosk-recasepunc-ru-0.22](http://alphacephei.com/vosk/models/vosk-recasepunc-ru-0.22.zip)                 |  1.6G | Apache 2.0 |
+| [vosk-recasepunc-ru-0.22](https://alphacephei.com/vosk/models/vosk-recasepunc-ru-0.22.zip)                 |  1.6G | Apache 2.0 |
 | **German**                                                                                                |       |            |
-| [vosk-recasepunc-de-0.21](http://alphacephei.com/vosk/models/vosk-recasepunc-de-0.21.zip)                 |  1.1G | Apache 2.0 |
+| [vosk-recasepunc-de-0.21](https://alphacephei.com/vosk/models/vosk-recasepunc-de-0.21.zip)                 |  1.1G | Apache 2.0 |
 
 ## Other models
 
 Other places where you can check for models which might be compatible:
 
-  * <http://kaldi-asr.org/models.html> - variety of models from Kaldi - librispeech, aspire, chinese models
+  * <https://kaldi-asr.org/models.html> - variety of models from Kaldi - librispeech, aspire, chinese models
   * <https://github.com/daanzu/kaldi-active-grammar/blob/master/docs/models.md> - Big dictation models for English
   * <https://github.com/uhh-lt/vosk-model-tuda-de> - German models
   * <https://github.com/german-asr/kaldi-german> - Another German project
-  * <http://zamia-speech.org/asr/> - German and English model from Zamia
+  * <https://zamia-speech.org/asr/> - German and English model from Zamia
   * <https://github.com/pguyot/zamia-speech/releases> - French models for Zamia
   * <https://github.com/opensource-spraakherkenning-nl/Kaldi_NL> - Dutch model
   * <https://montreal-forced-aligner.readthedocs.io/en/latest/pretrained_models.html> (GMM models, not compatible but might be still useful)
