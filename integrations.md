@@ -46,3 +46,5 @@ test the integration.
 <https://github.com/o-oconnell/mp4grep> - mp4grep is a tool that transcribes and searches audio and video files for a regex pattern. 
 
 <https://github.com/swentel/solfidola> - solfège musical training
+
+<https://github.com/mosave/LVTerminal> - Lite Voice Terminal, an "offline smart speaker" solution powered by on-premise ASR server
