@@ -50,3 +50,5 @@ test the integration.
 <https://github.com/mosave/LVTerminal> - Lite Voice Terminal, an "offline smart speaker" solution powered by on-premise ASR server
 
 <https://github.com/iamsrp/dexter> - Dexter, A Voice Controlled Assistant for RPi
+
+<https://github.com/SubtitleEdit/subtitleedit> - Subtitle Editor in C#

@@ -96,6 +96,8 @@ To add a new model here create an issue on Github.
 | [vosk-model-kz-0.15](https://alphacephei.com/vosk/models/vosk-model-kz-0.15.zip)                          |  378M | 8.06(dev) 6.81(test) | Bigger wideband model [SAIDA_Kazakh](https://github.com/IS2AI/ISSAI_SAIDA_Kazakh_ASR)| Apache 2.0 |
 | **Swedish**                                                                                                |       |            |     |  |
 | [vosk-model-small-sv-rhasspy-0.15](https://alphacephei.com/vosk/models/vosk-model-small-sv-rhasspy-0.15.zip)      |  289M | TBD | Repackaged model from [Rhasspy project](https://github.com/rhasspy/sv_kaldi-rhasspy) | MIT |
+| **Japanese**                                                                                                |       |            |     |  |
+| [vosk-model-small-ja-0.22](https://alphacephei.com/vosk/models/vosk-model-small-ja-0.22.zip)              |  48M | 9.52(csj CER) 17.07(ted10k CER) | Lightweight wideband model for Android and RPi for Japanese | Apache 2.0 |
 | **Speaker identification model**                                                                          |       |            |     |  |
 | [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  | TBD | Model for speaker identification, should work for all languages | Apache 2.0 |
 
