@@ -85,8 +85,8 @@ To add a new model here create an issue on Github.
 | [vosk-model-small-fa-0.4](https://alphacephei.com/vosk/models/vosk-model-small-fa-0.4.zip)                |  47M  | TBD | Lightweight wideband model for Android and RPi for Farsi (Persian) | Apache 2.0 |
 | [vosk-model-fa-0.5](https://alphacephei.com/vosk/models/vosk-model-fa-0.5.zip)                            |  1G   | TBD | Model with large vocabulary, not yet accurate but better than before (Persian) | Apache 2.0 |
 | [vosk-model-small-fa-0.5](https://alphacephei.com/vosk/models/vosk-model-small-fa-0.5.zip)                |  60M  | TBD | Bigger small model for desktop application (Persian) | Apache 2.0 |
-| **Filipino**                                                                                                 |       |            |     |  |
-| [vosk-model-tl-ph-generic-0.6](https://alphacephei.com/vosk/models/vosk-model-tl-ph-generic-0.6.zip)  |  320M  | TBD | Medium wideband model for Filipino (Tagalog) by [feddybear](https://github.com/feddybear/flipside_ph) | CC-BY-NC-SA 4.0 |
+| **Filipino**                                                                                              |       |            |     |  |
+| [vosk-model-tl-ph-generic-0.6](https://alphacephei.com/vosk/models/vosk-model-tl-ph-generic-0.6.zip)      |  320M  | TBD | Medium wideband model for Filipino (Tagalog) by [feddybear](https://github.com/feddybear/flipside_ph) | CC-BY-NC-SA 4.0 |
 | **Ukrainian**                                                                                             |       |            |     |  |
 | [vosk-model-small-uk-v3-nano](https://alphacephei.com/vosk/models/vosk-model-small-uk-v3-nano.zip)        |  73M  | TBD | Nano model from [Speech Recognition for Ukrainian](https://github.com/egorsmkv/speech-recognition-uk) | Apache 2.0 |
 | [vosk-model-small-uk-v3-small](https://alphacephei.com/vosk/models/vosk-model-small-uk-v3-small.zip)      | 133M  | TBD | Small model from [Speech Recognition for Ukrainian](https://github.com/egorsmkv/speech-recognition-uk) | Apache 2.0 |
@@ -94,10 +94,12 @@ To add a new model here create an issue on Github.
 | **Kazakh**                                                                                                |       |            |     |  |
 | [vosk-model-small-kz-0.15](https://alphacephei.com/vosk/models/vosk-model-small-kz-0.15.zip)              |  42M  | 9.60(dev) 8.32(test) | Small mobile model from [SAIDA_Kazakh](https://github.com/IS2AI/ISSAI_SAIDA_Kazakh_ASR)| Apache 2.0 |
 | [vosk-model-kz-0.15](https://alphacephei.com/vosk/models/vosk-model-kz-0.15.zip)                          |  378M | 8.06(dev) 6.81(test) | Bigger wideband model [SAIDA_Kazakh](https://github.com/IS2AI/ISSAI_SAIDA_Kazakh_ASR)| Apache 2.0 |
-| **Swedish**                                                                                                |       |            |     |  |
+| **Swedish**                                                                                               |       |            |     |  |
 | [vosk-model-small-sv-rhasspy-0.15](https://alphacephei.com/vosk/models/vosk-model-small-sv-rhasspy-0.15.zip)      |  289M | TBD | Repackaged model from [Rhasspy project](https://github.com/rhasspy/sv_kaldi-rhasspy) | MIT |
-| **Japanese**                                                                                                |       |            |     |  |
+| **Japanese**                                                                                              |       |            |     |  |
 | [vosk-model-small-ja-0.22](https://alphacephei.com/vosk/models/vosk-model-small-ja-0.22.zip)              |  48M | 9.52(csj CER) 17.07(ted10k CER) | Lightweight wideband model for Android and RPi for Japanese | Apache 2.0 |
+| **Esperanto**                                                                                             |       |            |     |  |
+| [vosk-model-small-eo-0.22](https://alphacephei.com/vosk/models/vosk-model-small-eo-0.22.zip)              |  40M | 8.28 (CV Test) | Lightweight wideband model for Android and RPi for Esperanto | Apache 2.0 |
 | **Speaker identification model**                                                                          |       |            |     |  |
 | [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  | TBD | Model for speaker identification, should work for all languages | Apache 2.0 |
 
