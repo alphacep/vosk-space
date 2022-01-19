@@ -52,3 +52,5 @@ test the integration.
 <https://github.com/iamsrp/dexter> - Dexter, A Voice Controlled Assistant for RPi
 
 <https://github.com/SubtitleEdit/subtitleedit> - Subtitle Editor in C#
+
+<https://git.sr.ht/~geb/numen> - Simple voice control for handsfree computing on Linux
