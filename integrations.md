@@ -54,3 +54,5 @@ test the integration.
 <https://github.com/SubtitleEdit/subtitleedit> - Subtitle Editor in C#
 
 <https://git.sr.ht/~geb/numen> - Simple voice control for handsfree computing on Linux
+
+<https://github.com/omlins/JustSayIt.jl> - Offline, low latency, highly accurate and secure speech to command translation software
