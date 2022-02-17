@@ -112,6 +112,8 @@ For punctuation and case restoration we recommend the  models trained with <http
 {:class="table table-bordered"}
 | Model                                                                                                     | Size  | License    |
 |-----------------------------------------------------------------------------------------------------------|-------|------------|
+| **English**                                                                                               |       |            |
+| [vosk-recasepunc-en-0.22](https://alphacephei.com/vosk/models/vosk-recasepunc-en-0.22.zip)                 |  1.6G | Apache 2.0 |
 | **Russian**                                                                                               |       |            |
 | [vosk-recasepunc-ru-0.22](https://alphacephei.com/vosk/models/vosk-recasepunc-ru-0.22.zip)                 |  1.6G | Apache 2.0 |
 | **German**                                                                                                |       |            |
