@@ -64,7 +64,7 @@ To add a new model here create an issue on Github.
 | [vosk-model-small-de-zamia-0.3](https://alphacephei.com/vosk/models/vosk-model-small-de-zamia-0.3.zip)    |  49M  | 14.81 (Tuda-de test, 37.46 (podcast) | Zamia f_250 small model repackaged (not recommended) | LGPL-3.0   |
 | [vosk-model-small-de-0.15](https://alphacephei.com/vosk/models/vosk-model-small-de-0.15.zip)              |  45M  | 13.75 (Tuda-de test), 30.67 (podcast) | Lightweight wideband model for Android and RPi | Apache 2.0 |
 | **Spanish**                                                                                               |       |            |     |  |
-| [vosk-model-small-es-0.3](https://alphacephei.com/vosk/models/vosk-model-small-es-0.3.zip)                |  33M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
+| [vosk-model-small-es-0.22](https://alphacephei.com/vosk/models/vosk-model-small-es-0.22.zip)              |  39M  | 18.51 (cv test) 20.39 (mtedx test) | Lightweight wideband model for Android and RPi | Apache 2.0 |
 | **Portuguese/Brazilian Portuguese**                                                                       |       |            |     |  |
 | [vosk-model-small-pt-0.3](https://alphacephei.com/vosk/models/vosk-model-small-pt-0.3.zip)                |  31M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
 | **Greek**                                                                                                 |       |            |     |  |
