@@ -145,20 +145,16 @@ Other places where you can check for models which might be compatible:
 ## Training your own model
 
 You can train your model with Kaldi toolkit. The training is pretty
-standard - you need tdnn nnet3 model with i-vectors. You can check
-mini_librispeech recipe for details. Some notes on training:
+standard - you need tdnn nnet3 model with i-vectors. You can check Vosk recipe for details:
 
-  * For smaller mobile models watch number of parameters
+<https://github.com/alphacep/vosk-api/tree/master/training>
+
+  * For smaller mobile models watch the number of parameters
   * Train the model without pitch. It might be helpful for small amount of data, but for large database it doesn't give the advantage
 but complicates the processing and increases response time.
-  * Train ivector of dim 30 instead of standard 100 to save memory of mobile models.
-  * Latest mini_librispeech uses online cmvn which we do not support yet. Use [this script](https://github.com/kaldi-asr/kaldi/blob/master/egs/mini_librispeech/s5/local/chain/tuning/run_tdnn_1j.sh) to train nnet3 model.
-
-PLEASE NOTE THAT THE SIMPLE GMM MODEL YOU TRAIN WITH **"KALDI FOR
-DUMMIES"** TUTORIAL **DOES NOT WORK** WITH VOSK. YOU NEED TO RUN
-MINI-LIBRISPEECH FROM START TO END, INCLUDING **CHAIN MODEL TRAINING**.
-You also need CUDA GPU to train. If you do not have a GPU, try to run
-Kaldi on Collab.
+  * Train ivector of dim 40 instead of standard 100 to save memory of mobile models.
+  * Many Kaldi recipes are overcomplicated and do many unnecessary steps
+  * PLEASE NOTE THAT THE SIMPLE GMM MODEL YOU TRAIN WITH **"KALDI FOR DUMMIES"** TUTORIAL **DOES NOT WORK** WITH VOSK. YOU NEED TO RUN VOSK RECIPE FROM START TO END, INCLUDING **CHAIN MODEL TRAINING**. You also need CUDA GPU to train. If you do not have a GPU, try to run Kaldi on Google Colab.
 
 ## Model structure
 
