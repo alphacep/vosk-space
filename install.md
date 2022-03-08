@@ -57,12 +57,12 @@ We do not support:
   * OSX M1
   * Windows ARM64
 
-Make sure you have up-to-date pip and python3 versions:
+Make sure you have up-to-date pip and Python3 versions:
 
   * Python version: 3.5-3.9
   * pip version: 20.3 and newer.
 
-Upgrade python and pip if needed. Then install vosk on Linux/Mac from pip:
+Upgrade Python and pip if needed. Then install vosk on Linux/Mac from pip:
 
 ```sh
 pip3 install vosk
@@ -74,7 +74,7 @@ Please note that some platforms are not fully supported by pip, for example on a
 https://github.com/alphacep/vosk-api/releases/download/v0.3.31/vosk-0.3.31-py3-none-linux_aarch64.whl
 ```
 
-On OSX M1 you can try to install x86 python in Rosetta2, vosk should work then.
+On OSX M1 you can try to install x86 Python in Rosetta2, vosk should work then.
 
 If you have trouble installing, check the output of the following commands and provide it for reference:
 
@@ -113,7 +113,7 @@ The outline of the build is [here](https://github.com/alphacep/vosk-api/blob/mas
 
 #### Python module build
 
-After you have built kaldi with openblas,clapack and openfst, you can buid python module:
+After you have built kaldi with openblas, clapack and openfst, you can build the python module:
 
 ```sh
 git clone https://github.com/alphacep/vosk-api
