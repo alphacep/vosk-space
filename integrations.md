@@ -56,3 +56,5 @@ test the integration.
 <https://git.sr.ht/~geb/numen> - Simple voice control for handsfree computing on Linux
 
 <https://github.com/omlins/JustSayIt.jl> - Offline, low latency, highly accurate and secure speech to command translation software
+
+<https://github.com/OpenVoiceOS/ovos-stt-plugin-vosk> - vosk STT plugin for mycroft
