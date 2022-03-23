@@ -103,6 +103,7 @@ To add a new model here create an issue on Github.
 | [vosk-model-small-eo-0.22](https://alphacephei.com/vosk/models/vosk-model-small-eo-0.22.zip)              |  40M  | 8.28 (CV Test) | Lightweight wideband model for Esperanto | Apache 2.0 |
 | **Hindi**                                                                                                 |       |            |     |  |
 | [vosk-model-small-hi-0.22](https://alphacephei.com/vosk/models/vosk-model-small-hi-0.22.zip)              |  42M | 20.89 (IITM Challenge) 24.72 (MUCS Challenge) | Lightweight model for Hindi | Apache 2.0 |
+| [vosk-model-hi-0.22](https://alphacephei.com/vosk/models/vosk-model-hi-0.22.zip)                          |  1.5Gb | 14.85 (CV Test) 14.83 (IITM Challenge) 13.11 (MUCS Challenge) | Big accurate model for servers | Apache 2.0 |
 | **Speaker identification model**                                                                          |       |            |     |  |
 | [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  | TBD | Model for speaker identification, should work for all languages | Apache 2.0 |
 
