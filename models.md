@@ -77,8 +77,9 @@ To add a new model here create an issue on Github.
 | [vosk-model-small-it-0.4](https://alphacephei.com/vosk/models/vosk-model-small-it-0.4.zip)                |  32M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
 | **Dutch**                                                                                                 |       |            |     |  |
 | [vosk-model-small-nl-0.22](https://alphacephei.com/vosk/models/vosk-model-small-nl-0.22.zip)              |  39M  | 22.45 (CV Test) 26.80 (TV) | Lightweight model for Dutch | Apache 2.0 |
-| [vosk-model-nl-spraakherkenning-0.6](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6.zip) |  860M  | TBD | Medium Dutch model from [Kaldi_NL](https://github.com/opensource-spraakherkenning-nl/Kaldi_NL) | CC-BY-NC-SA |
-| [vosk-model-nl-spraakherkenning-0.6-lgraph](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6-lgraph.zip) |  100M  | TBD | Smaller model with dynamic graph | CC-BY-NC-SA  |
+| **Dutch Other**                                                                                                 |       |            |     |  |
+| [vosk-model-nl-spraakherkenning-0.6](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6.zip) |  860M  | 20.40 (CV Test) 32.64 (TV) | Medium Dutch model from [Kaldi_NL](https://github.com/opensource-spraakherkenning-nl/Kaldi_NL) | CC-BY-NC-SA |
+| [vosk-model-nl-spraakherkenning-0.6-lgraph](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6-lgraph.zip) |  100M  | 22.82 (CV Test) 34.01 (TV) | Smaller model with dynamic graph | CC-BY-NC-SA  |
 | **Catalan**                                                                                               |       |            |     |  |
 | [vosk-model-small-ca-0.4](https://alphacephei.com/vosk/models/vosk-model-small-ca-0.4.zip)                |  42M  | TBD | Lightweight wideband model for Android and RPi for Catalan | Apache 2.0 |
 | **Arabic**                                                                                                |       |            |     |  |
