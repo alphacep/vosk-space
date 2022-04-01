@@ -58,3 +58,5 @@ test the integration.
 <https://github.com/omlins/JustSayIt.jl> - Offline, low latency, highly accurate and secure speech to command translation software
 
 <https://github.com/OpenVoiceOS/ovos-stt-plugin-vosk> - vosk STT plugin for mycroft
+
+<https://github.com/rafaelcaricio/gst-plugin-vosk> - Vosk plugin for Gstreamer
