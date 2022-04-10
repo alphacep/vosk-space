@@ -41,7 +41,7 @@ To add a new model here create an issue on Github.
 | [vosk-model-en-us-0.21](https://alphacephei.com/vosk/models/vosk-model-en-us-0.21.zip)                     |  1.6G | 5.43 (librispeech test-clean) 6.42 (tedlium) 40.63(callcenter) | Wideband model previous generation | Apache 2.0 |
 | **Indian English**                                                                                        |       |            |            |       |
 | [vosk-model-en-in-0.5](https://alphacephei.com/vosk/models/vosk-model-en-in-0.5.zip)                      |  1G | 36.12 (NPTEL Pure) | Generic Indian English model for telecom and broadcast | Apache 2.0 |
-| [vosk-model-small-en-in-0.4](https://alphacephei.com/vosk/models/vosk-model-small-en-in-0.4.zip)           |  36M  | TBD | Lightweight Indian English model for mobile applications | Apache 2.0 |
+| [vosk-model-small-en-in-0.4](https://alphacephei.com/vosk/models/vosk-model-small-en-in-0.4.zip)           |  36M  | 49.05 (NPTEL Pure) | Lightweight Indian English model for mobile applications | Apache 2.0 |
 | **Chinese**                                                                                               |       |            |     |  |
 | [vosk-model-cn-0.1](https://alphacephei.com/vosk/models/vosk-model-cn-0.1.zip)                        |  195M | TBD | Big narrowband Chinese model for server processing | Apache 2.0 |
 | [vosk-model-small-cn-0.3](https://alphacephei.com/vosk/models/vosk-model-small-cn-0.3.zip)                |  32M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
