@@ -43,7 +43,7 @@ To add a new model here create an issue on Github.
 | [vosk-model-en-in-0.5](https://alphacephei.com/vosk/models/vosk-model-en-in-0.5.zip)                      |  1G | 36.12 (NPTEL Pure) | Generic Indian English model for telecom and broadcast | Apache 2.0 |
 | [vosk-model-small-en-in-0.4](https://alphacephei.com/vosk/models/vosk-model-small-en-in-0.4.zip)           |  36M  | 49.05 (NPTEL Pure) | Lightweight Indian English model for mobile applications | Apache 2.0 |
 | **Chinese**                                                                                               |       |            |     |  |
-| [vosk-model-small-cn-0.22](https://alphacephei.com/vosk/models/vosk-model-small-cn-0.22.zip)                |  42M  | 23.54 (SpeechIO-02) 38.29 (SpeechIO-06) | Lightweight model for Android and RPi | Apache 2.0 |
+| [vosk-model-small-cn-0.22](https://alphacephei.com/vosk/models/vosk-model-small-cn-0.22.zip)                |  42M  | 23.54 (SpeechIO-02) 38.29 (SpeechIO-06) 17.15 (THCHS) | Lightweight model for Android and RPi | Apache 2.0 |
 | [vosk-model-cn-0.15](https://alphacephei.com/vosk/models/vosk-model-cn-0.15.zip)                        |  1.5G | 19.27 (SpeechIO-02) 9.65 (THCHS) | Big narrowband Chinese model for server processing | Apache 2.0 |
 | [vosk-model-cn-kaldi-multicn-0.15](https://alphacephei.com/vosk/models/vosk-model-cn-kaldi-multicn-0.15.zip)  |  1.5G | 17.44 (SpeechIO-02) 9.56 (THCHS) | Original Wideband Kaldi multi-cn model from [Kaldi](https://kaldi-asr.org/models/m11) with Vosk LM | Apache 2.0 |
 | **Russian**                                                                                               |       |            |     |  |
