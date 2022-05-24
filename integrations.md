@@ -62,3 +62,5 @@ test the integration.
 <https://github.com/rafaelcaricio/gst-plugin-vosk> - Vosk plugin for Gstreamer
 
 <https://github.com/janvarev/Irene-Voice-Assistant/> - Voice assistant in Russian
+
+<https://github.com/antiboredom/videogrep> - Search in Videos
