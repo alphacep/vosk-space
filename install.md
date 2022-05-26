@@ -46,15 +46,14 @@ The easiest way to install vosk api is with pip. You do not have to compile anyt
 We currently support the following platforms:
 
   * Linux on x86_64
-  * Raspbian on Raspberry Pi
+  * Raspbian on Raspberry Pi 3/4
   * Linux on arm64
-  * OSX (only x86, not M1)
-  * Windows
+  * OSX (both x86 and M1)
+  * Windows x86 and 64
 
 We do not support:
 
   * ARMv6 (Rpi Zero is too slow)
-  * OSX M1
   * Windows ARM64
 
 Make sure you have up-to-date pip and python3 versions:
@@ -71,10 +70,8 @@ pip3 install vosk
 Please note that some platforms are not fully supported by pip, for example on arm64 you have install from released wheels:
 
 ```sh
-https://github.com/alphacep/vosk-api/releases/download/v0.3.31/vosk-0.3.31-py3-none-linux_aarch64.whl
+https://github.com/alphacep/vosk-api/releases/download/v0.3.41/vosk-0.3.41-py3-none-linux_aarch64.whl
 ```
-
-On OSX M1 you can try to install x86 python in Rosetta2, vosk should work then.
 
 If you have trouble installing, check the output of the following commands and provide it for reference:
 
@@ -127,14 +124,20 @@ python3 setup.py install
 
 ### Python
 
-Clone the [vosk-api](https://github.com/alphacep/vosk-api) and run the following commands:
+You can transcribe a file with a simple vosk-transcriber command line tool:
+
+```
+vosk-transcriber -i test.mp4 -o test.txt
+vosk-transcriber -i test.mp4 -t srt -o test.srt
+vosk-transcriber -l fr -i test.m4a -o test.srt
+vosk-transcriber --list-languages
+```
+
+To run python samples, clone the [vosk-api](https://github.com/alphacep/vosk-api) and run the following commands:
 
 ```
 git clone https://github.com/alphacep/vosk-api
 cd vosk-api/python/example
-wget https://alphacephei.com/kaldi/models/vosk-model-small-en-us-0.15.zip
-unzip vosk-model-small-en-us-0.15.zip
-mv vosk-model-small-en-us-0.15 model
 python3 ./test_simple.py test.wav
 ```
 
