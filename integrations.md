@@ -64,3 +64,5 @@ test the integration.
 <https://github.com/janvarev/Irene-Voice-Assistant/> - Voice assistant in Russian
 
 <https://github.com/antiboredom/videogrep> - Search in Videos
+
+<https://play.google.com/store/apps/details?id=com.africadevtalents.koumabiboro> - Kouma Bi Boro is a speech recognition application in Mandinka language mainly based on the one spoken in Ivory Coast
