@@ -66,3 +66,5 @@ test the integration.
 <https://github.com/antiboredom/videogrep> - Search in Videos
 
 <https://play.google.com/store/apps/details?id=com.africadevtalents.koumabiboro> - Kouma Bi Boro is a speech recognition application in Mandinka language mainly based on the one spoken in Ivory Coast
+
+<https://github.com/opencast/opencast> - The free and open source solution for automated video capture and distribution at scale.
