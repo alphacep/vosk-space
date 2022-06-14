@@ -129,7 +129,7 @@ You can transcribe a file with a simple vosk-transcriber command line tool:
 ```
 vosk-transcriber -i test.mp4 -o test.txt
 vosk-transcriber -i test.mp4 -t srt -o test.srt
-vosk-transcriber -l fr -i test.m4a -o test.srt
+vosk-transcriber -l fr -i test.m4a -t srt -o test.srt
 vosk-transcriber --list-languages
 ```
 
