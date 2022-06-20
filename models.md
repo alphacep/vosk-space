@@ -103,7 +103,7 @@ To add a new model here create an issue on Github.
 | **Japanese**                                                                                              |       |            |     |  |
 | [vosk-model-small-ja-0.22](https://alphacephei.com/vosk/models/vosk-model-small-ja-0.22.zip)              |  48M | 9.52(csj CER) 17.07(ted10k CER) | Lightweight wideband model for Japanese | Apache 2.0 |
 | **Esperanto**                                                                                             |       |            |     |  |
-| [vosk-model-small-eo-0.22](https://alphacephei.com/vosk/models/vosk-model-small-eo-0.22.zip)              |  40M  | 8.28 (CV Test) | Lightweight wideband model for Esperanto | Apache 2.0 |
+| [vosk-model-small-eo-0.42](https://alphacephei.com/vosk/models/vosk-model-small-eo-0.42.zip)              |  42M  | 7.24 (CV Test) | Lightweight model for Esperanto | Apache 2.0 |
 | **Hindi**                                                                                                 |       |            |     |  |
 | [vosk-model-small-hi-0.22](https://alphacephei.com/vosk/models/vosk-model-small-hi-0.22.zip)              |  42M | 20.89 (IITM Challenge) 24.72 (MUCS Challenge) | Lightweight model for Hindi | Apache 2.0 |
 | [vosk-model-hi-0.22](https://alphacephei.com/vosk/models/vosk-model-hi-0.22.zip)                          |  1.5Gb | 14.85 (CV Test) 14.83 (IITM Challenge) 13.11 (MUCS Challenge) | Big accurate model for servers | Apache 2.0 |
