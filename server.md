@@ -18,31 +18,17 @@ Start the server
 docker run -d -p 2700:2700 alphacep/kaldi-en:latest
 ```
 
-or for Chinese. The model is based on Kaldi multi-cn recipe, thanks to [Xingyu Na](https://github.com/naxingyu).
+There are kaldi-en, kaldi-cn, kaldi-ru, kaldi-fr, kaldi-de and other images on [Docker Hub](https://hub.docker.com/u/alphacep).
+
+You can also run the docker with your own model if you want to replace the default model by
+binding your local model folder to the model folder inside the docker. It will even work
+for a different language.
 
 ```
-docker run -d -p 2700:2700 alphacep/kaldi-cn:latest
+docker run -d -p 2700:2700 -v /opt/model:/opt/vosk-model-en/model alphacep/kaldi-en:latest
 ```
 
-or for Russian
-
-```
-docker run -d -p 2700:2700 alphacep/kaldi-ru:latest
-```
-
-or for German
-
-```
-docker run -d -p 2700:2700 alphacep/kaldi-de:latest
-```
-
-or for Indian English
-
-```
-docker run -d -p 2700:2700 alphacep/kaldi-en-in:latest
-```
-
-Run
+To test the server run the example script
 
 ```
 git clone https://github.com/alphacep/vosk-server
@@ -50,12 +36,12 @@ cd vosk-server/websocket
 ./test.py test.wav
 ```
 
-You can try with any wav file which has proper format - 8khz 16bit mono PCM.
-Other formats has to be converted before decoding.
+You can try with any wav file which has proper format - 16bit mono PCM.
+Other formats has to be converted before decoding. See also test_ffmpeg.py.
 
 ## Troubleshooting
 
-Some servers use huge carpa models for best accuracy. To load them in memory you need about 8Gb of memory or even more. Make sure you have enough memory on your server.
+Some servers use huge carpa models for best accuracy. To load them in memory you need about 16Gb of memory or even more. Make sure you have enough memory on your server.
 
 In case of problems try to run server manually from docker prompt and see what happens:
 

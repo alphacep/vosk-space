@@ -103,19 +103,45 @@ document in Docker files:
 
 <https://github.com/alphacep/vosk-api/tree/master/travis>
 
+<https://github.com/alphacep/vosk-server/blob/master/docker/Dockerfile.kaldi-vosk-server>
+
+<https://github.com/alphacep/vosk-server/blob/master/docker/Dockerfile.kaldi-vosk-server-gpu>
+
+You might need to build yourself if you want to try CUDA decoder since we do not provide CUDA binaries.
+
 For Windows and Raspberry Pi we recommend cross-build with mingw and corresponding
 ARM toolchain. See docker files for details.
 
 The outline of the build is [here](https://github.com/alphacep/vosk-api/blob/master/travis/Dockerfile.manylinux#L26).
 
-#### Python module build
+#### Building the library libvosk.so
 
-After you have built kaldi with openblas,clapack and openfst, you can buid python module:
+Take a note that you need special Kaldi from our repo and also you need
+special compilation mode (openblas+clapack or mkl, shared, optionally
+cuda). For more details on build see our dockerfiles.
 
 ```sh
+cd <KALDI_ROOT>
+git clone -b vosk --single-branch https://github.com/alphacep/kaldi /opt/kaldi
+cd kaldi/tools
+make openfst
+./extras/install_openblas_clapack.sh
+cd ../src
+./configure --mathlib=OPENBLAS_CLAPACK --shared
+make -j 10 online2 lm rnnlm
+cd ../..
 git clone https://github.com/alphacep/vosk-api
 cd vosk-api/src
 KALDI_ROOT=<KALDI_ROOT> make
+```
+
+#### Python module build
+
+To build Python module you need to build a library `libvosk.so` in
+vosk-api/src folder first. You also can download prebuilt library from
+github releases. Put it inside vosk-api/src. Now lets build python module
+
+```
 cd ../vosk-api/python
 python3 setup.py install
 ```
