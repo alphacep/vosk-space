@@ -102,6 +102,7 @@ To add a new model here create an issue on Github.
 | [vosk-model-small-sv-rhasspy-0.15](https://alphacephei.com/vosk/models/vosk-model-small-sv-rhasspy-0.15.zip)      |  289M | TBD | Repackaged model from [Rhasspy project](https://github.com/rhasspy/sv_kaldi-rhasspy) | MIT |
 | **Japanese**                                                                                              |       |            |     |  |
 | [vosk-model-small-ja-0.22](https://alphacephei.com/vosk/models/vosk-model-small-ja-0.22.zip)              |  48M | 9.52(csj CER) 17.07(ted10k CER) | Lightweight wideband model for Japanese | Apache 2.0 |
+| [vosk-model-ja-0.22](https://alphacephei.com/vosk/models/vosk-model-ja-0.22.zip)                          |  1Gb | 8.40(csj CER) 13.91(ted10k CER) | Bid model for Japanese | Apache 2.0 |
 | **Esperanto**                                                                                             |       |            |     |  |
 | [vosk-model-small-eo-0.42](https://alphacephei.com/vosk/models/vosk-model-small-eo-0.42.zip)              |  42M  | 7.24 (CV Test) | Lightweight model for Esperanto | Apache 2.0 |
 | **Hindi**                                                                                                 |       |            |     |  |
