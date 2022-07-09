@@ -70,3 +70,8 @@ test the integration.
 <https://github.com/opencast/opencast> - The free and open source solution for automated video capture and distribution at scale.
 
 <https://github.com/bsaleh03/CaptionIt> - Vosk-powered HUD
+
+<https://github.com/PhilippeRo/IBus-Speech-To-Text> - This IBus engine uses VOSK (https://github.com/alphacep/vosk-api) for voice recognition and allows to dictate text in several languages in any application through IBus. It supports Wayland and likely Xorg, though it has not been tested with the latter.
+
+<https://github.com/PhilippeRo/gst-vosk/> - Gstreamer plugin for Vosk
+
