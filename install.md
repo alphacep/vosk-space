@@ -67,10 +67,10 @@ Upgrade python and pip if needed. Then install vosk on Linux/Mac from pip:
 pip3 install vosk
 ```
 
-Please note that some platforms are not fully supported by pip, for example on arm64 you have install from released wheels:
+Please note that some platforms are not fully supported by pip, for example on riscv64 you have install from released wheels:
 
 ```sh
-https://github.com/alphacep/vosk-api/releases/download/v0.3.41/vosk-0.3.41-py3-none-linux_aarch64.whl
+pip3 install https://github.com/alphacep/vosk-api/releases/download/v0.3.42/vosk-0.3.42-py3-none-linux_riscv64.whl
 ```
 
 If you have trouble installing, check the output of the following commands and provide it for reference:
