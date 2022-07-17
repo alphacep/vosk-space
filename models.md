@@ -74,12 +74,13 @@ To add a new model here create an issue on Github.
 | **Vietnamese**                                                                                            |       |            |     |  |
 | [vosk-model-small-vn-0.3](https://alphacephei.com/vosk/models/vosk-model-small-vn-0.3.zip)                |  32M  | TBD | Lightweight wideband model for Android and RPi | Apache 2.0 |
 | **Italian**                                                                                               |       |            |     |  |
-| [vosk-model-small-it-0.22](https://alphacephei.com/vosk/models/vosk-model-small-it-0.22.zip)              |  48M  | 16.88 (cv Test) 25.87 (mls) 17.01 (mtedx) | Lightweight model for Android and RPi | Apache 2.0 |
+| [vosk-model-small-it-0.22](https://alphacephei.com/vosk/models/vosk-model-small-it-0.22.zip)              |  48M  | 16.88 (cv test) 25.87 (mls) 17.01 (mtedx) | Lightweight model for Android and RPi | Apache 2.0 |
+| [vosk-model-it-0.22](https://alphacephei.com/vosk/models/vosk-model-it-0.22.zip)                          |  1.2G | 8.10 (cv test) 15.68 (mls) 11.23 (mtedx) | Big generic Italian model for servers | Apache 2.0 |
 | **Dutch**                                                                                                 |       |            |     |  |
-| [vosk-model-small-nl-0.22](https://alphacephei.com/vosk/models/vosk-model-small-nl-0.22.zip)              |  39M  | 22.45 (cv Test) 26.80 (tv) 25.84 (mls) 24.09 (voxpopuli) | Lightweight model for Dutch | Apache 2.0 |
+| [vosk-model-small-nl-0.22](https://alphacephei.com/vosk/models/vosk-model-small-nl-0.22.zip)              |  39M  | 22.45 (cv test) 26.80 (tv) 25.84 (mls) 24.09 (voxpopuli) | Lightweight model for Dutch | Apache 2.0 |
 | **Dutch Other**                                                                                                 |       |            |     |  |
-| [vosk-model-nl-spraakherkenning-0.6](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6.zip) |  860M  | 20.40 (cv Test) 32.64 (tv) 17.73 (mls) 19.96 (voxpopuli)  | Medium Dutch model from [Kaldi_NL](https://github.com/opensource-spraakherkenning-nl/Kaldi_NL) | CC-BY-NC-SA |
-| [vosk-model-nl-spraakherkenning-0.6-lgraph](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6-lgraph.zip) |  100M  | 22.82 (cv Test) 34.01 (tv) 18.81 (mls) 21.01 (voxpopuli) | Smaller model with dynamic graph | CC-BY-NC-SA  |
+| [vosk-model-nl-spraakherkenning-0.6](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6.zip) |  860M  | 20.40 (cv test) 32.64 (tv) 17.73 (mls) 19.96 (voxpopuli)  | Medium Dutch model from [Kaldi_NL](https://github.com/opensource-spraakherkenning-nl/Kaldi_NL) | CC-BY-NC-SA |
+| [vosk-model-nl-spraakherkenning-0.6-lgraph](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6-lgraph.zip) |  100M  | 22.82 (cv test) 34.01 (tv) 18.81 (mls) 21.01 (voxpopuli) | Smaller model with dynamic graph | CC-BY-NC-SA  |
 | **Catalan**                                                                                               |       |            |     |  |
 | [vosk-model-small-ca-0.4](https://alphacephei.com/vosk/models/vosk-model-small-ca-0.4.zip)                |  42M  | TBD | Lightweight wideband model for Android and RPi for Catalan | Apache 2.0 |
 | **Arabic**                                                                                                |       |            |     |  |
