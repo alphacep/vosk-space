@@ -25,10 +25,10 @@ accuracy. There are many ways to investigate that, the major ones are:
   * Make sure that language model and the vocabulary are relevant by
     calculation of the OOV rate and language model perplexity
   * Make sure that acoustic model is relevant by estimation of the
-   accuracy with the tuned langauge model or by estimation of the oracle
+   accuracy with the tuned language model or by estimation of the oracle
    lattice accuracy
   * Make sure that algorithms implemented are following best industry practices
-  * Make sure that software doesn't have bugs by comparision with the
+  * Make sure that software doesn't have bugs by comparison with the
     batch task setup or with a different software (yes, bugs also happen!)
 
 Note that it is hard to guess what is going on under the hood without
