@@ -48,5 +48,5 @@ steps:
   * Testing
 
 We can help you with the steps since we are interested to support as many
-langauges as possible. Feel free to contact us.
+languages as possible. Feel free to contact us.
 

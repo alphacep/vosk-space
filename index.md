@@ -21,7 +21,7 @@ Vosk is a speech recognition toolkit. The best things in Vosk are:
 
 ## Documentation
 
-  See the following secions for more information:
+  See the following sections for more information:
 
   * [Installation and usage](install)
   * [Integrations](integrations)

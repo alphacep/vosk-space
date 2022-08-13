@@ -18,7 +18,7 @@ dependencies {
 }
 ```
 
-In case you still want ot build android
+In case you still want to build android
 library, do the following:
 
 ```sh
