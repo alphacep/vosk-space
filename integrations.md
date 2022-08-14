@@ -75,3 +75,4 @@ test the integration.
 
 <https://github.com/PhilippeRo/gst-vosk/> - Gstreamer plugin for Vosk
 
+<https://github.com/ahmad081177/control-thymio-via-voice> - Thymio II robot (educational robot) via voice commands using VOSK
