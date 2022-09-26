@@ -87,6 +87,7 @@ To add a new model here create an issue on Github.
 | [vosk-model-small-ca-0.4](https://alphacephei.com/vosk/models/vosk-model-small-ca-0.4.zip)                |  42M  | TBD | Lightweight wideband model for Android and RPi for Catalan | Apache 2.0 |
 | **Arabic**                                                                                                |       |            |     |  |
 | [vosk-model-ar-mgb2-0.4](https://alphacephei.com/vosk/models/vosk-model-ar-mgb2-0.4.zip)                  |  318M | 16.40 (MGB-2 dev set) | Repackaged Arabic model trained on MGB2 dataset from [Kaldi](https://kaldi-asr.org/models/m9) | Apache 2.0 |
+| [vosk-model-ar-0.22-linto-1.1.0](https://alphacephei.com/vosk/models/vosk-model-ar-0.22-linto-1.1.0.zip)  |  1.3G  | 52.87 (cv test) 28.50 (MBG-2 dev set) 1.0xRT | Big model from [LINTO](https://doc.linto.ai/#/services/linstt) project | AGPL |
 | **Farsi**                                                                                                 |       |            |     |  |
 | [vosk-model-small-fa-0.4](https://alphacephei.com/vosk/models/vosk-model-small-fa-0.4.zip)                |  47M  | TBD | Lightweight wideband model for Android and RPi for Farsi (Persian) | Apache 2.0 |
 | [vosk-model-fa-0.5](https://alphacephei.com/vosk/models/vosk-model-fa-0.5.zip)                            |  1G   | TBD | Model with large vocabulary, not yet accurate but better than before (Persian) | Apache 2.0 |
