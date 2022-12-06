@@ -122,15 +122,15 @@ cuda). For more details on build see our dockerfiles.
 
 ```sh
 cd <KALDI_ROOT>
-git clone -b vosk --single-branch https://github.com/alphacep/kaldi /opt/kaldi
+git clone -b vosk --single-branch --depth=1 https://github.com/alphacep/kaldi /opt/kaldi
 cd kaldi/tools
-make openfst
+make openfst cub
 ./extras/install_openblas_clapack.sh
 cd ../src
 ./configure --mathlib=OPENBLAS_CLAPACK --shared
 make -j 10 online2 lm rnnlm
 cd ../..
-git clone https://github.com/alphacep/vosk-api
+git clone https://github.com/alphacep/vosk-api --depth=1
 cd vosk-api/src
 KALDI_ROOT=<KALDI_ROOT> make
 ```
