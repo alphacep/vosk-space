@@ -80,3 +80,5 @@ test the integration.
 <https://github.com/mixmesh/vosk> - Erlang bindings for Vosk
 
 <https://github.com/audapolis/audapolis> - audio editor
+
+<https://github.com/TUM-Dev/TUM-Live-Voice-Service> - Microservice that generates subtitles for TUM-Live
