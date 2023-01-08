@@ -119,6 +119,8 @@ To add a new model here create an issue on Github.
 | [vosk-model-small-pl-0.22](https://alphacephei.com/vosk/models/vosk-model-small-pl-0.22.zip)              |  50M | 18.36 (CV Test) 16.88 (MLS Test) 11.55 (Voxpopuli Test)| Lightweight model for Polish | Apache 2.0 |
 | **Uzbek**                                                                                                 |       |            |     |  |
 | [vosk-model-small-uz-0.22](https://alphacephei.com/vosk/models/vosk-model-small-uz-0.22.zip)              |  49M | 13.54 (CV Test) 12.92 (IS2AI USC test) | Lightweight model for Uzbek | Apache 2.0 |
+| **Korean**                                                                                                 |       |            |     |  |
+| [vosk-model-small-ko-0.22](https://alphacephei.com/vosk/models/vosk-model-small-ko-0.22.zip)              |  82M | 28.1 (Zeroth Test) | Lightweight model for Korean | Apache 2.0 |
 | **Speaker identification model**                                                                          |       |            |     |  |
 | [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  | TBD | Model for speaker identification, should work for all languages | Apache 2.0 |
 
