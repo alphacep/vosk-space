@@ -116,7 +116,9 @@ To add a new model here create an issue on Github.
 | **Czech**                                                                                                 |       |            |     |  |
 | [vosk-model-small-cs-0.4-rhasspy](https://alphacephei.com/vosk/models/vosk-model-small-cs-0.4-rhasspy.zip)|  44M | 21.29 (CV Test) | Lightweight model for Czech from Rhasspy project | MIT |
 | **Polish**                                                                                                 |       |            |     |  |
-| [vosk-model-small-pl-0.22](https://alphacephei.com/vosk/models/vosk-model-small-pl-0.22.zip)              |  50.5M | 18.36 (CV Test) 16.88 (MLS Test) 11.55 (Voxpopuli Test)| Lightweight model for Polish for Android | Apache 2.0 |
+| [vosk-model-small-pl-0.22](https://alphacephei.com/vosk/models/vosk-model-small-pl-0.22.zip)              |  50M | 18.36 (CV Test) 16.88 (MLS Test) 11.55 (Voxpopuli Test)| Lightweight model for Polish | Apache 2.0 |
+| **Uzbek**                                                                                                 |       |            |     |  |
+| [vosk-model-small-uz-0.22](https://alphacephei.com/vosk/models/vosk-model-small-uz-0.22.zip)              |  49M | 13.54 (CV Test) 12.92 (IS2AI USC test) | Lightweight model for Uzbek | Apache 2.0 |
 | **Speaker identification model**                                                                          |       |            |     |  |
 | [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  | TBD | Model for speaker identification, should work for all languages | Apache 2.0 |
 
