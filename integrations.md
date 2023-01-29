@@ -82,3 +82,7 @@ test the integration.
 <https://github.com/audapolis/audapolis> - audio editor
 
 <https://github.com/TUM-Dev/TUM-Live-Voice-Service> - Microservice that generates subtitles for TUM-Live
+
+## Bindings
+
+<https://github.com/igor725/lua-vosk> - Lua bindings
