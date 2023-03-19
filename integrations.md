@@ -86,3 +86,5 @@ test the integration.
 ## Bindings
 
 <https://github.com/igor725/lua-vosk> - Lua bindings
+
+<https://github.com/diegolijo/speech-to-text> - Cordova plugin
