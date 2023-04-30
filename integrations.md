@@ -20,6 +20,10 @@ See <https://github.com/jitsi/jigasi/pull/294>
 
 See the plugin for unimrcp server <https://github.com/alphacep/unimrcp-vosk-plugin/tree/vosk-plugin>
 
+## Call analytics
+
+<https://github.com/bogdal1993/voice_perception>
+
 ## ROS Robot operating system
 
 Some draft of the plugin is here, not yet fully functional
