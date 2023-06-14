@@ -123,6 +123,8 @@ To add a new model here create an issue on Github.
 | [vosk-model-small-uz-0.22](https://alphacephei.com/vosk/models/vosk-model-small-uz-0.22.zip)              |  49M | 13.54 (CV Test) 12.92 (IS2AI USC test) | Lightweight model for Uzbek | Apache 2.0 |
 | **Korean**                                                                                                 |       |            |     |  |
 | [vosk-model-small-ko-0.22](https://alphacephei.com/vosk/models/vosk-model-small-ko-0.22.zip)              |  82M | 28.1 (Zeroth Test) | Lightweight model for Korean | Apache 2.0 |
+| **Breton**                                                                                                 |       |            |     |  |
+| [vosk-model-br-0.7](https://alphacephei.com/vosk/models/vosk-model-br-0.7.zip)                           |  70M | 36.4 (MCV11 Test) | Breton model from [vosk-br](https://github.com/gweltou/vosk-br) project | MIT license |
 | **Speaker identification model**                                                                          |       |            |     |  |
 | [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  | TBD | Model for speaker identification, should work for all languages | Apache 2.0 |
 
@@ -163,6 +165,7 @@ Other places where you can check for models which might be compatible:
   * <https://github.com/egorsmkv/speech-recognition-uk> - Ukrainian ASR project with Vosk models
   * <https://github.com/Appen/UHV-OTS-Speech> - repository from Appen for Scalable Data Annotation Pipeline for High-Quality Large Speech Datasets Development
   * <https://github.com/vistec-AI/commonvoice-th> - Thai models trained on CommonVoice
+  * <https://github.com/gweltou/vosk-br> - Vosk for Breton
 
 ## Training your own model
 
