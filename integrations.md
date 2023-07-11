@@ -31,6 +31,8 @@ Some draft of the plugin is here, not yet fully functional
 <http://wiki.ros.org/vosk>. We need someone help to fully implement and
 test the integration.
 
+Another alternative implmentaiton <https://gitlab.com/bob-ros2/voskros>
+
 ## Other projects that use Vosk
 
 <https://github.com/ryohajika/ofxVosk> - ofxVosk is an openFrameworks addon of vosk-api to use automatic speech recognition (ASR) functionality based on Kaldi project.
