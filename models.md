@@ -124,7 +124,7 @@ To add a new model here create an issue on Github.
 | **Korean**                                                                                                 |       |            |     |  |
 | [vosk-model-small-ko-0.22](https://alphacephei.com/vosk/models/vosk-model-small-ko-0.22.zip)              |  82M | 28.1 (Zeroth Test) | Lightweight model for Korean | Apache 2.0 |
 | **Breton**                                                                                                 |       |            |     |  |
-| [vosk-model-br-0.7](https://alphacephei.com/vosk/models/vosk-model-br-0.7.zip)                           |  70M | 36.4 (MCV11 Test) | Breton model from [vosk-br](https://github.com/gweltou/vosk-br) project | MIT license |
+| [vosk-model-br-0.8](https://alphacephei.com/vosk/models/vosk-model-br-0.8.zip)                           |  70M | 36.4 (MCV11 Test) | Breton model from [vosk-br](https://github.com/gweltou/vosk-br) project | MIT license |
 | **Speaker identification model**                                                                          |       |            |     |  |
 | [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  | TBD | Model for speaker identification, should work for all languages | Apache 2.0 |
 
