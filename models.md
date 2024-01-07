@@ -117,14 +117,17 @@ To add a new model here create an issue on Github.
 | [vosk-model-hi-0.22](https://alphacephei.com/vosk/models/vosk-model-hi-0.22.zip)                          |  1.5Gb | 14.85 (CV Test) 14.83 (IITM Challenge) 13.11 (MUCS Challenge) | Big accurate model for servers | Apache 2.0 |
 | **Czech**                                                                                                 |       |            |     |  |
 | [vosk-model-small-cs-0.4-rhasspy](https://alphacephei.com/vosk/models/vosk-model-small-cs-0.4-rhasspy.zip)|  44M | 21.29 (CV Test) | Lightweight model for Czech from Rhasspy project | MIT |
-| **Polish**                                                                                                 |       |            |     |  |
+| **Polish**                                                                                                |       |            |     |  |
 | [vosk-model-small-pl-0.22](https://alphacephei.com/vosk/models/vosk-model-small-pl-0.22.zip)              |  50M | 18.36 (CV Test) 16.88 (MLS Test) 11.55 (Voxpopuli Test)| Lightweight model for Polish | Apache 2.0 |
 | **Uzbek**                                                                                                 |       |            |     |  |
-| [vosk-model-small-uz-0.22](https://alphacephei.com/vosk/models/vosk-model-small-uz-0.22.zip)              |  49M | 13.54 (CV Test) 12.92 (IS2AI USC test) | Lightweight model for Uzbek | Apache 2.0 |
-| **Korean**                                                                                                 |       |            |     |  |
-| [vosk-model-small-ko-0.22](https://alphacephei.com/vosk/models/vosk-model-small-ko-0.22.zip)              |  82M | 28.1 (Zeroth Test) | Lightweight model for Korean | Apache 2.0 |
-| **Breton**                                                                                                 |       |            |     |  |
-| [vosk-model-br-0.8](https://alphacephei.com/vosk/models/vosk-model-br-0.8.zip)                           |  70M | 36.4 (MCV11 Test) | Breton model from [vosk-br](https://github.com/gweltou/vosk-br) project | MIT license |
+| [vosk-model-small-uz-0.22](https://alphacephei.com/vosk/models/vosk-model-small-uz-0.22.zip)              |  49M  | 13.54 (CV Test) 12.92 (IS2AI USC test) | Lightweight model for Uzbek | Apache 2.0 |
+| **Korean**                                                                                                |       |            |     |  |
+| [vosk-model-small-ko-0.22](https://alphacephei.com/vosk/models/vosk-model-small-ko-0.22.zip )             |  82M  | 28.1 (Zeroth Test) | Lightweight model for Korean | Apache 2.0 |
+| **Breton**                                                                                                |       |            |     |  |
+| [vosk-model-br-0.8](https://alphacephei.com/vosk/models/vosk-model-br-0.8.zip)                            |  70M  | 36.4 (MCV11 Test) | Breton model from [vosk-br](https://github.com/gweltou/vosk-br) project | MIT license |
+| **Gujarati**                                                                                              |       |            |     |  |
+| [vosk-model-gu-0.42](https://alphacephei.com/vosk/models/vosk-model-gu-0.42.zip)                          |  700M  | 16.45 (MS Test) | Big Gujarati model | Apache 2.0 |
+| [vosk-model-small-gu-0.42](https://alphacephei.com/vosk/models/vosk-model-small-gu-0.42.zip)              |  100M  | 20.49 (MS Test) | Lightweight model for Gujarati | Apache 2.0 |
 | **Speaker identification model**                                                                          |       |            |     |  |
 | [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  | TBD | Model for speaker identification, should work for all languages | Apache 2.0 |
 
