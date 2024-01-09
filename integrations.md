@@ -89,6 +89,8 @@ Another alternative implmentaiton <https://gitlab.com/bob-ros2/voskros>
 
 <https://github.com/TUM-Dev/TUM-Live-Voice-Service> - Microservice that generates subtitles for TUM-Live
 
+<https://git.sr.ht/~geb/sprec> - Speech recognition command for scripting
+
 ## Bindings
 
 <https://github.com/igor725/lua-vosk> - Lua bindings
