@@ -59,7 +59,7 @@ Another alternative implmentaiton <https://gitlab.com/bob-ros2/voskros>
 
 <https://github.com/SubtitleEdit/subtitleedit> - Subtitle Editor in C#
 
-<https://git.sr.ht/~geb/numen> - Simple voice control for handsfree computing on Linux
+<https://numenvoice.org> - Voice control for handsfree computing
 
 <https://github.com/omlins/JustSayIt.jl> - Offline, low latency, highly accurate and secure speech to command translation software
 
