@@ -38,3 +38,10 @@ If you have any questions, feel free to
    * Send us an e-mail at [contact@alphacephei.com](mailto:contact@alphacephei.com)
    * Join our group dedicated to speech recognition on Telegram [@speech_recognition](https://t.me/speech_recognition)
    * We have a Wechat group which is pretty big, so it is invitation-only. Mail us to join the group and provide some information about yourself.
+
+Some other links
+
+   * Discord <https://discord.gg/Bpmd2qXp>
+   * Matrix <https://app.gitter.im/#/room/%23alphacep_community:gitter.im>
+   * Twitter <https://twitter.com/alphacep>
+   * Reddit <https://www.reddit.com/r/speechtech>
