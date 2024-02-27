@@ -96,3 +96,5 @@ Another alternative implmentaiton <https://gitlab.com/bob-ros2/voskros>
 <https://github.com/igor725/lua-vosk> - Lua bindings
 
 <https://github.com/diegolijo/speech-to-text> - Cordova plugin
+
+<https://github.com/unusualprojects/GodotSpeechRecognition> - Vosk in Godot

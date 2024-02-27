@@ -41,7 +41,7 @@ If you have any questions, feel free to
 
 Some other links
 
-   * Discord <https://discord.gg/Bpmd2qXp>
+   * Discord <https://discord.gg/kknE9jjVj6>
    * Matrix <https://app.gitter.im/#/room/%23alphacep_community:gitter.im>
    * Twitter <https://twitter.com/alphacep>
    * Reddit <https://www.reddit.com/r/speechtech>
