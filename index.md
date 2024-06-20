@@ -30,6 +30,14 @@ Vosk is a speech recognition toolkit. The best things in Vosk are:
   * [Models](models)
   * [Language Model Adaptation](lm)
 
+## Contributions
+
+We would love for you to participate!
+
+  * [Contribute to vosk-api](https://github.com/alphacep/vosk-api)
+  * [Contribute to vosk-server](https://github.com/alphacep/vosk-server)
+  * [Contribute to documentation](https://github.com/alphacep/vosk-space)
+
 ## Contact Us
 
 If you have any questions, feel free to
