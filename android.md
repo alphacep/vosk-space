@@ -35,7 +35,7 @@ soon.
 To run on android model has to be sufficiently small, we recommend to
 check model sizes in the demo to figure out what should be the size of
 the model. If you want to update the grammar or the acoustic model, check
-[vosk-api documentation](https://github.com/alphacep/vosk-api/blob/master/doc/adapation.md).
+[vosk-api documentation](adaptation).
 
 ## Nativescript
 
