@@ -91,6 +91,9 @@ To add a new model here create an issue on Github.
 | **Arabic**                                                                                                |       |            |     |  |
 | [vosk-model-ar-mgb2-0.4](https://alphacephei.com/vosk/models/vosk-model-ar-mgb2-0.4.zip)                  |  318M | 16.40 (MGB-2 dev set) | Repackaged Arabic model trained on MGB2 dataset from [Kaldi](https://kaldi-asr.org/models/m9) | Apache 2.0 |
 | [vosk-model-ar-0.22-linto-1.1.0](https://alphacephei.com/vosk/models/vosk-model-ar-0.22-linto-1.1.0.zip)  |  1.3G  | 52.87 (cv test) 28.50 (MBG-2 dev set) 1.0xRT | Big model from [LINTO](https://doc.linto.ai/#/services/linstt) project | AGPL |
+| **Arabic Tunisian**                                                                                       |       |            |     |  |
+| [vosk-model-small-ar-tn-0.1-linto](https://alphacephei.com/vosk/models/vosk-model-small-ar-tn-0.1-linto.zip)    |  158M | 16.06 (TARIC set) | Small Arabic Tunisian model from [Linagora](https://huggingface.co/linagora/linto-asr-ar-tn-0.1) | Apache 2.0 |
+| [vosk-model-ar-tn-0.1-linto](https://alphacephei.com/vosk/models/vosk-model-ar-tn-0.1-linto.zip)          |  517M | 16.06 (TARIC set) | Arabic Tunisian model from [Linagora](https://huggingface.co/linagora/linto-asr-ar-tn-0.1) | Apache 2.0 |
 | **Farsi**                                                                                                 |       |            |     |  |
 | [vosk-model-small-fa-0.4](https://alphacephei.com/vosk/models/vosk-model-small-fa-0.4.zip)                |  47M  | TBD | Lightweight wideband model for Android and RPi for Farsi (Persian) | Apache 2.0 |
 | [vosk-model-fa-0.5](https://alphacephei.com/vosk/models/vosk-model-fa-0.5.zip)                            |  1G   | TBD | Model with large vocabulary, not yet accurate but better than before (Persian) | Apache 2.0 |
@@ -163,7 +166,7 @@ Other places where you can check for models which might be compatible:
   * <https://montreal-forced-aligner.readthedocs.io/en/latest/pretrained_models.html> (GMM models, not compatible but might be still useful)
   * <https://github.com/goodatlas/zeroth> - Korean Kaldi (just a recipe and data to train)
   * <https://github.com/undertheseanlp/automatic_speech_recognition> - Vietnamese Kaldi project
-  * <https://doc.linto.ai/#/services/linstt> - LINTO project with French and English models
+  * <https://doc.linto.ai/#/services/linstt> - LINTO project by [Linagora](https://linagora.com) with French, English and Arabic models
   * <https://community.rhasspy.org/> - Rhasspy (some Kaldi models for Czech, probably even more)
   * <https://github.com/feddybear/flipside_ph> - Filipino model project by Federico Ang
   * <https://github.com/alumae/kiirkirjutaja> - Estonian Speech Recognition project with Vosk models
