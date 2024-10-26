@@ -95,9 +95,11 @@ To add a new model here create an issue on Github.
 | [vosk-model-small-ar-tn-0.1-linto](https://alphacephei.com/vosk/models/vosk-model-small-ar-tn-0.1-linto.zip)    |  158M | 16.06 (TARIC set) | Small Arabic Tunisian model from [Linagora](https://huggingface.co/linagora/linto-asr-ar-tn-0.1) | Apache 2.0 |
 | [vosk-model-ar-tn-0.1-linto](https://alphacephei.com/vosk/models/vosk-model-ar-tn-0.1-linto.zip)          |  517M | 16.06 (TARIC set) | Arabic Tunisian model from [Linagora](https://huggingface.co/linagora/linto-asr-ar-tn-0.1) | Apache 2.0 |
 | **Farsi**                                                                                                 |       |            |     |  |
-| [vosk-model-small-fa-0.4](https://alphacephei.com/vosk/models/vosk-model-small-fa-0.4.zip)                |  47M  | TBD | Lightweight wideband model for Android and RPi for Farsi (Persian) | Apache 2.0 |
-| [vosk-model-fa-0.5](https://alphacephei.com/vosk/models/vosk-model-fa-0.5.zip)                            |  1G   | TBD | Model with large vocabulary, not yet accurate but better than before (Persian) | Apache 2.0 |
-| [vosk-model-small-fa-0.5](https://alphacephei.com/vosk/models/vosk-model-small-fa-0.5.zip)                |  60M  | TBD | Bigger small model for desktop application (Persian) | Apache 2.0 |
+| [vosk-model-fa-0.42](https://alphacephei.com/vosk/models/vosk-model-fa-0.42.zip)                          |  1.6G | 16.7 (CV17) 11.1 (Fleurs) | Model with large vocabulary, not yet accurate but better than before (Persian) | Apache 2.0 |
+| [vosk-model-small-fa-0.42](https://alphacephei.com/vosk/models/vosk-model-small-fa-0.42.zip)              |  53M  | 23.4 (CV17) 14.0 (Fleurs) | Small model for desktop and mobile applications (Persian) | Apache 2.0 |
+| **Farsi Other**                                                                                           |       |            |     |  |
+| [vosk-model-fa-0.5](https://alphacephei.com/vosk/models/vosk-model-fa-0.5.zip)                            |  1G   | 29.7 (CV17) 25.1 (Fleurs) | Model with large vocabulary, not yet accurate but better than before (Persian) | Apache 2.0 |
+| [vosk-model-small-fa-0.5](https://alphacephei.com/vosk/models/vosk-model-small-fa-0.5.zip)                |  60M  | 31.2 (CV17) 26.2 (Fleurs) | Bigger small model for desktop applications (Persian) | Apache 2.0 |
 | **Filipino**                                                                                              |       |            |     |  |
 | [vosk-model-tl-ph-generic-0.6](https://alphacephei.com/vosk/models/vosk-model-tl-ph-generic-0.6.zip)      |  320M  | 18.87 (FLEURS-dev) 18.61 (FLEURS-test) 97.9 (BABEL-dev) MATERIAL-dev (41.31) | Medium wideband model for Filipino (Tagalog) by [feddybear](https://github.com/feddybear/flipside_ph) | CC-BY-NC-SA 4.0 |
 | **Ukrainian**                                                                                             |       |            |     |  |
