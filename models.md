@@ -136,6 +136,8 @@ To add a new model here create an issue on Github.
 | **Tajik**                                                                                                 |       |            |     |  |
 | [vosk-model-tg-0.22](https://alphacephei.com/vosk/models/vosk-model-tg-0.22.zip)                          |  327M  | 41.1 (Fleurs test) | Big Tajik model | Apache 2.0 |
 | [vosk-model-small-tg-0.22](https://alphacephei.com/vosk/models/vosk-model-small-tg-0.22.zip)              |  50M  | 38.4 (Fleurs test) | Lightweight model for Tajik | Apache 2.0 |
+| **Telugu**                                                                                                 |       |            |     |  |
+| [vosk-model-small-te-0.42](https://alphacephei.com/vosk/models/vosk-model-small-te-0.42.zip)              |  58M  | 87.9 (Fleurs test) | Lightweight model for Telugu | Apache 2.0 |
 | **Speaker identification model**                                                                          |       |            |     |  |
 | [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  | TBD | Model for speaker identification, should work for all languages | Apache 2.0 |
 
