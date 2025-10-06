@@ -108,8 +108,8 @@ To add a new model here create an issue on Github.
 | [vosk-model-uk-v3](https://alphacephei.com/vosk/models/vosk-model-uk-v3.zip)                              |  343M | TBD | Bigger model from [Speech Recognition for Ukrainian](https://github.com/egorsmkv/speech-recognition-uk) | Apache 2.0 |
 | [vosk-model-uk-v3-lgraph](https://alphacephei.com/vosk/models/vosk-model-uk-v3-lgraph.zip)                |  325M | TBD | Big dynamic model from [Speech Recognition for Ukrainian](https://github.com/egorsmkv/speech-recognition-uk) | Apache 2.0 |
 | **Kazakh**                                                                                                |       |            |     |  |
-| [vosk-model-small-kz-0.15](https://alphacephei.com/vosk/models/vosk-model-small-kz-0.15.zip)              |  42M  | 9.60(dev) 8.32(test) | Small mobile model from [SAIDA_Kazakh](https://github.com/IS2AI/ISSAI_SAIDA_Kazakh_ASR)| Apache 2.0 |
-| [vosk-model-kz-0.15](https://alphacephei.com/vosk/models/vosk-model-kz-0.15.zip)                          |  378M | 8.06(dev) 6.81(test) | Bigger wideband model [SAIDA_Kazakh](https://github.com/IS2AI/ISSAI_SAIDA_Kazakh_ASR)| Apache 2.0 |
+| [vosk-model-small-kz-0.42](https://alphacephei.com/vosk/models/vosk-model-small-kz-0.42.zip)              |  58M  | 21.10 (fleurs) 30.0 (CV17) 9.7 (KSC) 24.86 (KSC Other) | Small mobile model for Kazakh| Apache 2.0 |
+| [vosk-model-kz-0.42](https://alphacephei.com/vosk/models/vosk-model-kz-0.42.zip)                          |  1.3G | 13.09 (fleurs) 12.50 (CV17) 4.49 (KSC) 18.51 (KSC Other) | Bigger model for Kazakh | Apache 2.0 |
 | **Swedish**                                                                                               |       |            |     |  |
 | [vosk-model-small-sv-rhasspy-0.15](https://alphacephei.com/vosk/models/vosk-model-small-sv-rhasspy-0.15.zip)      |  289M | TBD | Repackaged model from [Rhasspy project](https://github.com/rhasspy/sv_kaldi-rhasspy) | MIT |
 | **Japanese**                                                                                              |       |            |     |  |
@@ -138,6 +138,9 @@ To add a new model here create an issue on Github.
 | [vosk-model-small-tg-0.22](https://alphacephei.com/vosk/models/vosk-model-small-tg-0.22.zip)              |  50M  | 38.4 (Fleurs test) | Lightweight model for Tajik | Apache 2.0 |
 | **Telugu**                                                                                                 |       |            |     |  |
 | [vosk-model-small-te-0.42](https://alphacephei.com/vosk/models/vosk-model-small-te-0.42.zip)              |  58M  | 87.9 (Fleurs test) | Lightweight model for Telugu | Apache 2.0 |
+| **Kyrgyz**                                                                                                |       |            |     |  |
+| [vosk-model-small-ky-0.42](https://alphacephei.com/vosk/models/vosk-model-small-ky-0.42.zip)              |  49M  | 18.95 (Fleurs) 16.96 (CV17) | Small mobile model for Kyrgyz| Apache 2.0 |
+| [vosk-model-ky-0.42](https://alphacephei.com/vosk/models/vosk-model-ky-0.42.zip)                          |  1.1G | 13.45 (Fleurs) 8.75 (CV17) | Bigger model for Kyrgyz | Apache 2.0 |
 | **Speaker identification model**                                                                          |       |            |     |  |
 | [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  | TBD | Model for speaker identification, should work for all languages | Apache 2.0 |
 
