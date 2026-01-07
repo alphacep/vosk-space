@@ -20,6 +20,16 @@ See <https://github.com/jitsi/jigasi/pull/294>
 
 See the plugin for unimrcp server <https://github.com/alphacep/unimrcp-vosk-plugin/tree/vosk-plugin>
 
+## Agent Voice Response
+
+AVR is an open and modular platform focused on AI voicebots for
+telephony, tightly integrated with Asterisk and designed to work with
+different ASR, LLM, TTS, and Speech-to-Speech providers.
+
+Documentation: <https://wiki.agentvoiceresponse.com/en/vosk>
+
+Integration code: <https://github.com/agentvoiceresponse/avr-asr-vosk>
+
 ## Call analytics
 
 <https://github.com/bogdal1993/voice_perception>
