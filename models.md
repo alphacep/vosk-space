@@ -141,6 +141,9 @@ To add a new model here create an issue on Github.
 | **Kyrgyz**                                                                                                |       |            |     |  |
 | [vosk-model-small-ky-0.42](https://alphacephei.com/vosk/models/vosk-model-small-ky-0.42.zip)              |  49M  | 18.95 (Fleurs) 16.96 (CV17) | Small mobile model for Kyrgyz| Apache 2.0 |
 | [vosk-model-ky-0.42](https://alphacephei.com/vosk/models/vosk-model-ky-0.42.zip)                          |  1.1G | 13.45 (Fleurs) 8.75 (CV17) | Bigger model for Kyrgyz | Apache 2.0 |
+| **Georgian**                                                                                                |       |            |     |  |
+| [vosk-model-small-ka-0.42](https://alphacephei.com/vosk/models/vosk-model-small-ka-0.42.zip)              |  45M  | 18.0 (Fleurs) 14.2 (CV17) | Small mobile model for Georgian| Apache 2.0 |
+| [vosk-model-ka-0.42](https://alphacephei.com/vosk/models/vosk-model-ka-0.42.zip)                          |  700M | 12.7 (Fleurs) 5.2 (CV17) | Bigger model for Georgian | Apache 2.0 |
 | **Speaker identification model**                                                                          |       |            |     |  |
 | [vosk-model-spk-0.4](https://alphacephei.com/vosk/models/vosk-model-spk-0.4.zip)                          |  13M  | TBD | Model for speaker identification, should work for all languages | Apache 2.0 |
 
